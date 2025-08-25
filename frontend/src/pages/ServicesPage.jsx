@@ -51,7 +51,7 @@ const ServicesPage = () => {
           <div className="bg-gradient-to-r from-orange-500 to-red-500 text-white rounded-lg p-8">
             <h3 className="text-2xl font-bold mb-2">Tặng 50%</h3>
             <h4 className="text-xl font-semibold mb-4">Gói Thiết Kế Kiến Trúc Cao Cấp</h4>
-            <p className="mb-4">(KTS >15 năm kinh nghiệm)</p>
+            <p className="mb-4">(KTS &gt;15 năm kinh nghiệm)</p>
             <div className="bg-white/20 rounded-lg p-4 mb-6">
               <p className="font-semibold">Gói thiết kế tối giản chỉ 70k/m²</p>
               <p className="text-sm mt-2">Bao gồm mặt bằng công năng chi tiết, mặt bằng kết cấu cột, Concept 3D trong tháng 9-10/2025</p>
