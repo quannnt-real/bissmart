@@ -61,7 +61,7 @@ const HomePage = () => {
                 className="border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4 text-lg font-semibold"
                 asChild
               >
-                <Link to="/process">Xem quy trình</Link>
+                <Link to="/services">Tìm hiểu dịch vụ</Link>
               </Button>
             </div>
           </div>
