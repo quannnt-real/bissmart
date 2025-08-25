@@ -151,7 +151,7 @@ const HomePage = () => {
                 <CardTitle className="text-xl text-gray-900">Thiết kế chuyên nghiệp</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-600 mb-4">Đội ngũ kiến trúc sư > 15 năm kinh nghiệm</p>
+                <p className="text-gray-600 mb-4">Đội ngũ kiến trúc sư &gt; 15 năm kinh nghiệm</p>
                 <ul className="space-y-2 mb-6">
                   <li className="flex items-center space-x-2">
                     <CheckCircle className="w-4 h-4 text-[#60bde9]" />
