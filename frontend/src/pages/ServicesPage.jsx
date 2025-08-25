@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card';
 import { Badge } from '../components/ui/badge';
 import { Button } from '../components/ui/button';
 import { Link } from 'react-router-dom';
-import { CheckCircle, ArrowRight, Home, Users, Shield, Star, Award, Clock, Hammer, FileText, MapPin } from 'lucide-react';
+import { CheckCircle, ArrowRight, Home, Users, Shield, Star, Award, Clock, Hammer, FileText, MapPin, Play, Quote } from 'lucide-react';
 import { mockData } from '../data/mock';
+import QuoteForm from '../components/QuoteForm';
 
 const ServicesPage = () => {
   return (
