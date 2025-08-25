@@ -3,226 +3,323 @@ import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card'
 import { Badge } from '../components/ui/badge';
 import { Button } from '../components/ui/button';
 import { Link } from 'react-router-dom';
-import { CheckCircle, ArrowRight, Ruler, Hammer, FileText, Users, Clock, Shield } from 'lucide-react';
+import { CheckCircle, ArrowRight, Home, Users, Shield, Star, Award, Clock, Hammer, FileText, MapPin } from 'lucide-react';
 import { mockData } from '../data/mock';
 
 const ServicesPage = () => {
-  const serviceDetails = [
-    {
-      id: 1,
-      title: "Thiết kế kiến trúc",
-      description: "Dịch vụ thiết kế kiến trúc chuyên nghiệp từ ý tưởng đến bản vẽ hoàn chỉnh",
-      icon: Ruler,
-      image: "https://images.unsplash.com/photo-1664819766323-78308c6c434c",
-      features: [
-        "Khảo sát và tư vấn địa điểm xây dựng",
-        "Thiết kế mặt bằng công năng chi tiết",
-        "Thiết kế kiến trúc 3D chuyên nghiệp",
-        "Bản vẽ kỹ thuật đầy đủ",
-        "Tư vấn phong cách kiến trúc phù hợp",
-        "Tối ưu hóa không gian sống"
-      ],
-      process: [
-        "Tiếp nhận yêu cầu và khảo sát thực địa",
-        "Phân tích và đưa ra ý tưởng thiết kế",
-        "Vẽ phác thảo và thảo luận với khách hàng", 
-        "Hoàn thiện bản vẽ thiết kế",
-        "Render 3D và trình bày phương án cuối cùng"
-      ]
-    },
-    {
-      id: 2,
-      title: "Thi công trọn gói",
-      description: "Dịch vụ thi công xây dựng trọn gói từ móng đến hoàn thiện",
-      icon: Hammer,
-      image: "https://images.unsplash.com/photo-1575971637203-d6255d9947a9",
-      features: [
-        "Thi công phần móng và kết cấu",
-        "Xây dựng phần thô hoàn chỉnh",
-        "Lắp đặt hệ thống điện nước",
-        "Hoàn thiện nội thất và ngoại thất",
-        "Lắp đặt thiết bị và nội thất",
-        "Nghiệm thu và bàn giao"
-      ],
-      process: [
-        "Khảo sát và chuẩn bị mặt bằng",
-        "Thi công móng và kết cấu chính",
-        "Xây tường và lắp đặt hệ thống kỹ thuật",
-        "Hoàn thiện và trang trí nội thất",
-        "Kiểm tra chất lượng và bàn giao"
-      ]
-    },
-    {
-      id: 3,
-      title: "Hỗ trợ pháp lý",
-      description: "Hỗ trợ đầy đủ thủ tục pháp lý và giấy phép xây dựng",
-      icon: FileText,
-      image: "https://images.unsplash.com/photo-1567954970774-58d6aa6c50dc",
-      features: [
-        "Xin cấp phép xây dựng",
-        "Làm thủ tục pháp lý liên quan",
-        "Tư vấn quy định xây dựng",
-        "Hỗ trợ giải quyết tranh chấp",
-        "Hoàn công và cấp sổ hồng",
-        "Tư vấn bảo hiểm công trình"
-      ],
-      process: [
-        "Chuẩn bị hồ sơ và giấy tờ cần thiết",
-        "Nộp hồ sơ xin cấp phép xây dựng",
-        "Theo dõi tiến trình phê duyệt",
-        "Nhận giấy phép và thông báo khách hàng",
-        "Hỗ trợ hoàn công sau khi hoàn thành"
-      ]
-    }
-  ];
-
   return (
     <div className="min-h-screen py-16">
       <div className="container mx-auto px-4">
         {/* Hero Section */}
         <div className="text-center mb-16">
-          <Badge className="bg-[#60bde9] text-white mb-4">Dịch vụ</Badge>
-          <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            Dịch vụ của chúng tôi
+          <Badge className="bg-[#60bde9] text-white mb-4 text-lg px-6 py-2">
+            ƯU ĐÃI ĐẶC BIỆT 2025
+          </Badge>
+          <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">
+            BIS SMART
           </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Chúng tôi cung cấp giải pháp xây dựng toàn diện từ thiết kế đến hoàn thiện, 
-            đảm bảo chất lượng và tiến độ theo cam kết
+          <h2 className="text-2xl lg:text-3xl font-bold text-[#60bde9] mb-6">
+            NHÀ THẦU UY TÍN SỐ 1 VỀ XÂY NHÀ TRỌN GÓI
+          </h2>
+          <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed mb-8">
+            {mockData.company.description}
           </p>
         </div>
 
-        {/* Services Overview */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-          {mockData.services.map((service) => (
-            <Card key={service.id} className="group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-              <div className="overflow-hidden rounded-t-lg">
-                <img 
-                  src={service.image} 
-                  alt={service.title}
-                  className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
-                />
-              </div>
-              <CardHeader>
-                <CardTitle className="text-xl text-gray-900">{service.title}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600 mb-4">{service.description}</p>
-                <ul className="space-y-2 mb-6">
-                  {service.features.map((feature, index) => (
-                    <li key={index} className="flex items-center space-x-2">
-                      <CheckCircle className="w-4 h-4 text-[#60bde9]" />
-                      <span className="text-sm text-gray-600">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-
-        {/* Detailed Services */}
-        <div className="space-y-16">
-          {serviceDetails.map((service, index) => (
-            <div key={service.id} className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:grid-cols-2' : ''}`}>
-              <div className={index % 2 === 1 ? 'lg:order-2' : ''}>
-                <div className="flex items-center mb-6">
-                  <service.icon className="w-12 h-12 text-[#60bde9] mr-4" />
-                  <h2 className="text-3xl font-bold text-gray-900">{service.title}</h2>
+        {/* Special Offers */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+          <div className="bg-gradient-to-r from-[#60bde9] to-[#4a9bc7] text-white rounded-lg p-8">
+            <h3 className="text-2xl font-bold mb-4">Tặng 100%</h3>
+            <div className="space-y-3 mb-6">
+              {mockData.mainService.features.map((feature, index) => (
+                <div key={index} className="flex items-center space-x-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0" />
+                  <span>{feature}</span>
                 </div>
-                <p className="text-gray-600 mb-6 text-lg leading-relaxed">
-                  {service.description}
-                </p>
-                
-                <div className="mb-8">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-4">Tính năng nổi bật:</h3>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                    {service.features.map((feature, idx) => (
-                      <div key={idx} className="flex items-start space-x-2">
-                        <CheckCircle className="w-5 h-5 text-[#60bde9] flex-shrink-0 mt-0.5" />
-                        <span className="text-gray-700">{feature}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-
-                <div className="mb-8">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-4">Quy trình thực hiện:</h3>
-                  <div className="space-y-3">
-                    {service.process.map((step, idx) => (
-                      <div key={idx} className="flex items-start space-x-3">
-                        <div className="w-6 h-6 bg-[#60bde9] text-white rounded-full flex items-center justify-center text-sm font-semibold flex-shrink-0 mt-0.5">
-                          {idx + 1}
-                        </div>
-                        <span className="text-gray-700">{step}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-              
-              <div className={index % 2 === 1 ? 'lg:order-1' : ''}>
-                <img 
-                  src={service.image} 
-                  alt={service.title}
-                  className="w-full h-96 object-cover rounded-lg shadow-lg"
-                />
-              </div>
+              ))}
             </div>
-          ))}
+            <Button 
+              size="lg" 
+              variant="secondary" 
+              className="bg-white text-[#60bde9] hover:bg-gray-100 w-full"
+              asChild
+            >
+              <Link to="/contact">NHẬN BÁO GIÁ CÔNG TRÌNH</Link>
+            </Button>
+          </div>
+
+          <div className="bg-gradient-to-r from-orange-500 to-red-500 text-white rounded-lg p-8">
+            <h3 className="text-2xl font-bold mb-2">Tặng 50%</h3>
+            <h4 className="text-xl font-semibold mb-4">Gói Thiết Kế Kiến Trúc Cao Cấp</h4>
+            <p className="mb-4">(KTS >15 năm kinh nghiệm)</p>
+            <div className="bg-white/20 rounded-lg p-4 mb-6">
+              <p className="font-semibold">Gói thiết kế tối giản chỉ 70k/m²</p>
+              <p className="text-sm mt-2">Bao gồm mặt bằng công năng chi tiết, mặt bằng kết cấu cột, Concept 3D trong tháng 9-10/2025</p>
+            </div>
+            <Button 
+              size="lg" 
+              variant="secondary" 
+              className="bg-white text-orange-600 hover:bg-gray-100 w-full"
+              asChild
+            >
+              <Link to="/contact">ĐĂNG KÝ NGAY</Link>
+            </Button>
+          </div>
         </div>
 
-        {/* Why Choose Our Services */}
-        <div className="mt-16 bg-gray-50 rounded-lg p-8">
+        {/* Company Commitments */}
+        <div className="mb-16">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              Tại sao chọn dịch vụ của chúng tôi?
+              Chúng tôi cam kết bằng HỢP ĐỒNG rõ ràng VỚI KHÁCH HÀNG
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Những lợi thế vượt trội khi sử dụng dịch vụ của BIS SMART
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Những cam kết chất lượng được ghi rõ trong hợp đồng với khách hàng
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card className="text-center hover:shadow-lg transition-shadow">
-              <CardContent className="p-6">
-                <Users className="w-12 h-12 text-[#60bde9] mx-auto mb-4" />
-                <h3 className="text-xl font-bold text-gray-900 mb-3">Đội ngũ chuyên nghiệp</h3>
-                <p className="text-gray-600">
-                  Kiến trúc sư và kỹ sư có hơn 10 năm kinh nghiệm trong ngành
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="text-center hover:shadow-lg transition-shadow">
-              <CardContent className="p-6">
-                <Clock className="w-12 h-12 text-[#60bde9] mx-auto mb-4" />
-                <h3 className="text-xl font-bold text-gray-900 mb-3">Đúng tiến độ</h3>
-                <p className="text-gray-600">
-                  Cam kết hoàn thành đúng thời gian với chất lượng tốt nhất
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="text-center hover:shadow-lg transition-shadow">
-              <CardContent className="p-6">
-                <Shield className="w-12 h-12 text-[#60bde9] mx-auto mb-4" />
-                <h3 className="text-xl font-bold text-gray-900 mb-3">Bảo hành lâu dài</h3>
-                <p className="text-gray-600">
-                  Bảo hành 5 năm cho tất cả công trình và dịch vụ hỗ trợ 24/7
-                </p>
-              </CardContent>
-            </Card>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {mockData.commitments.map((commitment, index) => (
+              <div key={index} className="flex items-start space-x-3 p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <CheckCircle className="w-6 h-6 text-[#60bde9] flex-shrink-0 mt-1" />
+                <p className="text-gray-700 leading-relaxed">{commitment}</p>
+              </div>
+            ))}
           </div>
         </div>
 
-        {/* CTA Section */}
-        <div className="mt-16 text-center">
-          <div className="bg-[#60bde9] text-white rounded-lg p-12">
+        {/* Regional Presence */}
+        <div className="mb-16">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+              Hình ảnh văn phòng ở 3 miền
+            </h2>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {mockData.contact.regions.map((region, index) => (
+              <Card key={index} className="overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                <div className="h-48 overflow-hidden">
+                  <img 
+                    src={index === 0 ? "https://images.unsplash.com/photo-1557053819-aa6046add523" : 
+                         index === 1 ? "https://images.unsplash.com/photo-1575971637203-d6255d9947a9" :
+                         "https://images.unsplash.com/photo-1664819766323-78308c6c434c"} 
+                    alt={`Văn phòng ${region.name}`}
+                    className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+                  />
+                </div>
+                <CardHeader>
+                  <CardTitle className="text-[#60bde9] text-2xl text-center">{region.name}</CardTitle>
+                </CardHeader>
+                <CardContent className="text-center">
+                  <div className="flex items-center justify-center space-x-2 mb-2">
+                    <MapPin className="w-4 h-4 text-gray-500" />
+                    <p className="text-gray-600">{region.address}</p>
+                  </div>
+                  <p className="text-[#60bde9] font-semibold">{region.phone}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+
+        {/* Projects Gallery */}
+        <div className="mb-16">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+              Các công trình thực tế 3 miền
+            </h2>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            {mockData.contact.regions.map((region, index) => (
+              <div key={index}>
+                <h3 className="text-xl font-bold text-[#60bde9] mb-4 text-center">{region.name}</h3>
+                <div className="grid grid-cols-3 gap-2">
+                  {[1, 2, 3].map((projectIndex) => (
+                    <div key={projectIndex} className="aspect-square overflow-hidden rounded-lg">
+                      <img 
+                        src={`https://images.unsplash.com/photo-${projectIndex === 1 ? '1508450859948-4e04fabaa4ea' : 
+                                                                  projectIndex === 2 ? '1693639385915-d7a7ddefe8e1' :
+                                                                  '1621511075938-f03482369feb'}?w=300&h=300&fit=crop`}
+                        alt={`Công trình ${projectIndex}`}
+                        className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+                      />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Process */}
+        <div className="mb-16">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+              QUY TRÌNH THỰC HIỆN CÔNG VIỆC
+            </h2>
+          </div>
+          
+          <div className="space-y-8">
+            {mockData.process.map((step, index) => (
+              <Card key={step.step} className="hover:shadow-lg transition-shadow">
+                <CardContent className="p-8">
+                  <div className="flex items-start space-x-6">
+                    <div className="w-16 h-16 bg-[#60bde9] text-white rounded-full flex items-center justify-center text-2xl font-bold flex-shrink-0">
+                      {step.step}
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-xl font-bold text-gray-900 mb-3">{step.title}</h3>
+                      <p className="text-gray-700 mb-3">{step.description}</p>
+                      <p className="text-gray-600 text-sm">{step.details}</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+
+        {/* Technical Standards */}
+        <div className="mb-16">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+              Quy trình thi công khoa học
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              05 điểm quan trọng trong phần thô trong 15 điểm được BIS SMART thực hiện khi thi công
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {mockData.technicalStandards.map((standard, index) => (
+              <Card key={index} className="hover:shadow-lg transition-shadow">
+                <CardHeader>
+                  <div className="flex items-center space-x-3 mb-2">
+                    <div className="w-8 h-8 bg-[#60bde9] text-white rounded-full flex items-center justify-center font-bold">
+                      {standard.point}
+                    </div>
+                    <CardTitle className="text-lg">{standard.title}</CardTitle>
+                  </div>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600 text-sm leading-relaxed">{standard.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+
+        {/* Comparison Table */}
+        <div className="mb-16">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+              Khác biệt của BIS SMART
+            </h2>
+          </div>
+
+          <div className="overflow-x-auto">
+            <table className="w-full bg-white rounded-lg shadow-lg overflow-hidden">
+              <thead className="bg-[#60bde9] text-white">
+                <tr>
+                  <th className="px-6 py-4 text-left">Tiêu chí</th>
+                  <th className="px-6 py-4 text-left">BIS SMART</th>
+                  <th className="px-6 py-4 text-left">Đơn vị khác</th>
+                </tr>
+              </thead>
+              <tbody>
+                {mockData.differences.map((diff, index) => (
+                  <tr key={index} className={index % 2 === 0 ? 'bg-gray-50' : 'bg-white'}>
+                    <td className="px-6 py-4 font-semibold text-gray-900">{diff.criteria}</td>
+                    <td className="px-6 py-4 text-green-700">{diff.bismart}</td>
+                    <td className="px-6 py-4 text-red-600">{diff.others}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        {/* Pricing Packages */}
+        <div className="mb-16">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+              BẢNG GIÁ SƠ BỘ THI CÔNG
+            </h2>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {mockData.pricing.map((pkg, index) => (
+              <Card key={index} className={`relative hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 ${pkg.popular ? 'ring-4 ring-[#60bde9] scale-105' : ''}`}>
+                {pkg.popular && (
+                  <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                    <Badge className="bg-[#60bde9] text-white px-4 py-2 text-sm">
+                      PHỔ BIẾN NHẤT
+                    </Badge>
+                  </div>
+                )}
+                <CardHeader className="text-center">
+                  <CardTitle className="text-2xl text-gray-900">{pkg.name}</CardTitle>
+                  <div className="text-3xl font-bold text-[#60bde9] mt-2">
+                    {pkg.price}
+                    <span className="text-lg font-normal text-gray-600">{pkg.unit}</span>
+                  </div>
+                  <p className="text-sm text-gray-500 mt-2">{pkg.breakdown}</p>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-3">
+                    {pkg.features.map((feature, idx) => (
+                      <li key={idx} className="flex items-start space-x-2">
+                        <CheckCircle className="w-5 h-5 text-[#60bde9] flex-shrink-0 mt-0.5" />
+                        <span className="text-gray-700 text-sm">{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <Button 
+                    className={`w-full mt-6 ${pkg.popular ? 'bg-[#60bde9] hover:bg-[#4a9bc7] text-white' : 'border-[#60bde9] text-[#60bde9] hover:bg-[#60bde9] hover:text-white'}`}
+                    variant={pkg.popular ? 'default' : 'outline'}
+                    asChild
+                  >
+                    <Link to="/contact">Chọn gói này</Link>
+                  </Button>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+
+        {/* Material Partners */}
+        <div className="mb-16">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+              Đối tác vật liệu uy tín
+            </h2>
+            <p className="text-xl text-gray-600">
+              Chúng tôi hợp tác với các thương hiệu vật liệu hàng đầu
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-6">
+            {mockData.materialPartners.map((partner, index) => (
+              <div key={index} className="text-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                <div className="w-16 h-16 bg-gray-100 rounded-lg mx-auto mb-3 flex items-center justify-center">
+                  <span className="font-bold text-[#60bde9] text-sm">{partner.name}</span>
+                </div>
+                <p className="text-xs text-gray-600">{partner.category}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Contact Form CTA */}
+        <div className="text-center">
+          <div className="bg-gradient-to-r from-[#60bde9] to-[#4a9bc7] text-white rounded-lg p-12">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              Bạn cần tư vấn dịch vụ?
+              FORM ĐIỀN ĐỂ NHẬN BÁO GIÁ
             </h2>
             <p className="text-xl mb-8 max-w-2xl mx-auto">
-              Liên hệ với chúng tôi để được tư vấn miễn phí và nhận báo giá chi tiết nhất
+              Liên hệ trực tiếp với BIS SMART để nhận báo giá chi tiết và chính xác nhất
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
@@ -231,7 +328,7 @@ const ServicesPage = () => {
                 className="bg-white text-[#60bde9] hover:bg-gray-100 px-8 py-4 text-lg font-semibold"
                 asChild
               >
-                <Link to="/contact">Liên hệ tư vấn</Link>
+                <Link to="/contact">Nhận báo giá miễn phí</Link>
               </Button>
               <Button 
                 size="lg" 
@@ -239,8 +336,8 @@ const ServicesPage = () => {
                 className="border-white text-white hover:bg-white hover:text-[#60bde9] px-8 py-4 text-lg font-semibold"
                 asChild
               >
-                <Link to="/pricing">
-                  Xem báo giá <ArrowRight className="w-5 h-5 ml-2" />
+                <Link to="/projects">
+                  Xem dự án <ArrowRight className="w-5 h-5 ml-2" />
                 </Link>
               </Button>
             </div>
