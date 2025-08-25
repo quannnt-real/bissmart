@@ -230,19 +230,100 @@ export const mockData = {
     ]
   },
 
-  // Special Offers
-  offers: {
-    design: {
-      title: "Tặng 50% Gói Thiết Kế Kiến Trúc Cao Cấp",
-      subtitle: "KTS >15 năm kinh nghiệm",
-      validUntil: "31/10/2025"
+  // Material Partners
+  materialPartners: [
+    { name: "HÒA PHÁT", category: "Thép xây dựng" },
+    { name: "BẠCH MÃ", category: "Thiết bị điện nước" },
+    { name: "SINO", category: "Vật liệu xây dựng" },
+    { name: "VIỆT ÚC", category: "Ống nước" },
+    { name: "THẠCH BÀN", category: "Gạch ốp lát" },
+    { name: "CASAR", category: "Đá granite" },
+    { name: "VĨNH TƯỜNG", category: "Gạch xây" },
+    { name: "INAX", category: "Thiết bị vệ sinh" },
+    { name: "DULUX", category: "Sơn nước" },
+    { name: "VIETCERAMIC", category: "Gạch ceramic" },
+    { name: "TOTO", category: "Thiết bị vệ sinh" },
+    { name: "JOTUN", category: "Sơn cao cấp" },
+    { name: "TRẦN PHÚ", category: "Thiết bị điện" },
+    { name: "KOVA", category: "Keo dán gạch" },
+    { name: "ĐỒNG TÂM", category: "Gạch ốp lát" },
+    { name: "PHILIP", category: "Đèn LED" }
+  ],
+
+  // Construction Differences Table
+  differences: [
+    {
+      category: "QUY MÔ CÔNG TRÌNH",
+      criteria: "Kinh nghiệm",
+      bismart: "Kinh nghiệm thực tế về thiết kế, thi công những công trình khắp cả nước",
+      others: "Ít hoặc chưa có kinh nghiệm. Chỉ triển khai các công trình nhỏ, hạn chế về khu vực địa lý"
     },
-    minimal: {
-      title: "Gói thiết kế tối giản chỉ 70k/m²",
-      description: "Bao gồm mặt bằng công năng chi tiết, mặt bằng kết cấu cột, Concept 3D",
-      validUntil: "31/10/2025"
+    {
+      category: "CHẤT LƯỢNG CÔNG TRÌNH", 
+      criteria: "Thi công",
+      bismart: "Không cạnh tranh bằng cách hạ giá. Không đánh đổi chất lượng công trình lấy số lượng hợp đồng.",
+      others: "Chấp nhận giảm chất lượng công trình để giảm giá thành, sử dụng chiến lược cạnh tranh bằng giá."
+    },
+    {
+      category: "CHẤT LƯỢNG CÔNG TRÌNH",
+      criteria: "Đội ngũ",
+      bismart: "Đội ngũ kĩ sư, kiến trúc sư dày dặn kinh nghiệm",
+      others: "Đội ngũ non trẻ, ít kinh nghiệm."
+    },
+    {
+      category: "CHẤT LƯỢNG CÔNG TRÌNH",
+      criteria: "Quy trình",
+      bismart: "Có bộ quy trình thi công bài bản, đúc kết từ kinh nghiệm thi công được khách hàng trong 10 năm đánh giá",
+      others: "Không có quy trình thi công bài bản."
+    },
+    {
+      category: "CHẤT LƯỢNG CÔNG TRÌNH",
+      criteria: "An toàn",
+      bismart: "Có biện pháp thi công an toàn, đảm bảo an toàn cho các nhà liền kề và an toàn trong quá trình thi công",
+      others: "Không có biện pháp an toàn, khiến rủi ro lún nứt các công trình bên cạnh."
+    },
+    {
+      category: "TIẾN ĐỘ THI CÔNG",
+      criteria: "Quản lý tiến độ",
+      bismart: "Có bảng tiến độ tổng, tiến độ mốc, tiến độ tuần. Đối chiếu – rà soát tiến độ bằng biểu đồ",
+      others: "Không có bảng tiến độ tổng để theo dõi."
+    },
+    {
+      category: "CHI PHÍ CÔNG TRÌNH",
+      criteria: "Báo giá",
+      bismart: "Báo giá sát nhất với công trình 90-95%",
+      others: "Khái toán chung chung, không sát khối lượng thực tế."
     }
-  },
+  ],
+
+  // Technical Standards
+  technicalStandards: [
+    {
+      point: 1,
+      title: "Tường 10cm được gia cố",
+      description: "Đối với tường 10cm, ở đoạn kết thúc phải được kẹp đổ bổ trụ bằng bê tông cốt thép để hạn chế nứt tường và tăng độ cứng cho tường"
+    },
+    {
+      point: 2, 
+      title: "Tường xây có giằng",
+      description: "Tường xây phải có tối thiểu 1 lớp giằng bê tông cốt thép và 3 giằng bằng gạch thẻ để tăng độ cứng cho tường, hạn chế thấm khi xây gạch cau, và tăng khả năng chống nứt."
+    },
+    {
+      point: 3,
+      title: "Giằng bê tông mép trên", 
+      description: "Đối với mép trên gờ lan can, bồn hoa, tường kết thúc phải được đổ bằng giằng bê tông cốt thép => tăng độ cứng + thuận tiện khi lắp lan can."
+    },
+    {
+      point: 4,
+      title: "Hạ cos sàn ban công",
+      description: "Đối với ban công, WC thì lúc đổ bê tông phải hạ cos sàn & đổ gờ bê tông cao tầm 5cm => giảm khả năng thấm ngược từ WC/ban công vào nhà."
+    },
+    {
+      point: 5,
+      title: "Lưới thép chống nứt",
+      description: "Toàn bộ đường cắt đục để đi ống điện nước phải được đóng lưới thép mắt cáo toàn bộ => giảm nứt"
+    }
+  ],
 
   // Commitments
   commitments: [
