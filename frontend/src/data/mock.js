@@ -348,5 +348,121 @@ export const mockData = {
     "Có quy trình làm việc rõ ràng từ khảo sát – thiết kế – thi công",
     "Có đội ngũ nhân sự và văn phòng tại 3 miền: Hà Nội – Đà Nẵng – Sài Gòn",
     "Cam kết thi công giống 90% bản thiết kế 3D"
-  ]
+  ],
+
+  // Customer Testimonials with Videos
+  testimonials: [
+    {
+      id: 1,
+      customerName: "Anh Nguyễn Văn A",
+      location: "Hà Nội",
+      projectType: "Biệt thự 3 tầng",
+      videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      thumbnail: "https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea?w=400&h=300&fit=crop",
+      testimonial: "BIS Smart đã xây dựng ngôi nhà mơ ước cho gia đình tôi. Chất lượng tuyệt vời, đúng tiến độ và giá cả hợp lý."
+    },
+    {
+      id: 2,
+      customerName: "Chị Trần Thị B",
+      location: "Đà Nẵng",
+      projectType: "Nhà liền kề 4 tầng",
+      videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      thumbnail: "https://images.unsplash.com/photo-1693639385915-d7a7ddefe8e1?w=400&h=300&fit=crop",
+      testimonial: "Đội ngũ thi công chuyên nghiệp, tư vấn nhiệt tình. Tôi rất hài lòng với chất lượng công trình."
+    },
+    {
+      id: 3,
+      customerName: "Anh Lê Văn C",
+      location: "TP.HCM",
+      projectType: "Nhà phố 5 tầng",
+      videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      thumbnail: "https://images.unsplash.com/photo-1557053819-aa6046add523?w=400&h=300&fit=crop",
+      testimonial: "BIS Smart làm việc rất uy tín, minh bạch. Không phát sinh chi phí nào ngoài hợp đồng."
+    },
+    {
+      id: 4,
+      customerName: "Chị Phạm Thị D",
+      location: "Hải Phòng",
+      projectType: "Biệt thự 2 tầng",
+      videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      thumbnail: "https://images.unsplash.com/photo-1575971637203-d6255d9947a9?w=400&h=300&fit=crop",
+      testimonial: "Thiết kế đẹp, thi công chất lượng. Nhà xây xong đúng như mong đợi của gia đình."
+    },
+    {
+      id: 5,
+      customerName: "Anh Hoàng Văn E",
+      location: "Cần Thơ",
+      projectType: "Nhà cấp 4 mái thái",
+      videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      thumbnail: "https://images.unsplash.com/photo-1621511075938-f03482369feb?w=400&h=300&fit=crop",
+      testimonial: "Giá cả hợp lý, chất lượng tốt. Đội thợ làm việc nghiêm túc, sạch sẽ."
+    },
+    {
+      id: 6,
+      customerName: "Chị Vũ Thị F",
+      location: "Nha Trang",
+      projectType: "Villa nghỉ dưỡng",
+      videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      thumbnail: "https://images.unsplash.com/photo-1597412149254-7b67336fa324?w=400&h=300&fit=crop",
+      testimonial: "Dịch vụ tận tâm, theo dõi tiến độ thường xuyên. Tôi sẽ giới thiệu cho bạn bè."
+    }
+  ],
+
+  // Material Images by Package
+  materialImages: {
+    "GÓI TIẾT KIỆM": {
+      vatLieuTho: [
+        { name: "Sắt thép", image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300&h=200&fit=crop" },
+        { name: "Xi măng", image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=300&h=200&fit=crop" },
+        { name: "Gạch xây", image: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=300&h=200&fit=crop" },
+        { name: "Đá 1x2, 2x4", image: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=300&h=200&fit=crop" }
+      ],
+      gachOpLat: [
+        { name: "Gạch lát 600x600 bóng kính", image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=300&h=200&fit=crop" },
+        { name: "Gạch 400x400 chống trượt", image: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=300&h=200&fit=crop" },
+        { name: "Gạch ốp 300x600 tường WC", image: "https://images.unsplash.com/photo-1506277886164-e25aa3f4ef7f?w=300&h=200&fit=crop" }
+      ],
+      thietBiDien: [
+        { name: "Công tắc, ổ cắm", image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300&h=200&fit=crop" },
+        { name: "Đèn dowlight", image: "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?w=300&h=200&fit=crop" },
+        { name: "Bình nóng lạnh", image: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=300&h=200&fit=crop" }
+      ]
+    },
+    "GÓI TỐI ƯU": {
+      vatLieuTho: [
+        { name: "Sắt thép", image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300&h=200&fit=crop" },
+        { name: "Xi măng", image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=300&h=200&fit=crop" },
+        { name: "Gạch xây", image: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=300&h=200&fit=crop" },
+        { name: "Đá 1x2, 2x4", image: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=300&h=200&fit=crop" }
+      ],
+      gachOpLat: [
+        { name: "Gạch lát 600x600 bóng kính cao cấp", image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=300&h=200&fit=crop" },
+        { name: "Gạch 400x400 chống trượt", image: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=300&h=200&fit=crop" },
+        { name: "Gạch ốp 300x600 tường WC", image: "https://images.unsplash.com/photo-1506277886164-e25aa3f4ef7f?w=300&h=200&fit=crop" }
+      ],
+      thietBiDien: [
+        { name: "Công tắc, ổ cắm cao cấp", image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300&h=200&fit=crop" },
+        { name: "Đèn LED cao cấp", image: "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?w=300&h=200&fit=crop" },
+        { name: "Bình nóng lạnh thông minh", image: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=300&h=200&fit=crop" }
+      ]
+    },
+    "GÓI CAO CẤP": {
+      vatLieuTho: [
+        { name: "Sắt thép", image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300&h=200&fit=crop" },
+        { name: "Xi măng", image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=300&h=200&fit=crop" },
+        { name: "Gạch xây", image: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=300&h=200&fit=crop" },
+        { name: "Đá 1x2, 2x4", image: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=300&h=200&fit=crop" }
+      ],
+      gachOpLat: [
+        { name: "Gạch lát 600x600 bóng kính luxury", image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=300&h=200&fit=crop" },
+        { name: "Gạch 400x400 chống trượt cao cấp", image: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=300&h=200&fit=crop" },
+        { name: "Gạch ốp 300x600 tường WC luxury", image: "https://images.unsplash.com/photo-1506277886164-e25aa3f4ef7f?w=300&h=200&fit=crop" }
+      ],
+      thietBiDien: [
+        { name: "Công tắc, ổ cắm thông minh", image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300&h=200&fit=crop" },
+        { name: "Hệ thống đèn LED thông minh", image: "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?w=300&h=200&fit=crop" },
+        { name: "Bình nóng lạnh AI", image: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=300&h=200&fit=crop" }
+      ]
+    }
+  }
 };
