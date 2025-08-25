@@ -230,6 +230,20 @@ export const mockData = {
     ]
   },
 
+  // Special Offers
+  offers: {
+    design: {
+      title: "Tặng 50% Gói Thiết Kế Kiến Trúc Cao Cấp",
+      subtitle: "KTS >15 năm kinh nghiệm",
+      validUntil: "31/10/2025"
+    },
+    minimal: {
+      title: "Gói thiết kế tối giản chỉ 70k/m²",
+      description: "Bao gồm mặt bằng công năng chi tiết, mặt bằng kết cấu cột, Concept 3D",
+      validUntil: "31/10/2025"
+    }
+  },
+
   // Material Partners
   materialPartners: [
     { name: "HÒA PHÁT", category: "Thép xây dựng" },
