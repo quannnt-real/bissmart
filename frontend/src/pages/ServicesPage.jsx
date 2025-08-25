@@ -334,6 +334,101 @@ const ServicesPage = () => {
           </div>
         </div>
 
+        {/* Material Images by Package */}
+        <div className="mb-16">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+              Hình ảnh chủng loại vật liệu theo báo giá
+            </h2>
+            <p className="text-xl text-gray-600">
+              Chi tiết vật liệu cho từng gói xây dựng
+            </p>
+          </div>
+
+          <div className="space-y-12">
+            {mockData.pricing.map((pkg, packageIndex) => (
+              <div key={packageIndex} className="bg-white rounded-lg shadow-lg overflow-hidden">
+                <div className={`p-6 text-center ${pkg.popular ? 'bg-[#60bde9]' : 'bg-gray-100'}`}>
+                  <h3 className={`text-2xl font-bold ${pkg.popular ? 'text-white' : 'text-gray-900'}`}>
+                    {pkg.name}
+                  </h3>
+                  <p className={`text-lg ${pkg.popular ? 'text-white/90' : 'text-gray-600'}`}>
+                    {pkg.price} {pkg.unit}
+                  </p>
+                </div>
+
+                <div className="p-8">
+                  {/* Phần vật liệu thô */}
+                  <div className="mb-8">
+                    <h4 className="text-xl font-semibold text-gray-900 mb-4 flex items-center space-x-2">
+                      <Hammer className="w-5 h-5 text-[#60bde9]" />
+                      <span>PHẦN VẬT LIỆU THÔ</span>
+                    </h4>
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                      {mockData.materialImages[pkg.name]?.vatLieuTho?.map((material, idx) => (
+                        <div key={idx} className="text-center group">
+                          <div className="overflow-hidden rounded-lg shadow-sm group-hover:shadow-lg transition-shadow duration-300">
+                            <img 
+                              src={material.image} 
+                              alt={material.name}
+                              className="w-full h-32 object-cover group-hover:scale-110 transition-transform duration-300"
+                            />
+                          </div>
+                          <p className="mt-2 text-sm font-medium text-gray-700">{material.name}</p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Phần gạch ốp lát */}
+                  <div className="mb-8">
+                    <h4 className="text-xl font-semibold text-gray-900 mb-4 flex items-center space-x-2">
+                      <Home className="w-5 h-5 text-[#60bde9]" />
+                      <span>PHẦN GẠCH - ỐP - LÁT</span>
+                    </h4>
+                    <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                      {mockData.materialImages[pkg.name]?.gachOpLat?.map((material, idx) => (
+                        <div key={idx} className="text-center group">
+                          <div className="overflow-hidden rounded-lg shadow-sm group-hover:shadow-lg transition-shadow duration-300">
+                            <img 
+                              src={material.image} 
+                              alt={material.name}
+                              className="w-full h-32 object-cover group-hover:scale-110 transition-transform duration-300"
+                            />
+                          </div>
+                          <p className="mt-2 text-sm font-medium text-gray-700">{material.name}</p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Phần thiết bị điện */}
+                  <div>
+                    <h4 className="text-xl font-semibold text-gray-900 mb-4 flex items-center space-x-2">
+                      <Shield className="w-5 h-5 text-[#60bde9]" />
+                      <span>PHẦN THIẾT BỊ ĐIỆN</span>
+                    </h4>
+                    <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                      {mockData.materialImages[pkg.name]?.thietBiDien?.map((material, idx) => (
+                        <div key={idx} className="text-center group">
+                          <div className="overflow-hidden rounded-lg shadow-sm group-hover:shadow-lg transition-shadow duration-300">
+                            <img 
+                              src={material.image} 
+                              alt={material.name}
+                              className="w-full h-32 object-cover group-hover:scale-110 transition-transform duration-300"
+                            />
+                          </div>
+                          <p className="mt-2 text-sm font-medium text-gray-700">{material.name}</p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
         {/* Material Partners */}
         <div className="mb-16">
           <div className="text-center mb-12">
