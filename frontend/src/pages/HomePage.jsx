@@ -109,36 +109,105 @@ const HomePage = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {mockData.services.map((service) => (
-              <Card key={service.id} className="group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-                <div className="overflow-hidden rounded-t-lg">
-                  <img 
-                    src={service.image} 
-                    alt={service.title}
-                    className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
-                  />
-                </div>
-                <CardHeader>
-                  <CardTitle className="text-xl text-gray-900">{service.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-600 mb-4">{service.description}</p>
-                  <ul className="space-y-2 mb-6">
-                    {service.features.map((feature, index) => (
-                      <li key={index} className="flex items-center space-x-2">
-                        <CheckCircle className="w-4 h-4 text-[#60bde9]" />
-                        <span className="text-sm text-gray-600">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  <Button className="w-full bg-[#60bde9] hover:bg-[#4a9bc7] text-white" asChild>
-                    <Link to="/services">
-                      Tìm hiểu thêm <ArrowRight className="w-4 h-4 ml-2" />
-                    </Link>
-                  </Button>
-                </CardContent>
-              </Card>
-            ))}
+            <Card className="group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="overflow-hidden rounded-t-lg">
+                <img 
+                  src={mockData.mainService.image} 
+                  alt={mockData.mainService.title}
+                  className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+                />
+              </div>
+              <CardHeader>
+                <CardTitle className="text-xl text-gray-900">{mockData.mainService.title}</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600 mb-4">{mockData.mainService.description}</p>
+                <ul className="space-y-2 mb-6">
+                  {mockData.mainService.features.map((feature, index) => (
+                    <li key={index} className="flex items-center space-x-2">
+                      <CheckCircle className="w-4 h-4 text-[#60bde9]" />
+                      <span className="text-sm text-gray-600">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+                <Button className="w-full bg-[#60bde9] hover:bg-[#4a9bc7] text-white" asChild>
+                  <Link to="/services">
+                    Tìm hiểu thêm <ArrowRight className="w-4 h-4 ml-2" />
+                  </Link>
+                </Button>
+              </CardContent>
+            </Card>
+            
+            {/* Additional service highlights */}
+            <Card className="group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="overflow-hidden rounded-t-lg">
+                <img 
+                  src="https://images.unsplash.com/photo-1664819766323-78308c6c434c" 
+                  alt="Thiết kế chuyên nghiệp"
+                  className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+                />
+              </div>
+              <CardHeader>
+                <CardTitle className="text-xl text-gray-900">Thiết kế chuyên nghiệp</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600 mb-4">Đội ngũ kiến trúc sư > 15 năm kinh nghiệm</p>
+                <ul className="space-y-2 mb-6">
+                  <li className="flex items-center space-x-2">
+                    <CheckCircle className="w-4 h-4 text-[#60bde9]" />
+                    <span className="text-sm text-gray-600">Thiết kế 3D chuyên nghiệp</span>
+                  </li>
+                  <li className="flex items-center space-x-2">
+                    <CheckCircle className="w-4 h-4 text-[#60bde9]" />
+                    <span className="text-sm text-gray-600">Bản vẽ kỹ thuật đầy đủ</span>
+                  </li>
+                  <li className="flex items-center space-x-2">
+                    <CheckCircle className="w-4 h-4 text-[#60bde9]" />
+                    <span className="text-sm text-gray-600">Tối ưu không gian sống</span>
+                  </li>
+                </ul>
+                <Button className="w-full bg-[#60bde9] hover:bg-[#4a9bc7] text-white" asChild>
+                  <Link to="/services">
+                    Tìm hiểu thêm <ArrowRight className="w-4 h-4 ml-2" />
+                  </Link>
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="overflow-hidden rounded-t-lg">
+                <img 
+                  src="https://images.unsplash.com/photo-1567954970774-58d6aa6c50dc" 
+                  alt="Hỗ trợ toàn diện"
+                  className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+                />
+              </div>
+              <CardHeader>
+                <CardTitle className="text-xl text-gray-900">Hỗ trợ toàn diện</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600 mb-4">Từ pháp lý đến bảo hành lâu dài</p>
+                <ul className="space-y-2 mb-6">
+                  <li className="flex items-center space-x-2">
+                    <CheckCircle className="w-4 h-4 text-[#60bde9]" />
+                    <span className="text-sm text-gray-600">Hỗ trợ giấy phép xây dựng</span>
+                  </li>
+                  <li className="flex items-center space-x-2">
+                    <CheckCircle className="w-4 h-4 text-[#60bde9]" />
+                    <span className="text-sm text-gray-600">Bảo hành 5 năm</span>
+                  </li>
+                  <li className="flex items-center space-x-2">
+                    <CheckCircle className="w-4 h-4 text-[#60bde9]" />
+                    <span className="text-sm text-gray-600">Hỗ trợ 24/7</span>
+                  </li>
+                </ul>
+                <Button className="w-full bg-[#60bde9] hover:bg-[#4a9bc7] text-white" asChild>
+                  <Link to="/services">
+                    Tìm hiểu thêm <ArrowRight className="w-4 h-4 ml-2" />
+                  </Link>
+                </Button>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
