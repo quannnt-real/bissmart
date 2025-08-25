@@ -280,33 +280,123 @@ export const mockData = {
     },
     {
       category: "CHẤT LƯỢNG CÔNG TRÌNH",
-      criteria: "Đội ngũ",
+      criteria: "Đội ngũ kỹ sư",
       bismart: "Đội ngũ kĩ sư, kiến trúc sư dày dặn kinh nghiệm",
       others: "Đội ngũ non trẻ, ít kinh nghiệm."
     },
     {
       category: "CHẤT LƯỢNG CÔNG TRÌNH",
-      criteria: "Quy trình",
-      bismart: "Có bộ quy trình thi công bài bản, đúc kết từ kinh nghiệm thi công được khách hàng trong 10 năm đánh giá",
+      criteria: "Quy trình thi công",
+      bismart: "Có bộ quy trình thi công bài bản, đúc kết từ kinh nghiệm thi công được khách hàng trong 10 năm quá đánh giá",
       others: "Không có quy trình thi công bài bản."
     },
     {
       category: "CHẤT LƯỢNG CÔNG TRÌNH",
-      criteria: "An toàn",
+      criteria: "Biện pháp an toàn",
       bismart: "Có biện pháp thi công an toàn, đảm bảo an toàn cho các nhà liền kề và an toàn trong quá trình thi công",
       others: "Không có biện pháp an toàn, khiến rủi ro lún nứt các công trình bên cạnh."
     },
     {
+      category: "CHẤT LƯỢNG CÔNG TRÌNH",
+      criteria: "Kỹ sư giám sát",
+      bismart: "Bố trí riêng 1 kỹ sư giám sát có kinh nghiệm phụ trách",
+      others: "Kỹ sư giám sát ít kinh nghiệm"
+    },
+    {
+      category: "CHẤT LƯỢNG CÔNG TRÌNH",
+      criteria: "Giám sát chất lượng",
+      bismart: "Có 3 cấp giám sát chất lượng: Giám sát công trình – Ban kiểm soát nội bộ – Ban giám đốc",
+      others: "Giao khoán chất lượng cho đội thợ thi công, không hoặc ít kiểm tra chéo."
+    },
+    {
+      category: "CHẤT LƯỢNG CÔNG TRÌNH",
+      criteria: "Tuân thủ thiết kế",
+      bismart: "Thi công bám sát bản vẽ thiết kế. Kỹ sư liên tục có mặt công trường để kiểm tra.",
+      others: "Thi công theo kinh nghiệm chủ quan, không có tiêu chuẩn đánh giá, sai thiết kế và ý tưởng của gia chủ."
+    },
+    {
+      category: "CHẤT LƯỢNG CÔNG TRÌNH",
+      criteria: "Camera quan sát",
+      bismart: "Luôn có camera quan sát, CĐT không cần đến công trình vẫn theo dõi được tiến trình thi công.",
+      others: "Không lắp camera"
+    },
+    {
+      category: "CHẤT LƯỢNG CÔNG TRÌNH",
+      criteria: "An toàn lao động",
+      bismart: "Bắt buộc áp dụng quy định an toàn lao động tại khu vực thi công. Trang bị đầy đủ đai bảo hộ, giáo thép,…",
+      others: "Thiếu trang bị bảo hộ lao động."
+    },
+    {
+      category: "CHẤT LƯỢNG CÔNG TRÌNH",
+      criteria: "Hệ chống đỡ",
+      bismart: "Đầy đủ tường rào, lưới bao che, hệ chống đỡ bằng xà gồ thép hộp.",
+      others: "Hệ chống đỡ bằng gỗ, rủi ro mất an toàn. Không có lưới chắn vật rơi khiến môi trường xung quanh ô nhiễm, nguy hiểm cho những người xung quanh."
+    },
+    {
+      category: "CHẤT LƯỢNG CÔNG TRÌNH",
+      criteria: "Vật tư – Vật liệu",
+      bismart: "Minh bạch vật tư – vật liệu, cam kết 100% chủng loại, số lượng đúng theo hợp đồng.",
+      others: "Không hoặc lơ là công tác kiểm soát vật tư, vật liệu đầu vào."
+    },
+    {
+      category: "CHẤT LƯỢNG CÔNG TRÌNH",
+      criteria: "Thiết kế",
+      bismart: "Kiến trúc sư >5 năm kinh nghiệm, bản vẽ có tính ứng dụng thực tế cao, ít phải chỉnh sửa.",
+      others: "Thường thuê ngoài, kiến trúc sư non trẻ, mới ra trường, bản vẽ nhiều điểm không phù hợp khi thi công thực tế, phải chỉnh sửa nhiều lần."
+    },
+    {
+      category: "CHẤT LƯỢNG CÔNG TRÌNH",
+      criteria: "Công nhân thi công",
+      bismart: "Thợ có kinh nghiệm làm công trình dự án, được đào tạo nội bộ, nắm được tiêu chuẩn thi công.",
+      others: "Nhân công giá rẻ, tay nghề thợ non, ít kinh nghiệm thi công."
+    },
+    {
+      category: "CHẤT LƯỢNG CÔNG TRÌNH",
+      criteria: "Nguồn nhân lực",
+      bismart: "Đáp ứng đầy đủ số lượng tối thiểu nhân công mỗi công trình để đảm bảo tiến độ.",
+      others: "Không có thợ nội bộ, khó điều động và phối hợp trong các trường hợp gấp."
+    },
+    {
       category: "TIẾN ĐỘ THI CÔNG",
-      criteria: "Quản lý tiến độ",
+      criteria: "Quy trình quản lý tiến độ",
       bismart: "Có bảng tiến độ tổng, tiến độ mốc, tiến độ tuần. Đối chiếu – rà soát tiến độ bằng biểu đồ",
       others: "Không có bảng tiến độ tổng để theo dõi."
+    },
+    {
+      category: "TIẾN ĐỘ THI CÔNG",
+      criteria: "Báo cáo tiến độ",
+      bismart: "Chủ động báo cáo tiến độ hằng ngày bằng hình ảnh, video qua nhóm zalo Chủ đầu tư và Ban kiểm soát.",
+      others: "Không chủ động báo cáo hoặc báo cáo không rõ ràng."
+    },
+    {
+      category: "TIẾN ĐỘ THI CÔNG",
+      criteria: "Chế tài",
+      bismart: "Cam kết đúng tiến độ thống nhất. Có chế tài phạt khi trễ/ trượt tiến độ.",
+      others: "Không có chế tài cụ thể trong hợp đồng."
     },
     {
       category: "CHI PHÍ CÔNG TRÌNH",
       criteria: "Báo giá",
       bismart: "Báo giá sát nhất với công trình 90-95%",
       others: "Khái toán chung chung, không sát khối lượng thực tế."
+    },
+    {
+      category: "CHI PHÍ CÔNG TRÌNH",
+      criteria: "Hợp đồng",
+      bismart: "Cam kết không phát sinh chi phí so với hợp đồng",
+      others: "Các điều khoản lập lờ về mốc tiến độ, thanh toán, vật tư vật liệu."
+    },
+    {
+      category: "CHĂM SÓC KHÁCH HÀNG",
+      criteria: "Hỗ trợ pháp lý",
+      bismart: "Ngoài hỗ trợ xin cấp phép xây dựng",
+      others: "Không hỗ trợ gia chủ, Không chịu trách nhiệm các vấn đề ngoài thi công."
+    },
+    {
+      category: "CHĂM SÓC KHÁCH HÀNG",
+      criteria: "Khảo sát rủi ro",
+      bismart: "Khảo sát, lập biên bản hiện trạng với các hộ liền kề để tránh rủi ro mẫu thuẫn.",
+      others: "Không tư vấn chủ nhà các rủi ro tiềm ẩn."
     }
   ],
 
