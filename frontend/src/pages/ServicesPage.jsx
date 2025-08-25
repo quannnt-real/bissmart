@@ -212,6 +212,50 @@ const ServicesPage = () => {
           </div>
         </div>
 
+        {/* Customer Testimonials with Videos */}
+        <div className="mb-16">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+              Khách hàng nói gì về BIS SMART
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Hơn 10 năm kinh nghiệm với hàng nghìn công trình đã hoàn thành
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {mockData.testimonials.map((testimonial) => (
+              <Card key={testimonial.id} className="overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                <div className="relative group">
+                  <img 
+                    src={testimonial.thumbnail} 
+                    alt={`Dự án của ${testimonial.customerName}`}
+                    className="w-full h-48 object-cover"
+                  />
+                  <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-all duration-300 flex items-center justify-center">
+                    <div className="w-16 h-16 bg-[#60bde9] rounded-full flex items-center justify-center cursor-pointer transform group-hover:scale-110 transition-transform duration-300">
+                      <Play className="w-8 h-8 text-white ml-1" />
+                    </div>
+                  </div>
+                  <div className="absolute bottom-4 left-4 right-4">
+                    <div className="bg-white/90 backdrop-blur-sm rounded-lg p-3">
+                      <h4 className="font-bold text-gray-900">{testimonial.customerName}</h4>
+                      <p className="text-sm text-gray-600">{testimonial.location}</p>
+                      <p className="text-xs text-[#60bde9] font-semibold">{testimonial.projectType}</p>
+                    </div>
+                  </div>
+                </div>
+                <CardContent className="p-6">
+                  <div className="flex items-start space-x-3">
+                    <Quote className="w-8 h-8 text-[#60bde9] flex-shrink-0 mt-1" />
+                    <p className="text-gray-700 italic leading-relaxed">{testimonial.testimonial}</p>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+
         {/* Comparison Table */}
         <div className="mb-16">
           <div className="text-center mb-12">
