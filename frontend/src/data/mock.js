@@ -23,30 +23,17 @@ export const mockData = {
     cta: "NHẬN BÁO GIÁ CÔNG TRÌNH"
   },
 
-  // Services
-  services: [
-    {
-      id: 1,
-      title: "Thiết kế kiến trúc",
-      description: "Thiết kế từ ý tưởng đến bản vẽ 3D chuyên nghiệp",
-      image: "https://images.unsplash.com/photo-1664819766323-78308c6c434c",
-      features: ["Thiết kế mặt bằng", "Render 3D", "Bản vẽ kỹ thuật"]
-    },
-    {
-      id: 2,
-      title: "Thi công trọn gói",
-      description: "Thi công hoàn thiện từ móng đến hoàn thiện",
-      image: "https://images.unsplash.com/photo-1575971637203-d6255d9947a9",
-      features: ["Thi công phần thô", "Hoàn thiện nội thất", "Bàn giao đúng hạn"]
-    },
-    {
-      id: 3,
-      title: "Hỗ trợ pháp lý",
-      description: "Hỗ trợ xin cấp phép xây dựng và thủ tục pháp lý",
-      image: "https://images.unsplash.com/photo-1567954970774-58d6aa6c50dc",
-      features: ["Xin phép xây dựng", "Thủ tục pháp lý", "Tư vấn quy định"]
-    }
-  ],
+  // Main Service
+  mainService: {
+    title: "XÂY NHÀ TRỌN GÓI",
+    description: "Dịch vụ xây dựng nhà ở trọn gói từ thiết kế đến hoàn thiện, cam kết chất lượng và tiến độ",
+    image: "https://images.unsplash.com/photo-1575971637203-d6255d9947a9",
+    features: [
+      "Tặng 100% Thiết kế bản vẽ công năng",
+      "Khảo sát mặt bằng & lên dự toán", 
+      "Hỗ trợ thủ tục pháp lý & giấy phép xây dựng"
+    ]
+  },
 
   // Process Steps
   process: [
