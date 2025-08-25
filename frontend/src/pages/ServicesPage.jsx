@@ -452,37 +452,8 @@ const ServicesPage = () => {
           </div>
         </div>
 
-        {/* Contact Form CTA */}
-        <div className="text-center">
-          <div className="bg-gradient-to-r from-[#60bde9] to-[#4a9bc7] text-white rounded-lg p-12">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              FORM ĐIỀN ĐỂ NHẬN BÁO GIÁ
-            </h2>
-            <p className="text-xl mb-8 max-w-2xl mx-auto">
-              Liên hệ trực tiếp với BIS SMART để nhận báo giá chi tiết và chính xác nhất
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
-                size="lg" 
-                variant="secondary"
-                className="bg-white text-[#60bde9] hover:bg-gray-100 px-8 py-4 text-lg font-semibold"
-                asChild
-              >
-                <Link to="/contact">Nhận báo giá miễn phí</Link>
-              </Button>
-              <Button 
-                size="lg" 
-                variant="outline" 
-                className="border-white text-white hover:bg-white hover:text-[#60bde9] px-8 py-4 text-lg font-semibold"
-                asChild
-              >
-                <Link to="/projects">
-                  Xem dự án <ArrowRight className="w-5 h-5 ml-2" />
-                </Link>
-              </Button>
-            </div>
-          </div>
-        </div>
+        {/* Quote Form */}
+        <QuoteForm />
       </div>
     </div>
   );
