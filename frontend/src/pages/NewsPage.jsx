@@ -160,7 +160,7 @@ const NewsPage = () => {
             <div className="flex items-center justify-between mb-8">
               <div>
                 <h2 className="text-3xl font-bold text-gray-900 flex items-center">
-                  <TrendingUp className="w-8 h-8 text-bis-primary mr-3" />
+                  <TrendingUp className="w-8 h-8 text-bis-accent mr-3" />
                   Bài viết nổi bật
                 </h2>
                 <p className="text-gray-600 mt-2">Những bài viết được quan tâm nhất tuần này</p>
