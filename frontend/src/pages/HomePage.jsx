@@ -77,7 +77,7 @@ const HomePage = () => {
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="text-center">
-              <Award className="w-12 h-12 text-bis-primary mx-auto mb-4" />
+              <Award className="w-12 h-12 text-bis-accent mx-auto mb-4" />
               <h3 className="text-3xl font-bold text-gray-900 mb-2">10+</h3>
               <p className="text-gray-600">Năm kinh nghiệm</p>
             </div>
@@ -87,12 +87,12 @@ const HomePage = () => {
               <p className="text-gray-600">Công trình hoàn thành</p>
             </div>
             <div className="text-center">
-              <Star className="w-12 h-12 text-bis-primary mx-auto mb-4" />
+              <Star className="w-12 h-12 text-bis-accent mx-auto mb-4" />
               <h3 className="text-3xl font-bold text-gray-900 mb-2">95%</h3>
               <p className="text-gray-600">Khách hàng hài lòng</p>
             </div>
             <div className="text-center">
-              <Clock className="w-12 h-12 text-bis-primary mx-auto mb-4" />
+              <Clock className="w-12 h-12 text-bis-secondary mx-auto mb-4" />
               <h3 className="text-3xl font-bold text-gray-900 mb-2">24/7</h3>
               <p className="text-gray-600">Hỗ trợ khách hàng</p>
             </div>
