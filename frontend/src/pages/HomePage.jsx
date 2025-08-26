@@ -21,7 +21,7 @@ const HomePage = () => {
       >
         <div className="max-w-7xl mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <Badge className="bg-[#60bde9] text-white mb-6 px-4 py-2 text-sm">
+            <Badge className="bg-bis-primary text-white mb-6 px-4 py-2 text-sm">
               ƯU ĐÃI ĐẶC BIỆT 2025
             </Badge>
             <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
@@ -32,7 +32,7 @@ const HomePage = () => {
             </p>
             
             {/* Special Offer */}
-            <div className="bg-[#60bde9] rounded-lg p-6 mb-8 shadow-xl">
+            <div className="bg-bis-primary rounded-lg p-6 mb-8 shadow-xl">
               <h3 className="text-2xl font-bold text-white mb-4">
                 {mockData.offers.design.title}
               </h3>
@@ -50,7 +50,7 @@ const HomePage = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
                 size="lg" 
-                className="bg-[#60bde9] hover:bg-[#4a9bc7] text-white px-8 py-4 text-lg font-semibold transition-all duration-200 transform hover:scale-105"
+                className="bg-bis-primary hover:bg-[#4a9bc7] text-white px-8 py-4 text-lg font-semibold transition-all duration-200 transform hover:scale-105"
                 asChild
               >
                 <Link to="/services#quote-form">{mockData.hero.cta}</Link>
@@ -130,7 +130,7 @@ const HomePage = () => {
                     </li>
                   ))}
                 </ul>
-                <Button className="w-full bg-[#60bde9] hover:bg-[#4a9bc7] text-white" asChild>
+                <Button className="w-full bg-bis-primary hover:bg-[#4a9bc7] text-white" asChild>
                   <Link to="/services">
                     Tìm hiểu thêm <ArrowRight className="w-4 h-4 ml-2" />
                   </Link>
@@ -166,7 +166,7 @@ const HomePage = () => {
                     <span className="text-sm text-gray-600">Tối ưu không gian sống</span>
                   </li>
                 </ul>
-                <Button className="w-full bg-[#60bde9] hover:bg-[#4a9bc7] text-white" asChild>
+                <Button className="w-full bg-bis-primary hover:bg-[#4a9bc7] text-white" asChild>
                   <Link to="/services">
                     Tìm hiểu thêm <ArrowRight className="w-4 h-4 ml-2" />
                   </Link>
@@ -201,7 +201,7 @@ const HomePage = () => {
                     <span className="text-sm text-gray-600">Hỗ trợ 24/7</span>
                   </li>
                 </ul>
-                <Button className="w-full bg-[#60bde9] hover:bg-[#4a9bc7] text-white" asChild>
+                <Button className="w-full bg-bis-primary hover:bg-[#4a9bc7] text-white" asChild>
                   <Link to="/services">
                     Tìm hiểu thêm <ArrowRight className="w-4 h-4 ml-2" />
                   </Link>
@@ -235,7 +235,7 @@ const HomePage = () => {
                   />
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300"></div>
                   <div className="absolute top-4 right-4">
-                    <Badge className="bg-[#60bde9] text-white">
+                    <Badge className="bg-bis-primary text-white">
                       {project.type}
                     </Badge>
                   </div>
@@ -270,7 +270,7 @@ const HomePage = () => {
                   
                   <p className="text-gray-600 mb-4 line-clamp-2">{project.description}</p>
                   
-                  <Button variant="outline" className="w-full border-[#60bde9] text-bis-primary hover:bg-[#60bde9] hover:text-white">
+                  <Button variant="outline" className="w-full border-[#60bde9] text-bis-primary hover:bg-bis-primary hover:text-white">
                     <Link to={`/project/${project.id}`} className="flex items-center justify-center w-full">
                       Xem chi tiết <ArrowRight className="w-4 h-4 ml-2" />
                     </Link>
@@ -281,7 +281,7 @@ const HomePage = () => {
           </div>
           
           <div className="text-center mt-8">
-            <Button size="lg" variant="outline" className="border-[#60bde9] text-bis-primary hover:bg-[#60bde9] hover:text-white" asChild>
+            <Button size="lg" variant="outline" className="border-[#60bde9] text-bis-primary hover:bg-bis-primary hover:text-white" asChild>
               <Link to="/projects">Xem tất cả dự án</Link>
             </Button>
           </div>
@@ -318,7 +318,7 @@ const HomePage = () => {
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-3 line-clamp-2">{post.title}</h3>
                   <p className="text-gray-600 mb-4 line-clamp-3">{post.excerpt}</p>
-                  <Button variant="outline" className="w-full border-[#60bde9] text-bis-primary hover:bg-[#60bde9] hover:text-white" asChild>
+                  <Button variant="outline" className="w-full border-[#60bde9] text-bis-primary hover:bg-bis-primary hover:text-white" asChild>
                     <Link to={`/news/${post.id}`}>
                       Đọc thêm <ArrowRight className="w-4 h-4 ml-2" />
                     </Link>
@@ -329,7 +329,7 @@ const HomePage = () => {
           </div>
           
           <div className="text-center mt-8">
-            <Button size="lg" variant="outline" className="border-[#60bde9] text-bis-primary hover:bg-[#60bde9] hover:text-white" asChild>
+            <Button size="lg" variant="outline" className="border-[#60bde9] text-bis-primary hover:bg-bis-primary hover:text-white" asChild>
               <Link to="/news">Xem tất cả tin tức</Link>
             </Button>
           </div>
@@ -360,7 +360,7 @@ const HomePage = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-[#60bde9] text-white">
+      <section className="py-16 bg-bis-primary text-white">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4">
             Sẵn sàng bắt đầu dự án của bạn?

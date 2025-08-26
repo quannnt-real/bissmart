@@ -164,7 +164,7 @@ const NewsDetailPage = () => {
             <div className="absolute bottom-8 left-8 right-8 text-white">
               <div className="flex items-center space-x-4 mb-4">
                 {post.category && (
-                  <Badge className="bg-[#60bde9] text-white px-4 py-2 text-lg">
+                  <Badge className="bg-bis-primary text-white px-4 py-2 text-lg">
                     {post.category}
                   </Badge>
                 )}
@@ -392,7 +392,7 @@ const NewsDetailPage = () => {
                     <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300"></div>
                     {relatedPost.category && (
                       <div className="absolute top-4 left-4">
-                        <Badge className="bg-[#60bde9] text-white">
+                        <Badge className="bg-bis-primary text-white">
                           {relatedPost.category}
                         </Badge>
                       </div>
@@ -440,7 +440,7 @@ const NewsDetailPage = () => {
                       <Button 
                         variant="outline" 
                         size="sm"
-                        className="border-[#60bde9] text-bis-primary hover:bg-[#60bde9] hover:text-white font-semibold"
+                        className="border-[#60bde9] text-bis-primary hover:bg-bis-primary hover:text-white font-semibold"
                         asChild
                       >
                         <Link to={`/news/${relatedPost.id}`}>

@@ -238,7 +238,7 @@ const QuoteForm = () => {
                   <Button
                     type="submit"
                     disabled={isSubmitting}
-                    className="bg-[#60bde9] hover:bg-[#4a9bc7] text-white px-12 py-4 text-xl font-semibold rounded-lg transition-all duration-300 transform hover:scale-105"
+                    className="bg-bis-primary hover:bg-[#4a9bc7] text-white px-12 py-4 text-xl font-semibold rounded-lg transition-all duration-300 transform hover:scale-105"
                   >
                     {isSubmitting ? 'Đang gửi...' : 'NHẬN BÁO GIÁ MIỄN PHÍ'}
                   </Button>

@@ -10,7 +10,7 @@ const AboutPage = () => {
       <div className="max-w-7xl mx-auto px-4">
         {/* Hero Section */}
         <div className="text-center mb-16">
-          <Badge className="bg-[#60bde9] text-white mb-4">Về chúng tôi</Badge>
+          <Badge className="bg-bis-primary text-white mb-4">Về chúng tôi</Badge>
           <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
             {mockData.company.name}
           </h1>

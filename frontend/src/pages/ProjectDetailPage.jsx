@@ -84,7 +84,7 @@ const ProjectDetailPage = () => {
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
             <div className="absolute bottom-8 left-8 right-8 text-white">
               <div className="flex items-center space-x-4 mb-4">
-                <Badge className="bg-[#60bde9] text-white px-4 py-2 text-lg">
+                <Badge className="bg-bis-primary text-white px-4 py-2 text-lg">
                   {project.type}
                 </Badge>
                 <Badge variant="secondary" className="bg-white/20 backdrop-blur-sm text-white px-4 py-2">
@@ -298,7 +298,7 @@ const ProjectDetailPage = () => {
                     />
                     <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300"></div>
                     <div className="absolute top-4 right-4">
-                      <Badge className="bg-[#60bde9] text-white">
+                      <Badge className="bg-bis-primary text-white">
                         {relatedProject.type}
                       </Badge>
                     </div>
@@ -335,7 +335,7 @@ const ProjectDetailPage = () => {
                     
                     <Button 
                       variant="outline" 
-                      className="w-full border-[#60bde9] text-bis-primary hover:bg-[#60bde9] hover:text-white font-semibold"
+                      className="w-full border-[#60bde9] text-bis-primary hover:bg-bis-primary hover:text-white font-semibold"
                       asChild
                     >
                       <Link to={`/project/${relatedProject.id}`}>

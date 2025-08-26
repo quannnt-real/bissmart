@@ -76,7 +76,7 @@ const ContactPage = () => {
       <div className="max-w-7xl mx-auto px-4">
         {/* Hero Section */}
         <div className="text-center mb-16">
-          <Badge className="bg-[#60bde9] text-white mb-4 text-lg px-6 py-2">
+          <Badge className="bg-bis-primary text-white mb-4 text-lg px-6 py-2">
             LIÊN HỆ VỚI CHÚNG TÔI
           </Badge>
           <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">
@@ -232,7 +232,7 @@ const ContactPage = () => {
 
                   <Button 
                     type="submit"
-                    className="w-full bg-[#60bde9] hover:bg-[#4a9bc7] text-white py-3 text-lg font-semibold"
+                    className="w-full bg-bis-primary hover:bg-[#4a9bc7] text-white py-3 text-lg font-semibold"
                   >
                     <Send className="w-5 h-5 mr-2" />
                     Gửi yêu cầu tư vấn

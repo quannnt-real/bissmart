@@ -45,7 +45,7 @@ const ProjectsPage = () => {
         }}
       >
         <div className="max-w-7xl mx-auto px-4 text-center">
-          <div className="inline-flex items-center bg-[#60bde9]/20 backdrop-blur-sm text-white px-6 py-3 rounded-full border border-white/20 mb-6">
+          <div className="inline-flex items-center bg-bis-primary/20 backdrop-blur-sm text-white px-6 py-3 rounded-full border border-white/20 mb-6">
             <Building className="w-5 h-5 mr-2" />
             <span className="font-medium">DỰ ÁN THỰC TẾ</span>
           </div>
@@ -172,7 +172,7 @@ const ProjectsPage = () => {
                       onClick={() => setViewMode('grid')}
                       className={`flex-1 flex items-center justify-center rounded-md transition-all ${
                         viewMode === 'grid' 
-                          ? 'bg-[#60bde9] text-white shadow-md' 
+                          ? 'bg-bis-primary text-white shadow-md' 
                           : 'text-gray-600 hover:text-gray-900'
                       }`}
                     >
@@ -183,7 +183,7 @@ const ProjectsPage = () => {
                       onClick={() => setViewMode('list')}
                       className={`flex-1 flex items-center justify-center rounded-md transition-all ${
                         viewMode === 'list' 
-                          ? 'bg-[#60bde9] text-white shadow-md' 
+                          ? 'bg-bis-primary text-white shadow-md' 
                           : 'text-gray-600 hover:text-gray-900'
                       }`}
                     >
@@ -204,7 +204,7 @@ const ProjectsPage = () => {
                     setSortBy('newest');
                   }}
                   variant="outline"
-                  className="border-[#60bde9] text-bis-primary hover:bg-[#60bde9] hover:text-white"
+                  className="border-[#60bde9] text-bis-primary hover:bg-bis-primary hover:text-white"
                 >
                   Xóa tất cả bộ lọc
                 </Button>
@@ -255,7 +255,7 @@ const ProjectsPage = () => {
                   
                   {/* Project Type Badge */}
                   <div className="absolute top-4 left-4">
-                    <Badge className="bg-[#60bde9] text-white px-3 py-1 font-semibold">
+                    <Badge className="bg-bis-primary text-white px-3 py-1 font-semibold">
                       {project.type}
                     </Badge>
                   </div>
@@ -320,7 +320,7 @@ const ProjectsPage = () => {
                     </div>
                     
                     <Button 
-                      className="bg-[#60bde9] hover:bg-[#4a9bc7] text-white font-semibold px-6"
+                      className="bg-bis-primary hover:bg-[#4a9bc7] text-white font-semibold px-6"
                       asChild
                     >
                       <Link to={`/project/${project.id}`}>
@@ -345,7 +345,7 @@ const ProjectsPage = () => {
                 setFilterLocation('all');
                 setSearchTerm('');
               }}
-              className="bg-[#60bde9] hover:bg-[#4a9bc7] text-white"
+              className="bg-bis-primary hover:bg-[#4a9bc7] text-white"
             >
               Xóa tất cả bộ lọc
             </Button>

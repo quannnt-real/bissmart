@@ -186,7 +186,7 @@ const NewsPage = () => {
                     
                     {post.category && (
                       <div className="absolute top-4 right-4">
-                        <Badge className="bg-[#60bde9] text-white px-3 py-1 font-semibold">
+                        <Badge className="bg-bis-primary text-white px-3 py-1 font-semibold">
                           {post.category}
                         </Badge>
                       </div>
@@ -306,7 +306,7 @@ const NewsPage = () => {
                       onClick={() => setViewMode('grid')}
                       className={`flex-1 flex items-center justify-center rounded-md transition-all ${
                         viewMode === 'grid' 
-                          ? 'bg-[#60bde9] text-white shadow-md' 
+                          ? 'bg-bis-primary text-white shadow-md' 
                           : 'text-gray-600 hover:text-gray-900'
                       }`}
                     >
@@ -317,7 +317,7 @@ const NewsPage = () => {
                       onClick={() => setViewMode('list')}
                       className={`flex-1 flex items-center justify-center rounded-md transition-all ${
                         viewMode === 'list' 
-                          ? 'bg-[#60bde9] text-white shadow-md' 
+                          ? 'bg-bis-primary text-white shadow-md' 
                           : 'text-gray-600 hover:text-gray-900'
                       }`}
                     >
@@ -339,7 +339,7 @@ const NewsPage = () => {
                       setSortBy('newest');
                     }}
                     variant="outline"
-                    className="w-full h-12 border-[#60bde9] text-bis-primary hover:bg-[#60bde9] hover:text-white"
+                    className="w-full h-12 border-[#60bde9] text-bis-primary hover:bg-bis-primary hover:text-white"
                   >
                     Xóa bộ lọc
                   </Button>
@@ -390,7 +390,7 @@ const NewsPage = () => {
                   
                   {post.category && (
                     <div className="absolute top-4 left-4">
-                      <Badge className="bg-[#60bde9] text-white px-3 py-1 font-semibold">
+                      <Badge className="bg-bis-primary text-white px-3 py-1 font-semibold">
                         {post.category}
                       </Badge>
                     </div>
@@ -479,7 +479,7 @@ const NewsPage = () => {
                       </Button>
                       <Button 
                         size="sm"
-                        className="bg-[#60bde9] hover:bg-[#4a9bc7] text-white"
+                        className="bg-bis-primary hover:bg-[#4a9bc7] text-white"
                         asChild
                       >
                         <Link to={`/news/${post.id}`}>
@@ -504,7 +504,7 @@ const NewsPage = () => {
                 setFilterCategory('all');
                 setSearchTerm('');
               }}
-              className="bg-[#60bde9] hover:bg-[#4a9bc7] text-white"
+              className="bg-bis-primary hover:bg-[#4a9bc7] text-white"
             >
               Xóa tất cả bộ lọc
             </Button>

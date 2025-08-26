@@ -13,7 +13,7 @@ const ServicesPage = () => {
       <div className="max-w-7xl mx-auto px-4">
         {/* Hero Section */}
         <div className="text-center mb-16">
-          <Badge className="bg-[#60bde9] text-white mb-4 text-lg px-6 py-2">
+          <Badge className="bg-bis-primary text-white mb-4 text-lg px-6 py-2">
             ƯU ĐÃI ĐẶC BIỆT 2025
           </Badge>
           <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">
@@ -167,7 +167,7 @@ const ServicesPage = () => {
               <Card key={step.step} className="hover:shadow-lg transition-shadow">
                 <CardContent className="p-8">
                   <div className="flex items-start space-x-6">
-                    <div className="w-16 h-16 bg-[#60bde9] text-white rounded-full flex items-center justify-center text-2xl font-bold flex-shrink-0">
+                    <div className="w-16 h-16 bg-bis-primary text-white rounded-full flex items-center justify-center text-2xl font-bold flex-shrink-0">
                       {step.step}
                     </div>
                     <div className="flex-1">
@@ -198,7 +198,7 @@ const ServicesPage = () => {
               <Card key={index} className="hover:shadow-lg transition-shadow">
                 <CardHeader>
                   <div className="flex items-center space-x-3 mb-2">
-                    <div className="w-8 h-8 bg-[#60bde9] text-white rounded-full flex items-center justify-center font-bold">
+                    <div className="w-8 h-8 bg-bis-primary text-white rounded-full flex items-center justify-center font-bold">
                       {standard.point}
                     </div>
                     <CardTitle className="text-lg">{standard.title}</CardTitle>
@@ -233,7 +233,7 @@ const ServicesPage = () => {
                     className="w-full h-48 object-cover"
                   />
                   <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-all duration-300 flex items-center justify-center">
-                    <div className="w-16 h-16 bg-[#60bde9] rounded-full flex items-center justify-center cursor-pointer transform group-hover:scale-110 transition-transform duration-300">
+                    <div className="w-16 h-16 bg-bis-primary rounded-full flex items-center justify-center cursor-pointer transform group-hover:scale-110 transition-transform duration-300">
                       <Play className="w-8 h-8 text-white ml-1" />
                     </div>
                   </div>
@@ -266,7 +266,7 @@ const ServicesPage = () => {
 
           <div className="overflow-x-auto">
             <table className="w-full bg-white rounded-lg shadow-lg overflow-hidden">
-              <thead className="bg-[#60bde9] text-white">
+              <thead className="bg-bis-primary text-white">
                 <tr>
                   <th className="px-6 py-4 text-left">Tiêu chí</th>
                   <th className="px-6 py-4 text-left">BIS SMART</th>
@@ -299,7 +299,7 @@ const ServicesPage = () => {
               <Card key={index} className={`relative hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 ${pkg.popular ? 'ring-4 ring-[#60bde9] scale-105' : ''}`}>
                 {pkg.popular && (
                   <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                    <Badge className="bg-[#60bde9] text-white px-4 py-2 text-sm">
+                    <Badge className="bg-bis-primary text-white px-4 py-2 text-sm">
                       PHỔ BIẾN NHẤT
                     </Badge>
                   </div>
@@ -322,7 +322,7 @@ const ServicesPage = () => {
                     ))}
                   </ul>
                   <Button 
-                    className={`w-full mt-6 ${pkg.popular ? 'bg-[#60bde9] hover:bg-[#4a9bc7] text-white' : 'border-[#60bde9] text-bis-primary hover:bg-[#60bde9] hover:text-white'}`}
+                    className={`w-full mt-6 ${pkg.popular ? 'bg-bis-primary hover:bg-[#4a9bc7] text-white' : 'border-[#60bde9] text-bis-primary hover:bg-bis-primary hover:text-white'}`}
                     variant={pkg.popular ? 'default' : 'outline'}
                     asChild
                   >
@@ -348,7 +348,7 @@ const ServicesPage = () => {
           <div className="space-y-12">
             {mockData.pricing.map((pkg, packageIndex) => (
               <div key={packageIndex} className="bg-white rounded-lg shadow-lg overflow-hidden">
-                <div className={`p-6 text-center ${pkg.popular ? 'bg-[#60bde9]' : 'bg-gray-100'}`}>
+                <div className={`p-6 text-center ${pkg.popular ? 'bg-bis-primary' : 'bg-gray-100'}`}>
                   <h3 className={`text-2xl font-bold ${pkg.popular ? 'text-white' : 'text-gray-900'}`}>
                     {pkg.name}
                   </h3>

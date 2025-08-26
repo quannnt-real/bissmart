@@ -14,7 +14,7 @@ const ProcessPage = () => {
       <div className="max-w-7xl mx-auto px-4">
         {/* Hero Section */}
         <div className="text-center mb-16">
-          <Badge className="bg-[#60bde9] text-white mb-4">Quy trình làm việc</Badge>
+          <Badge className="bg-bis-primary text-white mb-4">Quy trình làm việc</Badge>
           <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
             Quy trình làm việc của chúng tôi
           </h1>
@@ -32,7 +32,7 @@ const ProcessPage = () => {
               <div key={step.step} className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''}`}>
                 <div className={index % 2 === 1 ? 'lg:col-start-2' : ''}>
                   <div className="flex items-center mb-6">
-                    <div className="w-16 h-16 bg-[#60bde9] text-white rounded-full flex items-center justify-center text-2xl font-bold mr-6 flex-shrink-0">
+                    <div className="w-16 h-16 bg-bis-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mr-6 flex-shrink-0">
                       {step.step}
                     </div>
                     <div>
@@ -68,7 +68,7 @@ const ProcessPage = () => {
                       alt={step.title}
                       className="w-full h-96 object-cover rounded-lg shadow-lg"
                     />
-                    <div className="absolute top-4 left-4 bg-[#60bde9] text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl">
+                    <div className="absolute top-4 left-4 bg-bis-primary text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl">
                       {step.step}
                     </div>
                   </div>
@@ -136,7 +136,7 @@ const ProcessPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <Card className="hover:shadow-lg transition-shadow">
               <CardHeader>
-                <div className="w-8 h-8 bg-[#60bde9] text-white rounded-full flex items-center justify-center font-bold mr-3">
+                <div className="w-8 h-8 bg-bis-primary text-white rounded-full flex items-center justify-center font-bold mr-3">
                   1
                 </div>
                 <CardTitle className="text-lg">Tường 10cm được gia cố</CardTitle>
@@ -150,7 +150,7 @@ const ProcessPage = () => {
 
             <Card className="hover:shadow-lg transition-shadow">
               <CardHeader>
-                <div className="w-8 h-8 bg-[#60bde9] text-white rounded-full flex items-center justify-center font-bold mr-3">
+                <div className="w-8 h-8 bg-bis-primary text-white rounded-full flex items-center justify-center font-bold mr-3">
                   2
                 </div>
                 <CardTitle className="text-lg">Tường xây có giằng</CardTitle>
@@ -164,7 +164,7 @@ const ProcessPage = () => {
 
             <Card className="hover:shadow-lg transition-shadow">
               <CardHeader>
-                <div className="w-8 h-8 bg-[#60bde9] text-white rounded-full flex items-center justify-center font-bold mr-3">
+                <div className="w-8 h-8 bg-bis-primary text-white rounded-full flex items-center justify-center font-bold mr-3">
                   3
                 </div>
                 <CardTitle className="text-lg">Giằng bê tông mép trên</CardTitle>
@@ -178,7 +178,7 @@ const ProcessPage = () => {
 
             <Card className="hover:shadow-lg transition-shadow">
               <CardHeader>
-                <div className="w-8 h-8 bg-[#60bde9] text-white rounded-full flex items-center justify-center font-bold mr-3">
+                <div className="w-8 h-8 bg-bis-primary text-white rounded-full flex items-center justify-center font-bold mr-3">
                   4
                 </div>
                 <CardTitle className="text-lg">Hạ cos sàn ban công</CardTitle>
@@ -192,7 +192,7 @@ const ProcessPage = () => {
 
             <Card className="hover:shadow-lg transition-shadow">
               <CardHeader>
-                <div className="w-8 h-8 bg-[#60bde9] text-white rounded-full flex items-center justify-center font-bold mr-3">
+                <div className="w-8 h-8 bg-bis-primary text-white rounded-full flex items-center justify-center font-bold mr-3">
                   5
                 </div>
                 <CardTitle className="text-lg">Lưới thép chống nứt</CardTitle>
@@ -204,7 +204,7 @@ const ProcessPage = () => {
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-lg transition-shadow bg-[#60bde9] text-white">
+            <Card className="hover:shadow-lg transition-shadow bg-bis-primary text-white">
               <CardContent className="p-6 text-center">
                 <Shield className="w-12 h-12 mx-auto mb-4" />
                 <h3 className="text-xl font-bold mb-3">Cam kết chất lượng</h3>
@@ -228,7 +228,7 @@ const ProcessPage = () => {
           </div>
 
           <div className="relative">
-            <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-[#60bde9] opacity-20"></div>
+            <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-bis-primary opacity-20"></div>
             <div className="space-y-8">
               {[
                 { step: "Tiếp nhận & Tư vấn", time: "1-2 ngày", color: "bg-green-500" },
@@ -246,7 +246,7 @@ const ProcessPage = () => {
                     </div>
                     <p className="text-bis-primary font-semibold">{item.time}</p>
                   </div>
-                  <div className="w-6 h-6 bg-[#60bde9] rounded-full border-4 border-white relative z-10"></div>
+                  <div className="w-6 h-6 bg-bis-primary rounded-full border-4 border-white relative z-10"></div>
                 </div>
               ))}
             </div>
@@ -255,7 +255,7 @@ const ProcessPage = () => {
 
         {/* CTA Section */}
         <div className="text-center">
-          <div className="bg-[#60bde9] text-white rounded-lg p-12">
+          <div className="bg-bis-primary text-white rounded-lg p-12">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
               Sẵn sàng bắt đầu dự án?
             </h2>
