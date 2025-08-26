@@ -27,12 +27,12 @@ const HomePage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div>
-                <Badge className="bg-[#f05a2c] text-white mb-4">
+                <Badge className="bg-[#60bde9] text-white mb-4">
                   Uy tín #1 về xây nhà trọn gói
                 </Badge>
                 <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
                   Xây nhà trọn gói 
-                  <span className="text-[#f05a2c]"> uy tín</span> không phát sinh
+                  <span className="text-[#60bde9]"> uy tín</span> không phát sinh
                 </h1>
                 <p className="text-gray-600 text-lg mt-6 leading-relaxed">
                   Cam kết xây đúng ngân sách, minh bạch vật tư & đúng tiến độ thi công. 
