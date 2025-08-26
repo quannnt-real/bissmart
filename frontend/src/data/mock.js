@@ -208,6 +208,14 @@ export const mockData = {
       image: "https://images.unsplash.com/photo-1575971637203-d6255d9947a9",
       date: "2025-01-10",
       author: "BIS Smart Team"
+    },
+    {
+      id: 3,
+      title: "Cách tối ưu chi phí xây dựng hiệu quả",
+      excerpt: "Bí quyết tiết kiệm chi phí mà vẫn đảm bảo chất lượng công trình...",
+      image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64",
+      date: "2025-01-12",
+      author: "BIS Smart Team"
     }
   ],
 
