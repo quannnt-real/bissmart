@@ -224,25 +224,25 @@ export const mockData = {
 
   // Contact Info
   contact: {
-    address: "123 Đường ABC, Quận XYZ, TP. Hà Nội",
-    phone: "0123 456 789",
-    email: "contact@bissmart.com",
+    address: "Tầng 9, tòa nhà Handico, đường Phạm Hùng, phường Mễ Trì, Quận Nam Từ Liêm, Hà Nội",
+    phone: "084.746.6868",
+    email: "bissmart.jsc@gmail.com",
     workingHours: "8:00 - 17:30 (Thứ 2 - Thứ 6)",
     regions: [
       {
-        name: "MIỀN BẮC",
-        address: "Hà Nội",
-        phone: "024 1234 5678"
+        name: "CN1 HÀ NỘI",
+        address: "Tầng 9, tòa nhà Handico, đường Phạm Hùng, phường Mễ Trì, Quận Nam Từ Liêm, Hà Nội",
+        phone: "084.746.6868"
       },
       {
-        name: "MIỀN TRUNG",
-        address: "Đà Nẵng",
-        phone: "0236 123 456"
+        name: "CN2 TP HỒ CHÍ MINH",
+        address: "85 Cách Mạng Tháng Tám, Tòa Twins Tower, Phường Bến Thành, Quận 1",
+        phone: "084.746.6868"
       },
       {
-        name: "MIỀN NAM",
-        address: "TP. Hồ Chí Minh",
-        phone: "028 1234 5678"
+        name: "CN3 ĐÀ NẴNG",
+        address: "62 Xuân Thủy, Khuê Trung, Cẩm Lệ",
+        phone: "084.746.6868"
       }
     ]
   },
