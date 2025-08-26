@@ -213,28 +213,28 @@ const ProjectDetailPage = () => {
                 </CardHeader>
                 <CardContent>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div className="flex items-start space-x-3 p-4 bg-orange-50 rounded-lg">
+                    <div className="flex items-start space-x-3 p-4 bg-blue-50 rounded-lg">
                       <div className="w-2 h-2 bg-[#60bde9] rounded-full mt-2 flex-shrink-0"></div>
                       <div>
                         <div className="font-semibold text-gray-900 mb-1">Thiết kế hiện đại</div>
                         <div className="text-sm text-gray-600">Kiến trúc đương đại, tối ưu không gian sống</div>
                       </div>
                     </div>
-                    <div className="flex items-start space-x-3 p-4 bg-orange-50 rounded-lg">
+                    <div className="flex items-start space-x-3 p-4 bg-blue-50 rounded-lg">
                       <div className="w-2 h-2 bg-[#60bde9] rounded-full mt-2 flex-shrink-0"></div>
                       <div>
                         <div className="font-semibold text-gray-900 mb-1">Vật liệu cao cấp</div>
                         <div className="text-sm text-gray-600">Sử dụng vật liệu nhập khẩu, bền vững</div>
                       </div>
                     </div>
-                    <div className="flex items-start space-x-3 p-4 bg-orange-50 rounded-lg">
+                    <div className="flex items-start space-x-3 p-4 bg-blue-50 rounded-lg">
                       <div className="w-2 h-2 bg-[#60bde9] rounded-full mt-2 flex-shrink-0"></div>
                       <div>
                         <div className="font-semibold text-gray-900 mb-1">Ánh sáng tự nhiên</div>
                         <div className="text-sm text-gray-600">Tận dụng tối đa ánh sáng và thông gió tự nhiên</div>
                       </div>
                     </div>
-                    <div className="flex items-start space-x-3 p-4 bg-orange-50 rounded-lg">
+                    <div className="flex items-start space-x-3 p-4 bg-blue-50 rounded-lg">
                       <div className="w-2 h-2 bg-[#60bde9] rounded-full mt-2 flex-shrink-0"></div>
                       <div>
                         <div className="font-semibold text-gray-900 mb-1">Hoàn thiện tỉ mỉ</div>
@@ -249,7 +249,7 @@ const ProjectDetailPage = () => {
             {/* Sidebar */}
             <div className="space-y-6">
               {/* Contact Card */}
-              <Card className="bg-orange-50 border-[#60bde9]">
+              <Card className="bg-blue-50 border-[#60bde9]">
                 <CardHeader>
                   <CardTitle className="text-lg text-gray-900">
                     Quan tâm dự án tương tự?

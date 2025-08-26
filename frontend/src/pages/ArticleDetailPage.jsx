@@ -177,7 +177,7 @@ const ArticleDetailPage = () => {
                 </div>
 
                 {/* Excerpt */}
-                <p className="text-xl text-gray-600 leading-relaxed mb-8 p-4 bg-orange-50 border-l-4 border-[#60bde9] rounded-r-lg">
+                <p className="text-xl text-gray-600 leading-relaxed mb-8 p-4 bg-blue-50 border-l-4 border-[#60bde9] rounded-r-lg">
                   {article.excerpt}
                 </p>
               </header>
@@ -272,7 +272,7 @@ const ArticleDetailPage = () => {
               </Card>
 
               {/* Contact CTA */}
-              <Card className="bg-orange-50 border-[#60bde9]">
+              <Card className="bg-blue-50 border-[#60bde9]">
                 <CardHeader>
                   <CardTitle className="text-lg text-gray-900">
                     Cần tư vấn thiết kế?

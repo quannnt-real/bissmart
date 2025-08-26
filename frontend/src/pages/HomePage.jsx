@@ -111,7 +111,7 @@ const HomePage = () => {
 
           <div className="max-w-4xl mx-auto">
             <Card className="border-2 border-[#60bde9] shadow-xl bg-white">
-              <CardHeader className="text-center bg-orange-50">
+              <CardHeader className="text-center bg-blue-50">
                 <CardTitle className="text-2xl text-gray-900">
                   Thi công trọn gói
                 </CardTitle>
