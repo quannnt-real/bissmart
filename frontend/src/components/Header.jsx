@@ -27,11 +27,11 @@ const Header = () => {
         <div className="container mx-auto px-4 flex justify-between items-center text-sm">
           <div className="flex items-center space-x-4">
             <div className="flex items-center space-x-1">
-              <Phone className="h-4 w-4 text-[#f05a2c]" />
+              <Phone className="h-4 w-4 text-white" />
               <span>{mockData.company.phone}</span>
             </div>
             <div className="flex items-center space-x-1">
-              <Mail className="h-4 w-4 text-[#f05a2c]" />
+              <Mail className="h-4 w-4 text-white" />
               <span>{mockData.company.email}</span>
             </div>
           </div>
