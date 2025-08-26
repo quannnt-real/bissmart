@@ -119,13 +119,13 @@ const NewsPage = () => {
         }}
       >
         <div className="max-w-7xl mx-auto px-4 text-center">
-          <div className="inline-flex items-center bg-[#60bde9]/20 backdrop-blur-sm text-white px-6 py-3 rounded-full border border-white/20 mb-6">
+          <div className="inline-flex items-center bg-bis-primary/20 backdrop-blur-sm text-white px-6 py-3 rounded-full border border-white/20 mb-6">
             <BookOpen className="w-5 h-5 mr-2" />
             <span className="font-medium">TIN TỨC & CHIA SẺ</span>
           </div>
           <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
             Tin tức xây dựng
-            <span className="block text-[#60bde9] mt-2">& Kiến thức chuyên môn</span>
+            <span className="block text-bis-accent mt-2">& Kiến thức chuyên môn</span>
           </h1>
           <p className="text-xl lg:text-2xl mb-8 text-gray-200 leading-relaxed max-w-4xl mx-auto">
             Cập nhật những thông tin mới nhất về xu hướng xây dựng, mẹo hay và kinh nghiệm thực tế từ đội ngũ chuyên gia
