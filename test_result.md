@@ -294,8 +294,9 @@
 
 ## test_plan:
   current_focus:
-    - "Fix project routing inconsistency - ProjectsPage to use /project/:id"
-    - "Create NewsDetailPage and add news detail routing"
+    - "Increase homepage news from 2 to 3 articles"
+    - "Redesign ProjectDetailPage for professional layout"
+    - "Redesign NewsDetailPage for professional layout"
   stuck_tasks: []
   test_all: true
   test_priority: "high_first"
