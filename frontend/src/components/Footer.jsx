@@ -86,7 +86,7 @@ const Footer = () => {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 text-sm">
             {mockData.company.branches.map((branch) => (
               <div key={branch.id} className="flex items-start space-x-2">
-                <MapPin className="h-4 w-4 text-[#f05a2c] mt-1 flex-shrink-0" />
+                <MapPin className="h-4 w-4 text-white mt-1 flex-shrink-0" />
                 <div>
                   <div className="font-semibold text-white">{branch.name}</div>
                   <div className="text-gray-400">{branch.address}</div>
