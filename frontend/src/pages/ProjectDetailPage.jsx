@@ -13,7 +13,7 @@ const ProjectDetailPage = () => {
   if (!project) {
     return (
       <div className="min-h-screen py-16">
-        <div className="container mx-auto px-4 text-center">
+        <div className="max-w-7xl mx-auto px-4 text-center">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Không tìm thấy dự án</h1>
           <Button asChild>
             <Link to="/projects">Quay lại danh sách dự án</Link>
