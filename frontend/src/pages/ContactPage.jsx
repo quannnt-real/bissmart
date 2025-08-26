@@ -247,7 +247,7 @@ const ContactPage = () => {
                         <span className="text-gray-700 font-semibold">{schedule.time}</span>
                       </div>
                     ))}
-                    <div className="mt-6 p-4 bg-blue-50 rounded-lg border border-orange-200">
+                    <div className="mt-6 p-4 bg-blue-50 rounded-lg border border-blue-200">
                       <div className="flex items-center space-x-2">
                         <Phone className="h-5 w-5 text-[#60bde9]" />
                         <span className="font-semibold text-gray-900">Hotline 24/7:</span>
