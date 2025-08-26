@@ -11,13 +11,11 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center">
-                <span className="text-gray-900 font-bold text-lg">BS</span>
-              </div>
-              <div>
-                <div className="font-bold text-lg text-white">BIS SMART</div>
-                <div className="text-gray-400 text-sm">Xây dựng uy tín</div>
-              </div>
+              <img 
+                src="/Logo-swhite-520x303.png" 
+                alt="BIS SMART - Xây dựng uy tín" 
+                className="h-12 w-auto"
+              />
             </div>
             <p className="text-gray-400 text-sm leading-relaxed">
               {mockData.company.slogan}
