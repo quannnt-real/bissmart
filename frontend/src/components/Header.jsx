@@ -23,20 +23,20 @@ const Header = () => {
   return (
     <header className="bg-white shadow-md sticky top-0 z-50">
       {/* Top contact bar */}
-      <div className="bg-[#223b5f] text-white py-2">
+      <div className="bg-gray-800 text-white py-2">
         <div className="container mx-auto px-4 flex justify-between items-center text-sm">
           <div className="flex items-center space-x-4">
             <div className="flex items-center space-x-1">
-              <Phone className="h-4 w-4" />
+              <Phone className="h-4 w-4 text-[#f05a2c]" />
               <span>{mockData.company.phone}</span>
             </div>
             <div className="flex items-center space-x-1">
-              <Mail className="h-4 w-4" />
+              <Mail className="h-4 w-4 text-[#f05a2c]" />
               <span>{mockData.company.email}</span>
             </div>
           </div>
           <div className="hidden md:block">
-            <span className="text-[#60bde9]">Báo giá 24/7 - Tư vấn miễn phí</span>
+            <span className="text-gray-300">Báo giá 24/7 - Tư vấn miễn phí</span>
           </div>
         </div>
       </div>
