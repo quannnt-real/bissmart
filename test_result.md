@@ -214,17 +214,29 @@
         agent: "main"
         comment: "Completely redesigned ProjectDetailPage with professional layout including: hero section with gradient overlay, project stats sidebar with contact CTA, image gallery grid, features & materials cards with colored headers, comprehensive project information display, and enhanced related projects section. Much more professional and visually appealing."
 
-  - task: "Redesign NewsDetailPage for professional layout"
+  - task: "Redesign ProjectsPage archive for professional layout"
     implemented: true
     working: true
-    file: "NewsDetailPage.jsx"
+    file: "ProjectsPage.jsx"
     stuck_count: 0
     priority: "high"
     needs_retesting: true
     status_history:
       - working: true
         agent: "main"
-        comment: "Completely redesigned NewsDetailPage with professional layout including: hero section with gradient overlay and article meta, breadcrumb navigation, article interaction buttons (like, comment, bookmark), enhanced typography with proper prose styling, sidebar with table of contents and newsletter/contact CTAs, author bio section with avatar, tags section, and improved related posts grid. Much more engaging and professional design."
+        comment: "Completely redesigned ProjectsPage with professional archive layout including: hero section with project stats overlay, advanced filter system with search, category, location, sorting options, grid/list view toggle, enhanced project cards with hover effects and detailed info, empty state design, comprehensive CTA section with benefits showcase. Much more professional and user-friendly."
+
+  - task: "Redesign NewsPage archive for professional layout"
+    implemented: true
+    working: true
+    file: "NewsPage.jsx"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: true
+        agent: "main"
+        comment: "Completely redesigned NewsPage with professional archive layout including: hero section with news stats, featured posts section with trending articles, advanced filter system with search, category, sorting, view mode options, enhanced article cards with engagement metrics (views, likes), interaction buttons (like, bookmark), newsletter signup section, comprehensive CTA section. Much more engaging and professional news archive."
 
   - task: "Customer testimonials with 6 videos section"
     implemented: true
