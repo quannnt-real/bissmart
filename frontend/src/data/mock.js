@@ -3,11 +3,14 @@
 export const mockData = {
   // Company Info
   company: {
-    name: "BIS SMART",
+    name: "CÔNG TY TNHH THIẾT KẾ VÀ XÂY DỰNG BIS SMART",
+    shortName: "BIS SMART",
     slogan: "NHÀ THẦU UY TÍN SỐ 1 VỀ XÂY NHÀ TRỌN GÓI",
     description: "Cam kết xây đúng ngân sách, không phát sinh chi phí bất ngờ, minh bạch vật tư & đúng tiến độ thi công",
-    logo: "https://via.placeholder.com/120x70/60bde9/ffffff?text=BIS+SMART",
-    primaryColor: "#60bde9"
+    logo: "https://via.placeholder.com/120x70/223b5f/ffffff?text=BIS+SMART",
+    primaryColor: "#223b5f",
+    accentColor: "#f05a2c",
+    secondaryColor: "#3a6c84"
   },
   design:{
     name: "Linxhq Việt Nam",
