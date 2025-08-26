@@ -245,7 +245,7 @@ const HomePage = () => {
                   </div>
                   <p className="text-gray-600 mb-4">{project.description}</p>
                   <Button variant="outline" className="w-full border-[#60bde9] text-[#60bde9] hover:bg-[#60bde9] hover:text-white" asChild>
-                    <Link to={`/projects/${project.id}`}>
+                    <Link to={`/project/${project.id}`}>
                       Xem chi tiết <ArrowRight className="w-4 h-4 ml-2" />
                     </Link>
                   </Button>
