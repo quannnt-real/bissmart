@@ -308,7 +308,9 @@
   current_focus:
     - "Increase homepage news from 2 to 3 articles"
     - "Redesign ProjectDetailPage for professional layout"
-    - "Redesign NewsDetailPage for professional layout"
+    - "Redesign NewsDetailPage for professional layout"  
+    - "Redesign ProjectsPage archive for professional layout"
+    - "Redesign NewsPage archive for professional layout"
   stuck_tasks: []
   test_all: true
   test_priority: "high_first"
