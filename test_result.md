@@ -270,11 +270,8 @@
 
 ## test_plan:
   current_focus:
-    - "Fix button link - báo giá công trình to services page"
-    - "Standardize project details layout between HomePage and ProjectsPage"  
-    - "Remove featured post from NewsPage"
-    - "Update container width from 1536px to 1280px"
-    - "Remove glassmorphism effects from homepage banner"
+    - "Fix project routing inconsistency - ProjectsPage to use /project/:id"
+    - "Create NewsDetailPage and add news detail routing"
   stuck_tasks: []
   test_all: true
   test_priority: "high_first"
