@@ -215,7 +215,7 @@ const ServicesPage = () => {
                   </div>
                   <div className="flex items-start space-x-3">
                     <Star className="h-5 w-5 text-[#f05a2c] mt-1 flex-shrink-0" />
-                    <span className="text-gray-700">Kiến trúc sư >15 năm kinh nghiệm</span>
+                    <span className="text-gray-700">Kiến trúc sư &gt;15 năm kinh nghiệm</span>
                   </div>
                   <div className="flex items-start space-x-3">
                     <Star className="h-5 w-5 text-[#f05a2c] mt-1 flex-shrink-0" />
