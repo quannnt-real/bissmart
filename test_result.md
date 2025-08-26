@@ -178,17 +178,29 @@
         agent: "main"
         comment: "Replaced all 'container mx-auto' with 'max-w-7xl mx-auto' across all components and pages (HomePage, NewsPage, ContactPage, ProjectsPage, ServicesPage, AboutPage, Header, Footer, QuoteForm, ProjectDetailPage, ProcessPage) to limit width to 1280px instead of 1536px"
 
-  - task: "Remove glassmorphism effects from homepage banner"
+  - task: "Fix project routing inconsistency - ProjectsPage to use /project/:id"
     implemented: true
     working: true
-    file: "HomePage.jsx"
+    file: "ProjectsPage.jsx"
     stuck_count: 0
     priority: "high"
     needs_retesting: true
     status_history:
       - working: true
         agent: "main"
-        comment: "Removed glassmorphism effects (bg-white/10, backdrop-blur-sm, border-white/20) and replaced with solid background (bg-[#60bde9] with shadow-xl) for better readability and cleaner design"
+        comment: "Fixed ProjectsPage routing inconsistency: changed `/projects/${project.id}` to `/project/${project.id}` in both project card hover button and bottom action button to match the route defined in App.js"
+
+  - task: "Create NewsDetailPage and add news detail routing"
+    implemented: true
+    working: true
+    file: "NewsDetailPage.jsx, App.js"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: true
+        agent: "main"
+        comment: "Created comprehensive NewsDetailPage.jsx component with full article display, author info, related posts, and social sharing. Added route `/news/:id` to App.js and imported NewsDetailPage component. News detail pages now functional."
 
   - task: "Customer testimonials with 6 videos section"
     implemented: true
