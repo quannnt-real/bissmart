@@ -102,7 +102,7 @@
 # Testing Data - Main Agent and testing sub agent both should log testing data below this section
 #====================================================================================================
 
-## user_problem_statement: "Trang dịch vụ của tôi đang thiếu các phần khách hàng nói gì về Bis Smart với 6 video cần hiển thị, form điền để nhận báo giấ, Hình ảnh chủng loại vật tư theo báo giá và phần khác biệt của Bis Smart đang thiếu thông tin so với thông tin được cung cấp"
+## user_problem_statement: "Kiểm tra trang tin tức đã tạo xong chưa? nếu chưa tiếp tục tạo và sau đó tạo tiếp trang liên hệ. Sau đó cập nhật routing cho các trang cũng như kết nối các dự án, các tin tức vào trang chủ"
 
 ## backend:
   - task: "API endpoints for contact/quote form"
