@@ -134,19 +134,19 @@ const NewsPage = () => {
           {/* Quick Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
             <div className="text-center">
-              <div className="text-3xl lg:text-4xl font-bold text-[#60bde9] mb-2">{allPosts.length}+</div>
+              <div className="text-3xl lg:text-4xl font-bold text-bis-accent mb-2">{allPosts.length}+</div>
               <div className="text-sm lg:text-base text-gray-300">Bài viết chuyên sâu</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl lg:text-4xl font-bold text-[#60bde9] mb-2">50k+</div>
+              <div className="text-3xl lg:text-4xl font-bold text-bis-accent mb-2">50k+</div>
               <div className="text-sm lg:text-base text-gray-300">Lượt đọc/tháng</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl lg:text-4xl font-bold text-[#60bde9] mb-2">10+</div>
+              <div className="text-3xl lg:text-4xl font-bold text-bis-accent mb-2">10+</div>
               <div className="text-sm lg:text-base text-gray-300">Chuyên gia đóng góp</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl lg:text-4xl font-bold text-[#60bde9] mb-2">Weekly</div>
+              <div className="text-3xl lg:text-4xl font-bold text-bis-accent mb-2">Weekly</div>
               <div className="text-sm lg:text-base text-gray-300">Cập nhật thường xuyên</div>
             </div>
           </div>
