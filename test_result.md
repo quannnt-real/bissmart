@@ -258,13 +258,17 @@
 
 ## test_plan:
   current_focus:
-    - "Backend server health and basic API functionality"
+    - "Fix button link - báo giá công trình to services page"
+    - "Standardize project details layout between HomePage and ProjectsPage"  
+    - "Remove featured post from NewsPage"
+    - "Update container width from 1536px to 1280px"
+    - "Remove glassmorphism effects from homepage banner"
   stuck_tasks: []
   test_all: true
   test_priority: "high_first"
 
 ## agent_communication:
   - agent: "main"
-    message: "Completed all requested tasks: 1) Verified NewsPage.jsx already exists with full functionality 2) Created comprehensive ContactPage.jsx with forms, company info, regional offices, and FAQ 3) Updated App.js routing to include all missing routes (/news, /projects, /contact, etc.) 4) Enhanced HomePage with Latest News section and updated Featured Projects with correct routing 5) Updated Header.jsx for consistent navigation. All services are running successfully and routing is now complete."
+    message: "Completed all UI/UX improvements requested: 1) Fixed button báo giá công trình to link to services page with anchor (#quote-form) 2) Standardized project card design between HomePage and ProjectsPage with consistent layout, hover effects, and information display 3) Removed featured post from NewsPage for uniform grid layout 4) Updated all container widths from 1536px to 1280px (max-w-7xl) across entire application 5) Removed glassmorphism effects from homepage banner, replaced with solid background. All services restarted successfully."
   - agent: "testing"
     message: "BACKEND TESTING COMPLETED: Comprehensive backend server testing performed. Created backend_test.py and executed full test suite. Results: ✅ Server health check passed (GET /api/ working) ✅ CORS configuration verified and working properly ✅ Status check API endpoints tested successfully (POST/GET /api/status with MongoDB integration) ✅ Error handling verified (proper 404/422 responses) ✅ MongoDB connection and data persistence confirmed. Backend server is stable, healthy, and ready for future API integrations. All 4/4 tests passed."
