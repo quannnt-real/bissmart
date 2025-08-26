@@ -45,7 +45,7 @@ const ProjectsPage = () => {
         }}
       >
         <div className="max-w-7xl mx-auto px-4 text-center">
-          <div className="inline-flex items-center bg-bis-primary/20 backdrop-blur-sm text-white px-6 py-3 rounded-full border border-white/20 mb-6">
+          <div className="inline-flex items-center bg-bis-accent/20 backdrop-blur-sm text-white px-6 py-3 rounded-full border border-white/20 mb-6">
             <Building className="w-5 h-5 mr-2" />
             <span className="font-medium">DỰ ÁN THỰC TẾ</span>
           </div>
