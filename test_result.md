@@ -102,7 +102,7 @@
 # Testing Data - Main Agent and testing sub agent both should log testing data below this section
 #====================================================================================================
 
-## user_problem_statement: "Button báo giá công trình đang link sai trang, nó phải nằm ở phần báo giá dịch vụ chữ? Bên cạnh đó chi tiết dự án tại trang chủ và trang dự án không giống nhau cần điều chỉnh cho giống, bài viết tin tức thì bỏ đi bài nổi bật, chỉ dùng thiết kế bình thường cho đẹp. Bên cạnh đó container cần giới hạn ở 1280 ko giới hạn ở kích thước 1536"
+## user_problem_statement: "Kiểm tra và sửa lại khi click vào các dự án từ trang dự án thì nó chuyển hướng tới trang `/projects/1` trong khi trang chủ chuyển tới trang `/project/1` và nội dung ở `/projects/1` thì ko có còn `/project/1` thì có nội dung. Trang tin tức vẫn ko xem được nội dung chi tiết của bài"
 
 ## backend:
   - task: "Backend server health and basic API functionality"
