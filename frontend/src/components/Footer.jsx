@@ -80,7 +80,7 @@ const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {mockData.contact.regions.map((region, index) => (
               <div key={index} className="text-center">
-                <h4 className="font-semibold text-[#60bde9] mb-2">{region.name}</h4>
+                <h4 className="font-semibold text-bis-secondary mb-2">{region.name}</h4>
                 <p className="text-gray-300 text-sm">{region.address}</p>
                 <p className="text-gray-300 text-sm">{region.phone}</p>
               </div>
