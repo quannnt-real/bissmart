@@ -194,13 +194,19 @@
     implemented: true
     working: true
     file: "NewsDetailPage.jsx, App.js"
-    stuck_count: 0
+    stuck_count: 1
     priority: "high"
     needs_retesting: true
     status_history:
       - working: true
         agent: "main"
         comment: "Created comprehensive NewsDetailPage.jsx component with full article display, author info, related posts, and social sharing. Added route `/news/:id` to App.js and imported NewsDetailPage component. News detail pages now functional."
+      - working: false
+        agent: "user"
+        comment: "ERROR: Cannot read properties of undefined (reading 'toLowerCase') - caused by accessing undefined category and readTime properties"
+      - working: true
+        agent: "main"
+        comment: "FIXED: Added null/undefined checks for all optional properties (category, readTime) throughout NewsDetailPage. Added conditional rendering for category badges and readTime displays. All posts from mockData.blogPosts (which don't have category/readTime) now work without errors."
 
   - task: "Customer testimonials with 6 videos section"
     implemented: true
