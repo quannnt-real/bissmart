@@ -1,25 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, useParams, Navigate } from 'react-router-dom';
 import { Button } from '../components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/card';
 import { Badge } from '../components/ui/badge';
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from '../components/ui/breadcrumb';
-import { Separator } from '../components/ui/separator';
 import { 
   ArrowRight, 
   ArrowLeft,
   MapPin,
   Ruler,
-  Calendar,
-  CheckCircle,
   Phone,
-  Clock,
   Users,
   Building,
-  Wrench,
-  Shield,
-  Award,
-  Home
+  Home,
+  ChevronLeft,
+  ChevronRight,
+  Maximize2
 } from 'lucide-react';
 import { mockData } from '../data/mock';
 
