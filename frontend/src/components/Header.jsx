@@ -45,9 +45,9 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
             <img 
-              src={mockData.company.logo} 
-              alt={mockData.company.name}
-              className="h-16 w-auto"
+              src="/Logo-520x303.png" 
+              alt="BIS Smart"
+              className="w-[120px] h-[70px] object-contain"
             />
           </Link>
 

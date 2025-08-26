@@ -11,9 +11,9 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <img 
-              src={mockData.company.logo} 
-              alt={mockData.company.name}
-              className="h-16 w-auto mb-4"
+              src="/Logo-swhite-520x303.png" 
+              alt="BIS Smart"
+              className="w-[120px] h-[70px] object-contain mb-4"
             />
             <p className="text-gray-300 mb-4 leading-relaxed">
               {mockData.company.description}
