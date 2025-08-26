@@ -9,6 +9,12 @@ export const mockData = {
     logo: "https://via.placeholder.com/120x70/60bde9/ffffff?text=BIS+SMART",
     primaryColor: "#60bde9"
   },
+  design:{
+    name: "Linxhq Việt Nam",
+    description: "Công ty thiết kế và phát triển phần mềm hàng đầu tại Việt Nam",
+    logo: "https://linxhq.com.vn/wp-content/uploads/2021/10/Picture1.png",
+    url: "https://linxhq.com.vn/"
+  },
 
   // Hero Section
   hero: {
