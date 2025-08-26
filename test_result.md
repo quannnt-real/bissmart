@@ -102,7 +102,7 @@
 # Testing Data - Main Agent and testing sub agent both should log testing data below this section
 #====================================================================================================
 
-## user_problem_statement: "Kiểm tra và sửa lại khi click vào các dự án từ trang dự án thì nó chuyển hướng tới trang `/projects/1` trong khi trang chủ chuyển tới trang `/project/1` và nội dung ở `/projects/1` thì ko có còn `/project/1` thì có nội dung. Trang tin tức vẫn ko xem được nội dung chi tiết của bài"
+## user_problem_statement: "Rà soát toàn trang và thay đổi hoặc thêm các thông tin này vào vị trí phù hợp: Tên doanh nghiệp: CÔNG TY TNHH THIẾT KẾ VÀ XÂY DỰNG BIS SMART, Code màu chính cần sửa lại cho phù hợp: #223b5f - #f05a2c - #3a6c84, Số điện thoại: 084.746.6868, Email: bissmart.jsc@gmail.com, Địa chỉ CN1 Hà Nội: Tầng 9, tòa nhà Handico, đường Phạm Hùng, phường Mễ Trì, Quận Nam Từ Liêm, Hà Nội; CN2 TP Hồ Chí Minh: 85 Cách Mạng Tháng Tám, Tòa Twins Tower, Phường Bến Thành, Quận 1; CN3 Đà Nẵng: 62 Xuân Thủy, Khuê Trung, Cẩm Lệ"
 
 ## backend:
   - task: "Backend server health and basic API functionality"
