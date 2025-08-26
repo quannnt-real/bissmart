@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Button } from '../components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card';
 import { Badge } from '../components/ui/badge';
-import { CheckCircle, ArrowRight, Star, Users, Award, Clock } from 'lucide-react';
+import { CheckCircle, ArrowRight, Star, Users, Award, Clock, MapPin, Building } from 'lucide-react';
 import { mockData } from '../data/mock';
 
 const HomePage = () => {
