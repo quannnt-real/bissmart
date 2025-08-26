@@ -59,15 +59,15 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Thông tin liên hệ</h3>
             <div className="space-y-3">
               <div className="flex items-start space-x-3">
-                <MapPin className="w-5 h-5 text-[#60bde9] mt-1 flex-shrink-0" />
+                <MapPin className="w-5 h-5 text-bis-accent mt-1 flex-shrink-0" />
                 <p className="text-gray-300">{mockData.contact.address}</p>
               </div>
               <div className="flex items-center space-x-3">
-                <Phone className="w-5 h-5 text-[#60bde9]" />
+                <Phone className="w-5 h-5 text-bis-accent" />
                 <p className="text-gray-300">{mockData.contact.phone}</p>
               </div>
               <div className="flex items-center space-x-3">
-                <Mail className="w-5 h-5 text-[#60bde9]" />
+                <Mail className="w-5 h-5 text-bis-accent" />
                 <p className="text-gray-300">{mockData.contact.email}</p>
               </div>
             </div>
