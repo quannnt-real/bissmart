@@ -52,7 +52,11 @@ module.exports = {
   				'3': 'hsl(var(--chart-3))',
   				'4': 'hsl(var(--chart-4))',
   				'5': 'hsl(var(--chart-5))'
-  			}
+  			},
+  			// BIS SMART custom colors
+  			'bis-primary': '#223b5f',
+  			'bis-accent': '#f05a2c',
+  			'bis-secondary': '#3a6c84'
   		},
   		keyframes: {
   			'accordion-down': {
