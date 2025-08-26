@@ -19,7 +19,7 @@ const ServicesPage = () => {
           <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">
             BIS SMART
           </h1>
-          <h2 className="text-2xl lg:text-3xl font-bold text-[#60bde9] mb-6">
+          <h2 className="text-2xl lg:text-3xl font-bold text-bis-primary mb-6">
             NHÀ THẦU UY TÍN SỐ 1 VỀ XÂY NHÀ TRỌN GÓI
           </h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed mb-8">
@@ -42,7 +42,7 @@ const ServicesPage = () => {
             <Button 
               size="lg" 
               variant="secondary" 
-              className="bg-white text-[#60bde9] hover:bg-gray-100 w-full"
+              className="bg-white text-bis-primary hover:bg-gray-100 w-full"
               asChild
             >
               <Link to="/contact">NHẬN BÁO GIÁ CÔNG TRÌNH</Link>
@@ -82,7 +82,7 @@ const ServicesPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {mockData.commitments.map((commitment, index) => (
               <div key={index} className="flex items-start space-x-3 p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                <CheckCircle className="w-6 h-6 text-[#60bde9] flex-shrink-0 mt-1" />
+                <CheckCircle className="w-6 h-6 text-bis-primary flex-shrink-0 mt-1" />
                 <p className="text-gray-700 leading-relaxed">{commitment}</p>
               </div>
             ))}
@@ -110,14 +110,14 @@ const ServicesPage = () => {
                   />
                 </div>
                 <CardHeader>
-                  <CardTitle className="text-[#60bde9] text-2xl text-center">{region.name}</CardTitle>
+                  <CardTitle className="text-bis-primary text-2xl text-center">{region.name}</CardTitle>
                 </CardHeader>
                 <CardContent className="text-center">
                   <div className="flex items-center justify-center space-x-2 mb-2">
                     <MapPin className="w-4 h-4 text-gray-500" />
                     <p className="text-gray-600">{region.address}</p>
                   </div>
-                  <p className="text-[#60bde9] font-semibold">{region.phone}</p>
+                  <p className="text-bis-primary font-semibold">{region.phone}</p>
                 </CardContent>
               </Card>
             ))}
@@ -135,7 +135,7 @@ const ServicesPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
             {mockData.contact.regions.map((region, index) => (
               <div key={index}>
-                <h3 className="text-xl font-bold text-[#60bde9] mb-4 text-center">{region.name}</h3>
+                <h3 className="text-xl font-bold text-bis-primary mb-4 text-center">{region.name}</h3>
                 <div className="grid grid-cols-3 gap-2">
                   {[1, 2, 3].map((projectIndex) => (
                     <div key={projectIndex} className="aspect-square overflow-hidden rounded-lg">
@@ -241,13 +241,13 @@ const ServicesPage = () => {
                     <div className="bg-white/90 backdrop-blur-sm rounded-lg p-3">
                       <h4 className="font-bold text-gray-900">{testimonial.customerName}</h4>
                       <p className="text-sm text-gray-600">{testimonial.location}</p>
-                      <p className="text-xs text-[#60bde9] font-semibold">{testimonial.projectType}</p>
+                      <p className="text-xs text-bis-primary font-semibold">{testimonial.projectType}</p>
                     </div>
                   </div>
                 </div>
                 <CardContent className="p-6">
                   <div className="flex items-start space-x-3">
-                    <Quote className="w-8 h-8 text-[#60bde9] flex-shrink-0 mt-1" />
+                    <Quote className="w-8 h-8 text-bis-primary flex-shrink-0 mt-1" />
                     <p className="text-gray-700 italic leading-relaxed">{testimonial.testimonial}</p>
                   </div>
                 </CardContent>
@@ -306,7 +306,7 @@ const ServicesPage = () => {
                 )}
                 <CardHeader className="text-center">
                   <CardTitle className="text-2xl text-gray-900">{pkg.name}</CardTitle>
-                  <div className="text-3xl font-bold text-[#60bde9] mt-2">
+                  <div className="text-3xl font-bold text-bis-primary mt-2">
                     {pkg.price}
                     <span className="text-lg font-normal text-gray-600">{pkg.unit}</span>
                   </div>
@@ -316,13 +316,13 @@ const ServicesPage = () => {
                   <ul className="space-y-3">
                     {pkg.features.map((feature, idx) => (
                       <li key={idx} className="flex items-start space-x-2">
-                        <CheckCircle className="w-5 h-5 text-[#60bde9] flex-shrink-0 mt-0.5" />
+                        <CheckCircle className="w-5 h-5 text-bis-primary flex-shrink-0 mt-0.5" />
                         <span className="text-gray-700 text-sm">{feature}</span>
                       </li>
                     ))}
                   </ul>
                   <Button 
-                    className={`w-full mt-6 ${pkg.popular ? 'bg-[#60bde9] hover:bg-[#4a9bc7] text-white' : 'border-[#60bde9] text-[#60bde9] hover:bg-[#60bde9] hover:text-white'}`}
+                    className={`w-full mt-6 ${pkg.popular ? 'bg-[#60bde9] hover:bg-[#4a9bc7] text-white' : 'border-[#60bde9] text-bis-primary hover:bg-[#60bde9] hover:text-white'}`}
                     variant={pkg.popular ? 'default' : 'outline'}
                     asChild
                   >
@@ -361,7 +361,7 @@ const ServicesPage = () => {
                   {/* Phần vật liệu thô */}
                   <div className="mb-8">
                     <h4 className="text-xl font-semibold text-gray-900 mb-4 flex items-center space-x-2">
-                      <Hammer className="w-5 h-5 text-[#60bde9]" />
+                      <Hammer className="w-5 h-5 text-bis-primary" />
                       <span>PHẦN VẬT LIỆU THÔ</span>
                     </h4>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -383,7 +383,7 @@ const ServicesPage = () => {
                   {/* Phần gạch ốp lát */}
                   <div className="mb-8">
                     <h4 className="text-xl font-semibold text-gray-900 mb-4 flex items-center space-x-2">
-                      <Home className="w-5 h-5 text-[#60bde9]" />
+                      <Home className="w-5 h-5 text-bis-primary" />
                       <span>PHẦN GẠCH - ỐP - LÁT</span>
                     </h4>
                     <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
@@ -405,7 +405,7 @@ const ServicesPage = () => {
                   {/* Phần thiết bị điện */}
                   <div>
                     <h4 className="text-xl font-semibold text-gray-900 mb-4 flex items-center space-x-2">
-                      <Shield className="w-5 h-5 text-[#60bde9]" />
+                      <Shield className="w-5 h-5 text-bis-primary" />
                       <span>PHẦN THIẾT BỊ ĐIỆN</span>
                     </h4>
                     <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
@@ -444,7 +444,7 @@ const ServicesPage = () => {
             {mockData.materialPartners.map((partner, index) => (
               <div key={index} className="text-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
                 <div className="w-16 h-16 bg-gray-100 rounded-lg mx-auto mb-3 flex items-center justify-center">
-                  <span className="font-bold text-[#60bde9] text-sm">{partner.name}</span>
+                  <span className="font-bold text-bis-primary text-sm">{partner.name}</span>
                 </div>
                 <p className="text-xs text-gray-600">{partner.category}</p>
               </div>

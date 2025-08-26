@@ -160,7 +160,7 @@ const NewsPage = () => {
             <div className="flex items-center justify-between mb-8">
               <div>
                 <h2 className="text-3xl font-bold text-gray-900 flex items-center">
-                  <TrendingUp className="w-8 h-8 text-[#60bde9] mr-3" />
+                  <TrendingUp className="w-8 h-8 text-bis-primary mr-3" />
                   Bài viết nổi bật
                 </h2>
                 <p className="text-gray-600 mt-2">Những bài viết được quan tâm nhất tuần này</p>
@@ -194,7 +194,7 @@ const NewsPage = () => {
 
                     <div className="absolute bottom-4 left-4 right-4 text-white">
                       <h3 className="text-xl lg:text-2xl font-bold mb-2 line-clamp-2">
-                        <Link to={`/news/${post.id}`} className="hover:text-[#60bde9] transition-colors">
+                        <Link to={`/news/${post.id}`} className="hover:text-bis-primary transition-colors">
                           {post.title}
                         </Link>
                       </h3>
@@ -339,7 +339,7 @@ const NewsPage = () => {
                       setSortBy('newest');
                     }}
                     variant="outline"
-                    className="w-full h-12 border-[#60bde9] text-[#60bde9] hover:bg-[#60bde9] hover:text-white"
+                    className="w-full h-12 border-[#60bde9] text-bis-primary hover:bg-[#60bde9] hover:text-white"
                   >
                     Xóa bộ lọc
                   </Button>
@@ -448,7 +448,7 @@ const NewsPage = () => {
                     </div>
                   </div>
                   
-                  <h3 className="text-lg font-bold text-gray-900 mb-3 group-hover:text-[#60bde9] transition-colors line-clamp-2">
+                  <h3 className="text-lg font-bold text-gray-900 mb-3 group-hover:text-bis-primary transition-colors line-clamp-2">
                     <Link to={`/news/${post.id}`}>
                       {post.title}
                     </Link>
@@ -548,7 +548,7 @@ const NewsPage = () => {
                 <Button 
                   size="lg" 
                   variant="secondary"
-                  className="bg-white text-[#60bde9] hover:bg-gray-100 font-semibold"
+                  className="bg-white text-bis-primary hover:bg-gray-100 font-semibold"
                   asChild
                 >
                   <Link to="/contact">Liên hệ tư vấn</Link>

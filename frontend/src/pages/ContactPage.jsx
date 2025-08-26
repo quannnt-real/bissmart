@@ -93,7 +93,7 @@ const ContactPage = () => {
             <Card className="shadow-xl">
               <CardHeader>
                 <CardTitle className="text-2xl font-bold text-gray-900 flex items-center">
-                  <MessageCircle className="w-6 h-6 mr-2 text-[#60bde9]" />
+                  <MessageCircle className="w-6 h-6 mr-2 text-bis-primary" />
                   Gửi yêu cầu tư vấn
                 </CardTitle>
                 <p className="text-gray-600">
@@ -248,13 +248,13 @@ const ContactPage = () => {
             <Card className="shadow-lg">
               <CardHeader>
                 <CardTitle className="text-xl font-bold text-gray-900 flex items-center">
-                  <Building className="w-5 h-5 mr-2 text-[#60bde9]" />
+                  <Building className="w-5 h-5 mr-2 text-bis-primary" />
                   Thông tin liên hệ
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="flex items-start space-x-3">
-                  <MapPin className="w-5 h-5 text-[#60bde9] mt-1 flex-shrink-0" />
+                  <MapPin className="w-5 h-5 text-bis-primary mt-1 flex-shrink-0" />
                   <div>
                     <p className="font-medium text-gray-900">Địa chỉ</p>
                     <p className="text-gray-600">{mockData.contact.address}</p>
@@ -262,7 +262,7 @@ const ContactPage = () => {
                 </div>
                 
                 <div className="flex items-center space-x-3">
-                  <Phone className="w-5 h-5 text-[#60bde9]" />
+                  <Phone className="w-5 h-5 text-bis-primary" />
                   <div>
                     <p className="font-medium text-gray-900">Điện thoại</p>
                     <p className="text-gray-600">{mockData.contact.phone}</p>
@@ -270,7 +270,7 @@ const ContactPage = () => {
                 </div>
                 
                 <div className="flex items-center space-x-3">
-                  <Mail className="w-5 h-5 text-[#60bde9]" />
+                  <Mail className="w-5 h-5 text-bis-primary" />
                   <div>
                     <p className="font-medium text-gray-900">Email</p>
                     <p className="text-gray-600">{mockData.contact.email}</p>
@@ -278,7 +278,7 @@ const ContactPage = () => {
                 </div>
                 
                 <div className="flex items-center space-x-3">
-                  <Clock className="w-5 h-5 text-[#60bde9]" />
+                  <Clock className="w-5 h-5 text-bis-primary" />
                   <div>
                     <p className="font-medium text-gray-900">Giờ làm việc</p>
                     <p className="text-gray-600">{mockData.contact.workingHours}</p>
@@ -291,7 +291,7 @@ const ContactPage = () => {
             <Card className="shadow-lg">
               <CardHeader>
                 <CardTitle className="text-xl font-bold text-gray-900 flex items-center">
-                  <Users className="w-5 h-5 mr-2 text-[#60bde9]" />
+                  <Users className="w-5 h-5 mr-2 text-bis-primary" />
                   Văn phòng khu vực
                 </CardTitle>
               </CardHeader>
@@ -301,12 +301,12 @@ const ContactPage = () => {
                     <div key={index} className="p-4 bg-gray-50 rounded-lg">
                       <div className="flex items-center justify-between mb-2">
                         <h3 className="font-semibold text-gray-900">{region.name}</h3>
-                        <Badge variant="outline" className="border-[#60bde9] text-[#60bde9]">
+                        <Badge variant="outline" className="border-[#60bde9] text-bis-primary">
                           Khu vực
                         </Badge>
                       </div>
                       <p className="text-gray-600 text-sm">{region.address}</p>
-                      <p className="text-[#60bde9] font-medium text-sm">{region.phone}</p>
+                      <p className="text-bis-primary font-medium text-sm">{region.phone}</p>
                     </div>
                   ))}
                 </div>
@@ -322,7 +322,7 @@ const ContactPage = () => {
                 </p>
                 <Button 
                   variant="secondary"
-                  className="w-full bg-white text-[#60bde9] hover:bg-gray-100 font-semibold"
+                  className="w-full bg-white text-bis-primary hover:bg-gray-100 font-semibold"
                   onClick={() => window.open(`tel:${mockData.contact.phone}`, '_self')}
                 >
                   <Phone className="w-5 h-5 mr-2" />

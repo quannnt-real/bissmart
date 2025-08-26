@@ -51,7 +51,7 @@ const ProjectsPage = () => {
           </div>
           <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
             Dự án tiêu biểu
-            <span className="block text-[#60bde9] mt-2">của BIS SMART</span>
+            <span className="block text-bis-primary mt-2">của BIS SMART</span>
           </h1>
           <p className="text-xl lg:text-2xl mb-8 text-gray-200 leading-relaxed max-w-4xl mx-auto">
             Khám phá những công trình tiêu biểu mà BIS SMART đã thực hiện thành công tại 3 miền Bắc - Trung - Nam
@@ -60,19 +60,19 @@ const ProjectsPage = () => {
           {/* Quick Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
             <div className="text-center">
-              <div className="text-3xl lg:text-4xl font-bold text-[#60bde9] mb-2">500+</div>
+              <div className="text-3xl lg:text-4xl font-bold text-bis-primary mb-2">500+</div>
               <div className="text-sm lg:text-base text-gray-300">Dự án hoàn thành</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl lg:text-4xl font-bold text-[#60bde9] mb-2">3</div>
+              <div className="text-3xl lg:text-4xl font-bold text-bis-primary mb-2">3</div>
               <div className="text-sm lg:text-base text-gray-300">Miền hoạt động</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl lg:text-4xl font-bold text-[#60bde9] mb-2">10+</div>
+              <div className="text-3xl lg:text-4xl font-bold text-bis-primary mb-2">10+</div>
               <div className="text-sm lg:text-base text-gray-300">Năm kinh nghiệm</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl lg:text-4xl font-bold text-[#60bde9] mb-2">95%</div>
+              <div className="text-3xl lg:text-4xl font-bold text-bis-primary mb-2">95%</div>
               <div className="text-sm lg:text-base text-gray-300">Khách hàng hài lòng</div>
             </div>
           </div>
@@ -204,7 +204,7 @@ const ProjectsPage = () => {
                     setSortBy('newest');
                   }}
                   variant="outline"
-                  className="border-[#60bde9] text-[#60bde9] hover:bg-[#60bde9] hover:text-white"
+                  className="border-[#60bde9] text-bis-primary hover:bg-[#60bde9] hover:text-white"
                 >
                   Xóa tất cả bộ lọc
                 </Button>
@@ -283,12 +283,12 @@ const ProjectsPage = () => {
                 
                 <CardContent className={`p-6 ${viewMode === 'list' ? 'flex-1' : ''}`}>
                   <div className="flex items-start justify-between mb-4">
-                    <h3 className="text-xl font-bold text-gray-900 group-hover:text-[#60bde9] transition-colors line-clamp-2">
+                    <h3 className="text-xl font-bold text-gray-900 group-hover:text-bis-primary transition-colors line-clamp-2">
                       {project.title}
                     </h3>
                     {viewMode === 'list' && (
                       <div className="ml-4 text-right">
-                        <div className="text-2xl font-bold text-[#60bde9]">#{project.id}</div>
+                        <div className="text-2xl font-bold text-bis-primary">#{project.id}</div>
                         <div className="text-xs text-gray-500">Mã dự án</div>
                       </div>
                     )}
@@ -296,11 +296,11 @@ const ProjectsPage = () => {
                   
                   <div className="grid grid-cols-2 gap-4 mb-4">
                     <div className="flex items-center space-x-2 text-sm text-gray-600 bg-gray-50 rounded-lg p-3">
-                      <MapPin className="w-4 h-4 text-[#60bde9] flex-shrink-0" />
+                      <MapPin className="w-4 h-4 text-bis-primary flex-shrink-0" />
                       <span className="font-medium">{project.location}</span>
                     </div>
                     <div className="flex items-center space-x-2 text-sm text-gray-600 bg-gray-50 rounded-lg p-3">
-                      <Building className="w-4 h-4 text-[#60bde9] flex-shrink-0" />
+                      <Building className="w-4 h-4 text-bis-primary flex-shrink-0" />
                       <span className="font-medium">{project.area}</span>
                     </div>
                   </div>
@@ -392,7 +392,7 @@ const ProjectsPage = () => {
                 <Button 
                   size="lg" 
                   variant="secondary"
-                  className="bg-white text-[#60bde9] hover:bg-gray-100 px-8 py-4 text-lg font-semibold"
+                  className="bg-white text-bis-primary hover:bg-gray-100 px-8 py-4 text-lg font-semibold"
                   asChild
                 >
                   <Link to="/contact">Nhận báo giá miễn phí</Link>
@@ -400,7 +400,7 @@ const ProjectsPage = () => {
                 <Button 
                   size="lg" 
                   variant="outline" 
-                  className="border-white text-white hover:bg-white hover:text-[#60bde9] px-8 py-4 text-lg font-semibold"
+                  className="border-white text-white hover:bg-white hover:text-bis-primary px-8 py-4 text-lg font-semibold"
                   asChild
                 >
                   <Link to="/services">

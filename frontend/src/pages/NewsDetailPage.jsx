@@ -138,9 +138,9 @@ const NewsDetailPage = () => {
         {/* Breadcrumb */}
         <div className="mb-8">
           <nav className="flex items-center space-x-2 text-sm text-gray-600 mb-4">
-            <Link to="/" className="hover:text-[#60bde9] transition-colors">Trang chủ</Link>
+            <Link to="/" className="hover:text-bis-primary transition-colors">Trang chủ</Link>
             <ChevronRight className="w-4 h-4" />
-            <Link to="/news" className="hover:text-[#60bde9] transition-colors">Tin tức</Link>
+            <Link to="/news" className="hover:text-bis-primary transition-colors">Tin tức</Link>
             <ChevronRight className="w-4 h-4" />
             <span className="text-gray-900 font-medium">{post.title}</span>
           </nav>
@@ -311,10 +311,10 @@ const NewsDetailPage = () => {
               </CardHeader>
               <CardContent className="p-6">
                 <ul className="space-y-3 text-sm">
-                  <li><a href="#section1" className="text-gray-700 hover:text-[#60bde9] transition-colors">1. Giới thiệu chung</a></li>
-                  <li><a href="#section2" className="text-gray-700 hover:text-[#60bde9] transition-colors">2. Phân tích chi tiết</a></li>
-                  <li><a href="#section3" className="text-gray-700 hover:text-[#60bde9] transition-colors">3. Kinh nghiệm thực tế</a></li>
-                  <li><a href="#section4" className="text-gray-700 hover:text-[#60bde9] transition-colors">4. Kết luận</a></li>
+                  <li><a href="#section1" className="text-gray-700 hover:text-bis-primary transition-colors">1. Giới thiệu chung</a></li>
+                  <li><a href="#section2" className="text-gray-700 hover:text-bis-primary transition-colors">2. Phân tích chi tiết</a></li>
+                  <li><a href="#section3" className="text-gray-700 hover:text-bis-primary transition-colors">3. Kinh nghiệm thực tế</a></li>
+                  <li><a href="#section4" className="text-gray-700 hover:text-bis-primary transition-colors">4. Kết luận</a></li>
                 </ul>
               </CardContent>
             </Card>
@@ -346,7 +346,7 @@ const NewsDetailPage = () => {
                   <Button 
                     size="sm"
                     variant="secondary" 
-                    className="w-full bg-white text-[#60bde9] hover:bg-gray-100 font-semibold"
+                    className="w-full bg-white text-bis-primary hover:bg-gray-100 font-semibold"
                     asChild
                   >
                     <Link to="/contact">
@@ -423,7 +423,7 @@ const NewsDetailPage = () => {
                       )}
                     </div>
                     
-                    <h3 className="text-lg font-bold text-gray-900 mb-3 group-hover:text-[#60bde9] transition-colors line-clamp-2">
+                    <h3 className="text-lg font-bold text-gray-900 mb-3 group-hover:text-bis-primary transition-colors line-clamp-2">
                       <Link to={`/news/${relatedPost.id}`}>
                         {relatedPost.title}
                       </Link>
@@ -440,7 +440,7 @@ const NewsDetailPage = () => {
                       <Button 
                         variant="outline" 
                         size="sm"
-                        className="border-[#60bde9] text-[#60bde9] hover:bg-[#60bde9] hover:text-white font-semibold"
+                        className="border-[#60bde9] text-bis-primary hover:bg-[#60bde9] hover:text-white font-semibold"
                         asChild
                       >
                         <Link to={`/news/${relatedPost.id}`}>

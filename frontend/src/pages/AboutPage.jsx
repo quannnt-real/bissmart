@@ -45,22 +45,22 @@ const AboutPage = () => {
         {/* Stats */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-16">
           <div className="text-center p-6 bg-white rounded-lg shadow-lg">
-            <Award className="w-12 h-12 text-[#60bde9] mx-auto mb-4" />
+            <Award className="w-12 h-12 text-bis-primary mx-auto mb-4" />
             <h3 className="text-3xl font-bold text-gray-900 mb-2">10+</h3>
             <p className="text-gray-600">Năm kinh nghiệm</p>
           </div>
           <div className="text-center p-6 bg-white rounded-lg shadow-lg">
-            <Users className="w-12 h-12 text-[#60bde9] mx-auto mb-4" />
+            <Users className="w-12 h-12 text-bis-primary mx-auto mb-4" />
             <h3 className="text-3xl font-bold text-gray-900 mb-2">500+</h3>
             <p className="text-gray-600">Công trình hoàn thành</p>
           </div>
           <div className="text-center p-6 bg-white rounded-lg shadow-lg">
-            <MapPin className="w-12 h-12 text-[#60bde9] mx-auto mb-4" />
+            <MapPin className="w-12 h-12 text-bis-primary mx-auto mb-4" />
             <h3 className="text-3xl font-bold text-gray-900 mb-2">3</h3>
             <p className="text-gray-600">Văn phòng đại diện</p>
           </div>
           <div className="text-center p-6 bg-white rounded-lg shadow-lg">
-            <CheckCircle className="w-12 h-12 text-[#60bde9] mx-auto mb-4" />
+            <CheckCircle className="w-12 h-12 text-bis-primary mx-auto mb-4" />
             <h3 className="text-3xl font-bold text-gray-900 mb-2">95%</h3>
             <p className="text-gray-600">Khách hàng hài lòng</p>
           </div>
@@ -87,7 +87,7 @@ const AboutPage = () => {
                     className="w-24 h-24 object-cover rounded-full mx-auto mb-4"
                   />
                   <h3 className="text-xl font-bold text-gray-900 mb-2">{member.name}</h3>
-                  <p className="text-[#60bde9] font-medium mb-2">{member.position}</p>
+                  <p className="text-bis-primary font-medium mb-2">{member.position}</p>
                   <p className="text-gray-600 text-sm">{member.experience}</p>
                 </CardContent>
               </Card>
@@ -100,7 +100,7 @@ const AboutPage = () => {
                   className="w-24 h-24 object-cover rounded-full mx-auto mb-4"
                 />
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Lê Văn C</h3>
-                <p className="text-[#60bde9] font-medium mb-2">Kỹ sư giám sát</p>
+                <p className="text-bis-primary font-medium mb-2">Kỹ sư giám sát</p>
                 <p className="text-gray-600 text-sm">8 năm kinh nghiệm</p>
               </CardContent>
             </Card>
@@ -122,7 +122,7 @@ const AboutPage = () => {
             {mockData.contact.regions.map((region, index) => (
               <Card key={index} className="text-center hover:shadow-lg transition-all duration-300 transform hover:-translate-y-2">
                 <CardHeader>
-                  <CardTitle className="text-[#60bde9] text-2xl">{region.name}</CardTitle>
+                  <CardTitle className="text-bis-primary text-2xl">{region.name}</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="mb-6">
@@ -136,7 +136,7 @@ const AboutPage = () => {
                   </div>
                   <div className="space-y-2">
                     <p className="font-medium text-gray-900">{region.address}</p>
-                    <p className="text-[#60bde9] font-medium">{region.phone}</p>
+                    <p className="text-bis-primary font-medium">{region.phone}</p>
                   </div>
                 </CardContent>
               </Card>
@@ -158,7 +158,7 @@ const AboutPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {mockData.commitments.map((commitment, index) => (
               <div key={index} className="flex items-start space-x-3 p-4 bg-white rounded-lg shadow-sm">
-                <CheckCircle className="w-6 h-6 text-[#60bde9] flex-shrink-0 mt-1" />
+                <CheckCircle className="w-6 h-6 text-bis-primary flex-shrink-0 mt-1" />
                 <p className="text-gray-700">{commitment}</p>
               </div>
             ))}

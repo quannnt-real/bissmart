@@ -73,22 +73,22 @@ const HomePage = () => {
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="text-center">
-              <Award className="w-12 h-12 text-[#60bde9] mx-auto mb-4" />
+              <Award className="w-12 h-12 text-bis-primary mx-auto mb-4" />
               <h3 className="text-3xl font-bold text-gray-900 mb-2">10+</h3>
               <p className="text-gray-600">Năm kinh nghiệm</p>
             </div>
             <div className="text-center">
-              <Users className="w-12 h-12 text-[#60bde9] mx-auto mb-4" />
+              <Users className="w-12 h-12 text-bis-primary mx-auto mb-4" />
               <h3 className="text-3xl font-bold text-gray-900 mb-2">500+</h3>
               <p className="text-gray-600">Công trình hoàn thành</p>
             </div>
             <div className="text-center">
-              <Star className="w-12 h-12 text-[#60bde9] mx-auto mb-4" />
+              <Star className="w-12 h-12 text-bis-primary mx-auto mb-4" />
               <h3 className="text-3xl font-bold text-gray-900 mb-2">95%</h3>
               <p className="text-gray-600">Khách hàng hài lòng</p>
             </div>
             <div className="text-center">
-              <Clock className="w-12 h-12 text-[#60bde9] mx-auto mb-4" />
+              <Clock className="w-12 h-12 text-bis-primary mx-auto mb-4" />
               <h3 className="text-3xl font-bold text-gray-900 mb-2">24/7</h3>
               <p className="text-gray-600">Hỗ trợ khách hàng</p>
             </div>
@@ -125,7 +125,7 @@ const HomePage = () => {
                 <ul className="space-y-2 mb-6">
                   {mockData.mainService.features.map((feature, index) => (
                     <li key={index} className="flex items-center space-x-2">
-                      <CheckCircle className="w-4 h-4 text-[#60bde9]" />
+                      <CheckCircle className="w-4 h-4 text-bis-primary" />
                       <span className="text-sm text-gray-600">{feature}</span>
                     </li>
                   ))}
@@ -154,15 +154,15 @@ const HomePage = () => {
                 <p className="text-gray-600 mb-4">Đội ngũ kiến trúc sư &gt; 15 năm kinh nghiệm</p>
                 <ul className="space-y-2 mb-6">
                   <li className="flex items-center space-x-2">
-                    <CheckCircle className="w-4 h-4 text-[#60bde9]" />
+                    <CheckCircle className="w-4 h-4 text-bis-primary" />
                     <span className="text-sm text-gray-600">Thiết kế 3D chuyên nghiệp</span>
                   </li>
                   <li className="flex items-center space-x-2">
-                    <CheckCircle className="w-4 h-4 text-[#60bde9]" />
+                    <CheckCircle className="w-4 h-4 text-bis-primary" />
                     <span className="text-sm text-gray-600">Bản vẽ kỹ thuật đầy đủ</span>
                   </li>
                   <li className="flex items-center space-x-2">
-                    <CheckCircle className="w-4 h-4 text-[#60bde9]" />
+                    <CheckCircle className="w-4 h-4 text-bis-primary" />
                     <span className="text-sm text-gray-600">Tối ưu không gian sống</span>
                   </li>
                 </ul>
@@ -189,15 +189,15 @@ const HomePage = () => {
                 <p className="text-gray-600 mb-4">Từ pháp lý đến bảo hành lâu dài</p>
                 <ul className="space-y-2 mb-6">
                   <li className="flex items-center space-x-2">
-                    <CheckCircle className="w-4 h-4 text-[#60bde9]" />
+                    <CheckCircle className="w-4 h-4 text-bis-primary" />
                     <span className="text-sm text-gray-600">Hỗ trợ giấy phép xây dựng</span>
                   </li>
                   <li className="flex items-center space-x-2">
-                    <CheckCircle className="w-4 h-4 text-[#60bde9]" />
+                    <CheckCircle className="w-4 h-4 text-bis-primary" />
                     <span className="text-sm text-gray-600">Bảo hành 5 năm</span>
                   </li>
                   <li className="flex items-center space-x-2">
-                    <CheckCircle className="w-4 h-4 text-[#60bde9]" />
+                    <CheckCircle className="w-4 h-4 text-bis-primary" />
                     <span className="text-sm text-gray-600">Hỗ trợ 24/7</span>
                   </li>
                 </ul>
@@ -253,24 +253,24 @@ const HomePage = () => {
                 </div>
                 
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-[#60bde9] transition-colors">
+                  <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-bis-primary transition-colors">
                     {project.title}
                   </h3>
                   
                   <div className="space-y-2 mb-4">
                     <div className="flex items-center space-x-2 text-sm text-gray-600">
-                      <MapPin className="w-4 h-4 text-[#60bde9]" />
+                      <MapPin className="w-4 h-4 text-bis-primary" />
                       <span>{project.location}</span>
                     </div>
                     <div className="flex items-center space-x-2 text-sm text-gray-600">
-                      <Building className="w-4 h-4 text-[#60bde9]" />
+                      <Building className="w-4 h-4 text-bis-primary" />
                       <span>{project.area}</span>
                     </div>
                   </div>
                   
                   <p className="text-gray-600 mb-4 line-clamp-2">{project.description}</p>
                   
-                  <Button variant="outline" className="w-full border-[#60bde9] text-[#60bde9] hover:bg-[#60bde9] hover:text-white">
+                  <Button variant="outline" className="w-full border-[#60bde9] text-bis-primary hover:bg-[#60bde9] hover:text-white">
                     <Link to={`/project/${project.id}`} className="flex items-center justify-center w-full">
                       Xem chi tiết <ArrowRight className="w-4 h-4 ml-2" />
                     </Link>
@@ -281,7 +281,7 @@ const HomePage = () => {
           </div>
           
           <div className="text-center mt-8">
-            <Button size="lg" variant="outline" className="border-[#60bde9] text-[#60bde9] hover:bg-[#60bde9] hover:text-white" asChild>
+            <Button size="lg" variant="outline" className="border-[#60bde9] text-bis-primary hover:bg-[#60bde9] hover:text-white" asChild>
               <Link to="/projects">Xem tất cả dự án</Link>
             </Button>
           </div>
@@ -318,7 +318,7 @@ const HomePage = () => {
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-3 line-clamp-2">{post.title}</h3>
                   <p className="text-gray-600 mb-4 line-clamp-3">{post.excerpt}</p>
-                  <Button variant="outline" className="w-full border-[#60bde9] text-[#60bde9] hover:bg-[#60bde9] hover:text-white" asChild>
+                  <Button variant="outline" className="w-full border-[#60bde9] text-bis-primary hover:bg-[#60bde9] hover:text-white" asChild>
                     <Link to={`/news/${post.id}`}>
                       Đọc thêm <ArrowRight className="w-4 h-4 ml-2" />
                     </Link>
@@ -329,7 +329,7 @@ const HomePage = () => {
           </div>
           
           <div className="text-center mt-8">
-            <Button size="lg" variant="outline" className="border-[#60bde9] text-[#60bde9] hover:bg-[#60bde9] hover:text-white" asChild>
+            <Button size="lg" variant="outline" className="border-[#60bde9] text-bis-primary hover:bg-[#60bde9] hover:text-white" asChild>
               <Link to="/news">Xem tất cả tin tức</Link>
             </Button>
           </div>
@@ -351,7 +351,7 @@ const HomePage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {mockData.commitments.slice(0, 6).map((commitment, index) => (
               <div key={index} className="flex items-start space-x-3 p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                <CheckCircle className="w-6 h-6 text-[#60bde9] flex-shrink-0 mt-1" />
+                <CheckCircle className="w-6 h-6 text-bis-primary flex-shrink-0 mt-1" />
                 <p className="text-gray-700">{commitment}</p>
               </div>
             ))}
@@ -372,7 +372,7 @@ const HomePage = () => {
             <Button 
               size="lg" 
               variant="secondary"
-              className="bg-white text-[#60bde9] hover:bg-gray-100 px-8 py-4 text-lg font-semibold"
+              className="bg-white text-bis-primary hover:bg-gray-100 px-8 py-4 text-lg font-semibold"
               asChild
             >
               <Link to="/contact">Nhận báo giá miễn phí</Link>
@@ -380,7 +380,7 @@ const HomePage = () => {
             <Button 
               size="lg" 
               variant="outline" 
-              className="border-white text-white hover:bg-white hover:text-[#60bde9] px-8 py-4 text-lg font-semibold"
+              className="border-white text-white hover:bg-white hover:text-bis-primary px-8 py-4 text-lg font-semibold"
               asChild
             >
               <Link to="/services">Tìm hiểu dịch vụ</Link>

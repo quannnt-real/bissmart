@@ -40,8 +40,8 @@ const ProcessPage = () => {
                         {step.title}
                       </h2>
                       <div className="flex items-center">
-                        <IconComponent className="w-6 h-6 text-[#60bde9] mr-2" />
-                        <span className="text-[#60bde9] font-medium">Bước {step.step}</span>
+                        <IconComponent className="w-6 h-6 text-bis-primary mr-2" />
+                        <span className="text-bis-primary font-medium">Bước {step.step}</span>
                       </div>
                     </div>
                   </div>
@@ -92,7 +92,7 @@ const ProcessPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <Card className="text-center hover:shadow-lg transition-shadow">
               <CardContent className="p-6">
-                <CheckCircle className="w-12 h-12 text-[#60bde9] mx-auto mb-4" />
+                <CheckCircle className="w-12 h-12 text-bis-primary mx-auto mb-4" />
                 <h3 className="text-xl font-bold text-gray-900 mb-3">Minh bạch</h3>
                 <p className="text-gray-600">
                   Tất cả các bước được thông báo rõ ràng, khách hàng luôn được cập nhật tiến độ
@@ -102,7 +102,7 @@ const ProcessPage = () => {
 
             <Card className="text-center hover:shadow-lg transition-shadow">
               <CardContent className="p-6">
-                <Shield className="w-12 h-12 text-[#60bde9] mx-auto mb-4" />
+                <Shield className="w-12 h-12 text-bis-primary mx-auto mb-4" />
                 <h3 className="text-xl font-bold text-gray-900 mb-3">Đảm bảo chất lượng</h3>
                 <p className="text-gray-600">
                   Kiểm soát chất lượng 3 cấp đảm bảo mọi công việc đạt tiêu chuẩn cao nhất
@@ -112,7 +112,7 @@ const ProcessPage = () => {
 
             <Card className="text-center hover:shadow-lg transition-shadow">
               <CardContent className="p-6">
-                <Users className="w-12 h-12 text-[#60bde9] mx-auto mb-4" />
+                <Users className="w-12 h-12 text-bis-primary mx-auto mb-4" />
                 <h3 className="text-xl font-bold text-gray-900 mb-3">Hỗ trợ 24/7</h3>
                 <p className="text-gray-600">
                   Đội ngũ hỗ trợ luôn sẵn sàng giải đáp mọi thắc mắc của khách hàng
@@ -244,7 +244,7 @@ const ProcessPage = () => {
                       <div className={`w-4 h-4 ${item.color} rounded-full mr-3`}></div>
                       <h3 className="font-bold text-gray-900">{item.step}</h3>
                     </div>
-                    <p className="text-[#60bde9] font-semibold">{item.time}</p>
+                    <p className="text-bis-primary font-semibold">{item.time}</p>
                   </div>
                   <div className="w-6 h-6 bg-[#60bde9] rounded-full border-4 border-white relative z-10"></div>
                 </div>
@@ -266,7 +266,7 @@ const ProcessPage = () => {
               <Button 
                 size="lg" 
                 variant="secondary"
-                className="bg-white text-[#60bde9] hover:bg-gray-100 px-8 py-4 text-lg font-semibold"
+                className="bg-white text-bis-primary hover:bg-gray-100 px-8 py-4 text-lg font-semibold"
                 asChild
               >
                 <Link to="/contact">Bắt đầu dự án</Link>
@@ -274,7 +274,7 @@ const ProcessPage = () => {
               <Button 
                 size="lg" 
                 variant="outline" 
-                className="border-white text-white hover:bg-white hover:text-[#60bde9] px-8 py-4 text-lg font-semibold"
+                className="border-white text-white hover:bg-white hover:text-bis-primary px-8 py-4 text-lg font-semibold"
                 asChild
               >
                 <Link to="/pricing">

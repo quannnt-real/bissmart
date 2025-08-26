@@ -253,7 +253,7 @@ const ProjectDetailPage = () => {
                   <Button 
                     size="lg" 
                     variant="secondary"
-                    className="w-full bg-white text-[#60bde9] hover:bg-gray-100 font-semibold"
+                    className="w-full bg-white text-bis-primary hover:bg-gray-100 font-semibold"
                     asChild
                   >
                     <Link to="/contact">
@@ -316,17 +316,17 @@ const ProjectDetailPage = () => {
                   </div>
                   
                   <CardContent className="p-6">
-                    <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-[#60bde9] transition-colors">
+                    <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-bis-primary transition-colors">
                       {relatedProject.title}
                     </h3>
                     
                     <div className="space-y-2 mb-4">
                       <div className="flex items-center space-x-2 text-sm text-gray-600">
-                        <MapPin className="w-4 h-4 text-[#60bde9]" />
+                        <MapPin className="w-4 h-4 text-bis-primary" />
                         <span>{relatedProject.location}</span>
                       </div>
                       <div className="flex items-center space-x-2 text-sm text-gray-600">
-                        <Building className="w-4 h-4 text-[#60bde9]" />
+                        <Building className="w-4 h-4 text-bis-primary" />
                         <span>{relatedProject.area}</span>
                       </div>
                     </div>
@@ -335,7 +335,7 @@ const ProjectDetailPage = () => {
                     
                     <Button 
                       variant="outline" 
-                      className="w-full border-[#60bde9] text-[#60bde9] hover:bg-[#60bde9] hover:text-white font-semibold"
+                      className="w-full border-[#60bde9] text-bis-primary hover:bg-[#60bde9] hover:text-white font-semibold"
                       asChild
                     >
                       <Link to={`/project/${relatedProject.id}`}>
