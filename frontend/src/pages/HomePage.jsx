@@ -226,26 +226,52 @@ const HomePage = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {mockData.projects.slice(0, 3).map((project) => (
-              <Card key={project.id} className="group overflow-hidden hover:shadow-xl transition-all duration-300">
-                <div className="overflow-hidden">
+              <Card key={project.id} className="group overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                <div className="relative overflow-hidden">
                   <img 
                     src={project.image} 
                     alt={project.title}
-                    className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+                    className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
                   />
-                </div>
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">{project.title}</h3>
-                  <div className="flex items-center space-x-4 text-sm text-gray-600 mb-3">
-                    <span>{project.location}</span>
-                    <span>•</span>
-                    <span>{project.area}</span>
-                    <span>•</span>
-                    <span>{project.type}</span>
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300"></div>
+                  <div className="absolute top-4 right-4">
+                    <Badge className="bg-[#60bde9] text-white">
+                      {project.type}
+                    </Badge>
                   </div>
-                  <p className="text-gray-600 mb-4">{project.description}</p>
-                  <Button variant="outline" className="w-full border-[#60bde9] text-[#60bde9] hover:bg-[#60bde9] hover:text-white" asChild>
-                    <Link to={`/project/${project.id}`}>
+                  <div className="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <Button 
+                      className="w-full bg-white/90 text-gray-900 hover:bg-white"
+                      asChild
+                    >
+                      <Link to={`/project/${project.id}`}>
+                        <ArrowRight className="w-4 h-4 mr-2" />
+                        Xem chi tiết
+                      </Link>
+                    </Button>
+                  </div>
+                </div>
+                
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-[#60bde9] transition-colors">
+                    {project.title}
+                  </h3>
+                  
+                  <div className="space-y-2 mb-4">
+                    <div className="flex items-center space-x-2 text-sm text-gray-600">
+                      <MapPin className="w-4 h-4 text-[#60bde9]" />
+                      <span>{project.location}</span>
+                    </div>
+                    <div className="flex items-center space-x-2 text-sm text-gray-600">
+                      <Building className="w-4 h-4 text-[#60bde9]" />
+                      <span>{project.area}</span>
+                    </div>
+                  </div>
+                  
+                  <p className="text-gray-600 mb-4 line-clamp-2">{project.description}</p>
+                  
+                  <Button variant="outline" className="w-full border-[#60bde9] text-[#60bde9] hover:bg-[#60bde9] hover:text-white">
+                    <Link to={`/project/${project.id}`} className="flex items-center justify-center w-full">
                       Xem chi tiết <ArrowRight className="w-4 h-4 ml-2" />
                     </Link>
                   </Button>
