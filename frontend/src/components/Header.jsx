@@ -91,8 +91,8 @@ const Header = () => {
                     to={item.href}
                     className={`text-lg font-medium transition-colors duration-200 ${
                       location.pathname === item.href 
-                        ? 'text-[#60bde9]' 
-                        : 'text-gray-700 hover:text-[#60bde9]'
+                        ? 'text-bis-primary' 
+                        : 'text-gray-700 hover:text-bis-primary'
                     }`}
                     onClick={() => setIsOpen(false)}
                   >
@@ -100,7 +100,7 @@ const Header = () => {
                   </Link>
                 ))}
                 <Button 
-                  className="bg-[#60bde9] hover:bg-[#4a9bc7] text-white mt-4"
+                  className="bg-bis-accent hover:bg-bis-accent/90 text-white mt-4"
                   asChild
                 >
                   <Link to="/contact" onClick={() => setIsOpen(false)}>
