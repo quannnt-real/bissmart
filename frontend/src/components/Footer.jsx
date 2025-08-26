@@ -11,8 +11,8 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-[#f05a2c] rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">BS</span>
+              <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center">
+                <span className="text-gray-900 font-bold text-lg">BS</span>
               </div>
               <div>
                 <div className="font-bold text-lg text-white">BIS SMART</div>
@@ -23,11 +23,11 @@ const Footer = () => {
               {mockData.company.slogan}
             </p>
             <div className="flex items-center space-x-2 text-sm">
-              <Phone className="h-4 w-4 text-[#f05a2c]" />
+              <Phone className="h-4 w-4 text-white" />
               <span className="text-gray-300">{mockData.company.phone}</span>
             </div>
             <div className="flex items-center space-x-2 text-sm">
-              <Mail className="h-4 w-4 text-[#f05a2c]" />
+              <Mail className="h-4 w-4 text-white" />
               <span className="text-gray-300">{mockData.company.email}</span>
             </div>
           </div>
