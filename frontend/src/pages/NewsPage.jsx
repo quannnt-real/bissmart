@@ -122,73 +122,12 @@ const NewsPage = () => {
           </div>
         </div>
 
-        {/* Featured Post */}
-        {featuredPost && (
-          <div className="mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8">Bài viết nổi bật</h2>
-            <Card className="overflow-hidden hover:shadow-xl transition-shadow duration-300">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
-                <div className="overflow-hidden">
-                  <img 
-                    src={featuredPost.image} 
-                    alt={featuredPost.title}
-                    className="w-full h-64 lg:h-full object-cover hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-                <div className="p-8">
-                  <div className="flex items-center space-x-4 mb-4">
-                    <Badge variant="secondary" className="bg-[#60bde9] text-white">
-                      {featuredPost.category}
-                    </Badge>
-                    <div className="flex items-center space-x-2 text-sm text-gray-500">
-                      <Calendar className="w-4 h-4" />
-                      <span>{new Date(featuredPost.date).toLocaleDateString('vi-VN')}</span>
-                    </div>
-                  </div>
-                  
-                  <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4 hover:text-[#60bde9] transition-colors">
-                    <Link to={`/news/${featuredPost.id}`}>
-                      {featuredPost.title}
-                    </Link>
-                  </h3>
-                  
-                  <p className="text-gray-600 mb-6 text-lg leading-relaxed">
-                    {featuredPost.excerpt}
-                  </p>
-                  
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center space-x-4 text-sm text-gray-500">
-                      <div className="flex items-center space-x-1">
-                        <User className="w-4 h-4" />
-                        <span>{featuredPost.author}</span>
-                      </div>
-                      <div className="flex items-center space-x-1">
-                        <Clock className="w-4 h-4" />
-                        <span>{featuredPost.readTime}</span>
-                      </div>
-                    </div>
-                    
-                    <Button 
-                      className="bg-[#60bde9] hover:bg-[#4a9bc7] text-white"
-                      asChild
-                    >
-                      <Link to={`/news/${featuredPost.id}`}>
-                        Đọc thêm <ArrowRight className="w-4 h-4 ml-2" />
-                      </Link>
-                    </Button>
-                  </div>
-                </div>
-              </div>
-            </Card>
-          </div>
-        )}
-
-        {/* Regular Posts Grid */}
+        {/* Posts Grid */}
         <div className="mb-16">
           <h2 className="text-3xl font-bold text-gray-900 mb-8">Bài viết mới nhất</h2>
-          {regularPosts.length > 0 ? (
+          {filteredPosts.length > 0 ? (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {regularPosts.map((post) => (
+              {filteredPosts.map((post) => (
                 <Card key={post.id} className="group overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
                   <div className="relative overflow-hidden">
                     <img 
