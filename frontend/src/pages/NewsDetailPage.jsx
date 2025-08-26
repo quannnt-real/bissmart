@@ -294,9 +294,13 @@ const NewsDetailPage = () => {
                       <div className="flex items-center space-x-2 text-xs text-gray-500 mb-3">
                         <Calendar className="w-3 h-3" />
                         <span>{new Date(relatedPost.date).toLocaleDateString('vi-VN')}</span>
-                        <span>•</span>
-                        <Clock className="w-3 h-3" />
-                        <span>{relatedPost.readTime}</span>
+                        {relatedPost.readTime && (
+                          <>
+                            <span>•</span>
+                            <Clock className="w-3 h-3" />
+                            <span>{relatedPost.readTime}</span>
+                          </>
+                        )}
                       </div>
                       
                       <h3 className="text-lg font-bold text-gray-900 mb-3 group-hover:text-[#60bde9] transition-colors line-clamp-2">
