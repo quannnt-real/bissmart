@@ -70,7 +70,7 @@ const HomePage = () => {
 
       {/* Stats Section */}
       <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
+        <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="text-center">
               <Award className="w-12 h-12 text-[#60bde9] mx-auto mb-4" />
