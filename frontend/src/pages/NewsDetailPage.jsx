@@ -139,9 +139,11 @@ const NewsDetailPage = () => {
 
         {/* Article Header */}
         <div className="max-w-4xl mx-auto mb-16">
-          <Badge className="bg-[#60bde9] text-white mb-4">
-            {post.category}
-          </Badge>
+          {post.category && (
+            <Badge className="bg-[#60bde9] text-white mb-4">
+              {post.category}
+            </Badge>
+          )}
           <h1 className="text-4xl font-bold text-gray-900 mb-6 leading-tight">
             {post.title}
           </h1>
