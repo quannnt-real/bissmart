@@ -1,0 +1,127 @@
+import React, { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import { Button } from './ui/button';
+import { Sheet, SheetContent, SheetTrigger } from './ui/sheet';
+import { Menu, Phone, Mail } from 'lucide-react';
+import { mockData } from '../data/mock';
+
+const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
+
+  const navItems = [
+    { href: '/', label: 'Trang chủ' },
+    { href: '/gioi-thieu', label: 'Giới thiệu' },
+    { href: '/dich-vu', label: 'Dịch vụ' },
+    { href: '/du-an', label: 'Dự án' },
+    { href: '/tin-tuc', label: 'Tin tức' },
+    { href: '/lien-he', label: 'Liên hệ' }
+  ];
+
+  const isActive = (href) => location.pathname === href;
+
+  return (
+    <header className="bg-white shadow-md sticky top-0 z-50">
+      {/* Top contact bar */}
+      <div className="bg-[#223b5f] text-white py-2">
+        <div className="container mx-auto px-4 flex justify-between items-center text-sm">
+          <div className="flex items-center space-x-4">
+            <div className="flex items-center space-x-1">
+              <Phone className="h-4 w-4" />
+              <span>{mockData.company.phone}</span>
+            </div>
+            <div className="flex items-center space-x-1">
+              <Mail className="h-4 w-4" />
+              <span>{mockData.company.email}</span>
+            </div>
+          </div>
+          <div className="hidden md:block">
+            <span className="text-[#60bde9]">Báo giá 24/7 - Tư vấn miễn phí</span>
+          </div>
+        </div>
+      </div>
+
+      {/* Main header */}
+      <div className="container mx-auto px-4 py-4">
+        <div className="flex justify-between items-center">
+          {/* Logo */}
+          <Link to="/" className="flex items-center space-x-3">
+            <div className="w-12 h-12 bg-[#f05a2c] rounded-lg flex items-center justify-center">
+              <span className="text-white font-bold text-xl">BS</span>
+            </div>
+            <div>
+              <div className="text-[#223b5f] font-bold text-lg leading-tight">BIS SMART</div>
+              <div className="text-gray-600 text-xs">Xây dựng trọn gói</div>
+            </div>
+          </Link>
+
+          {/* Desktop Navigation */}
+          <nav className="hidden lg:flex items-center space-x-8">
+            {navItems.map((item) => (
+              <Link
+                key={item.href}
+                to={item.href}
+                className={`relative py-2 transition-colors duration-200 ${
+                  isActive(item.href)
+                    ? 'text-[#f05a2c] font-semibold'
+                    : 'text-gray-700 hover:text-[#f05a2c]'
+                }`}
+              >
+                {item.label}
+                {isActive(item.href) && (
+                  <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#f05a2c]"></div>
+                )}
+              </Link>
+            ))}
+          </nav>
+
+          {/* CTA Button */}
+          <div className="hidden md:flex items-center space-x-4">
+            <Button 
+              className="bg-[#f05a2c] hover:bg-[#e04a1c] text-white px-6 py-2 rounded-lg font-semibold transition-all duration-200 shadow-lg hover:shadow-xl"
+              asChild
+            >
+              <Link to="/lien-he">Nhận tư vấn ngay</Link>
+            </Button>
+          </div>
+
+          {/* Mobile menu */}
+          <Sheet open={isOpen} onOpenChange={setIsOpen}>
+            <SheetTrigger asChild className="lg:hidden">
+              <Button variant="outline" size="icon">
+                <Menu className="h-6 w-6" />
+              </Button>
+            </SheetTrigger>
+            <SheetContent side="right" className="w-[300px]">
+              <nav className="flex flex-col space-y-4 mt-8">
+                {navItems.map((item) => (
+                  <Link
+                    key={item.href}
+                    to={item.href}
+                    onClick={() => setIsOpen(false)}
+                    className={`py-3 px-4 rounded-lg transition-colors duration-200 ${
+                      isActive(item.href)
+                        ? 'bg-[#f05a2c] text-white'
+                        : 'text-gray-700 hover:bg-gray-100'
+                    }`}
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+                <Button 
+                  className="bg-[#f05a2c] hover:bg-[#e04a1c] text-white mt-4"
+                  asChild
+                  onClick={() => setIsOpen(false)}
+                >
+                  <Link to="/lien-he">Nhận tư vấn ngay</Link>
+                </Button>
+              </nav>
+            </SheetContent>
+          </Sheet>
+        </div>
+      </div>
+    </header>
+  );
+};
+
+export default Header;
