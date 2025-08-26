@@ -157,10 +157,12 @@ const NewsDetailPage = () => {
               <User className="w-4 h-4" />
               <span>{post.author}</span>
             </div>
-            <div className="flex items-center space-x-2">
-              <Clock className="w-4 h-4" />
-              <span>{post.readTime}</span>
-            </div>
+            {post.readTime && (
+              <div className="flex items-center space-x-2">
+                <Clock className="w-4 h-4" />
+                <span>{post.readTime}</span>
+              </div>
+            )}
           </div>
           
           <div className="mb-8">
