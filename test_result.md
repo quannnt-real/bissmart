@@ -130,53 +130,65 @@
         comment: "Backend API endpoints for quote form not yet implemented, using frontend-only form currently"
 
 ## frontend:
-  - task: "News Page completion check"
+  - task: "Fix button link - báo giá công trình to services page"
     implemented: true
     working: true
-    file: "NewsPage.jsx"
+    file: "HomePage.jsx, ServicesPage.jsx"
     stuck_count: 0
     priority: "high"
-    needs_retesting: false
+    needs_retesting: true
     status_history:
       - working: true
         agent: "main"
-        comment: "NewsPage.jsx already exists with complete functionality: hero section, search/filter, featured posts, blog grid, newsletter subscription, and CTA section"
+        comment: "Fixed button link from /contact to /services#quote-form and added id='quote-form' to QuoteForm section in ServicesPage for proper anchor navigation"
 
-  - task: "Contact Page creation"
-    implemented: true
-    working: true
-    file: "ContactPage.jsx"
-    stuck_count: 0
-    priority: "high"
-    needs_retesting: false
-    status_history:
-      - working: true
-        agent: "main"
-        comment: "Created comprehensive ContactPage with contact form, company info, regional offices, FAQ section, and quick actions"
-
-  - task: "Updated routing configuration"
-    implemented: true
-    working: true
-    file: "App.js, Header.jsx"
-    stuck_count: 0
-    priority: "high"
-    needs_retesting: false
-    status_history:
-      - working: true
-        agent: "main"
-        comment: "Added all missing routes in App.js: /news, /blog, /projects, /project/:id, /process, /contact. Updated Header.jsx navigation links to use consistent URLs"
-
-  - task: "Connect projects and news to homepage"
+  - task: "Standardize project details layout between HomePage and ProjectsPage"
     implemented: true
     working: true
     file: "HomePage.jsx"
     stuck_count: 0
     priority: "high"
-    needs_retesting: false
+    needs_retesting: true
     status_history:
       - working: true
         agent: "main"
-        comment: "Added Latest News section to HomePage displaying blog posts with links to full articles. Updated Featured Projects section with correct routing to project details"
+        comment: "Updated HomePage project cards to match ProjectsPage design: added overlay effects, hover animations, badge with project type, separate location/area display with icons, and consistent card structure"
+
+  - task: "Remove featured post from NewsPage"
+    implemented: true
+    working: true
+    file: "NewsPage.jsx"
+    stuck_count: 0
+    priority: "medium"
+    needs_retesting: true
+    status_history:
+      - working: true
+        agent: "main"
+        comment: "Removed featured post section completely, now all posts use uniform grid layout for better visual consistency"
+
+  - task: "Update container width from 1536px to 1280px"
+    implemented: true
+    working: true
+    file: "All .jsx files"
+    stuck_count: 0
+    priority: "medium"
+    needs_retesting: true
+    status_history:
+      - working: true
+        agent: "main"
+        comment: "Replaced all 'container mx-auto' with 'max-w-7xl mx-auto' across all components and pages (HomePage, NewsPage, ContactPage, ProjectsPage, ServicesPage, AboutPage, Header, Footer, QuoteForm, ProjectDetailPage, ProcessPage) to limit width to 1280px instead of 1536px"
+
+  - task: "Remove glassmorphism effects from homepage banner"
+    implemented: true
+    working: true
+    file: "HomePage.jsx"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: true
+        agent: "main"
+        comment: "Removed glassmorphism effects (bg-white/10, backdrop-blur-sm, border-white/20) and replaced with solid background (bg-[#60bde9] with shadow-xl) for better readability and cleaner design"
 
   - task: "Customer testimonials with 6 videos section"
     implemented: true
