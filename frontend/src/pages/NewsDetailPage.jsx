@@ -284,7 +284,7 @@ const NewsDetailPage = () => {
               <CardContent className="p-8">
                 <h3 className="text-2xl font-bold text-gray-900 mb-6">Về tác giả</h3>
                 <div className="flex items-start space-x-6">
-                  <div className="w-20 h-20 bg-gradient-to-br from-[rgb(34 59 95)] to-[#4a9bc7] rounded-full flex items-center justify-center text-white font-bold text-2xl flex-shrink-0">
+                  <div className="w-20 h-20 bg-gradient-to-br from-[rgb(34 59 95)] to-[rgb(34 59 95 / 0.9)] rounded-full flex items-center justify-center text-white font-bold text-2xl flex-shrink-0">
                     {post.author.charAt(0)}
                   </div>
                   <div className="flex-1">
@@ -306,7 +306,7 @@ const NewsDetailPage = () => {
           <div className="space-y-8">
             {/* Table of Contents */}
             <Card className="border-0 shadow-lg sticky top-8">
-              <CardHeader className="bg-gradient-to-r from-[rgb(34 59 95)] to-[#4a9bc7] text-white rounded-t-xl">
+              <CardHeader className="bg-gradient-to-r from-[rgb(34 59 95)] to-[rgb(34 59 95 / 0.9)] text-white rounded-t-xl">
                 <CardTitle className="text-lg font-bold">Mục lục</CardTitle>
               </CardHeader>
               <CardContent className="p-6">
@@ -336,7 +336,7 @@ const NewsDetailPage = () => {
             </Card>
 
             {/* Contact CTA */}
-            <Card className="border-0 shadow-lg bg-gradient-to-br from-[rgb(34 59 95)] to-[#4a9bc7] text-white">
+            <Card className="border-0 shadow-lg bg-gradient-to-br from-[rgb(34 59 95)] to-[rgb(34 59 95 / 0.9)] text-white">
               <CardContent className="p-6 text-center">
                 <h3 className="text-lg font-bold mb-3">Cần tư vấn?</h3>
                 <p className="text-sm mb-4 text-white/90">

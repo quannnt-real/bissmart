@@ -60,7 +60,7 @@ const QuoteForm = () => {
   };
 
   return (
-    <div className="bg-gradient-to-br from-[rgb(34 59 95)] to-[#4a9bc7] py-16">
+    <div className="bg-gradient-to-br from-[rgb(34 59 95)] to-[rgb(34 59 95 / 0.9)] py-16">
       <div className="max-w-7xl mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">

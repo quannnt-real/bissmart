@@ -237,7 +237,7 @@ const NewsPage = () => {
         {/* Advanced Filter Section */}
         <div className="mb-12">
           <Card className="border-0 shadow-xl bg-white">
-            <CardHeader className="bg-gradient-to-r from-[rgb(34 59 95)] to-[#4a9bc7] text-white">
+            <CardHeader className="bg-gradient-to-r from-[rgb(34 59 95)] to-[rgb(34 59 95 / 0.9)] text-white">
               <CardTitle className="text-2xl font-bold flex items-center">
                 <Filter className="w-6 h-6 mr-3" />
                 Tìm kiếm & Lọc bài viết
@@ -537,7 +537,7 @@ const NewsPage = () => {
           </Card>
 
           {/* Contact CTA */}
-          <Card className="border-0 shadow-xl bg-gradient-to-br from-[rgb(34 59 95)] to-[#4a9bc7] text-white">
+          <Card className="border-0 shadow-xl bg-gradient-to-br from-[rgb(34 59 95)] to-[rgb(34 59 95 / 0.9)] text-white">
             <CardContent className="p-8 text-center">
               <MessageCircle className="w-16 h-16 mx-auto mb-4 opacity-80" />
               <h2 className="text-2xl font-bold mb-4">Cần tư vấn về dự án xây dựng?</h2>

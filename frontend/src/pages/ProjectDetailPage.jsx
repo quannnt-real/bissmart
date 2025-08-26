@@ -117,7 +117,7 @@ const ProjectDetailPage = () => {
           <div className="lg:col-span-2 space-y-12">
             {/* Project Overview */}
             <Card className="border-0 shadow-lg">
-              <CardHeader className="bg-gradient-to-r from-[rgb(34 59 95)] to-[#4a9bc7] text-white rounded-t-xl">
+              <CardHeader className="bg-gradient-to-r from-[rgb(34 59 95)] to-[rgb(34 59 95 / 0.9)] text-white rounded-t-xl">
                 <CardTitle className="text-2xl font-bold">Tổng quan dự án</CardTitle>
               </CardHeader>
               <CardContent className="p-8">
@@ -134,7 +134,7 @@ const ProjectDetailPage = () => {
 
             {/* Project Gallery */}
             <Card className="border-0 shadow-lg">
-              <CardHeader className="bg-gradient-to-r from-[rgb(34 59 95)] to-[#4a9bc7] text-white rounded-t-xl">
+              <CardHeader className="bg-gradient-to-r from-[rgb(34 59 95)] to-[rgb(34 59 95 / 0.9)] text-white rounded-t-xl">
                 <CardTitle className="text-2xl font-bold flex items-center">
                   <ImageIcon className="w-6 h-6 mr-3" />
                   Thư viện hình ảnh
@@ -243,7 +243,7 @@ const ProjectDetailPage = () => {
             </Card>
 
             {/* Contact CTA */}
-            <Card className="border-0 shadow-lg bg-gradient-to-br from-[rgb(34 59 95)] to-[#4a9bc7] text-white">
+            <Card className="border-0 shadow-lg bg-gradient-to-br from-[rgb(34 59 95)] to-[rgb(34 59 95 / 0.9)] text-white">
               <CardContent className="p-8 text-center">
                 <h3 className="text-2xl font-bold mb-4">Bạn muốn có dự án tương tự?</h3>
                 <p className="text-lg mb-6 text-white/90">
