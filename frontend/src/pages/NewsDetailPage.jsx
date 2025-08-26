@@ -247,7 +247,7 @@ const NewsDetailPage = () => {
                         {post.author.charAt(0)}
                       </div>
                       <h4 className="font-semibold text-gray-900 mb-2">{post.author}</h4>
-                      <p className="text-sm text-gray-600">Chuyên gia {post.category}</p>
+                      <p className="text-sm text-gray-600">Chuyên gia {post.category || 'xây dựng'}</p>
                     </div>
                   </CardContent>
                 </Card>
