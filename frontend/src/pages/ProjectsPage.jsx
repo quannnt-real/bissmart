@@ -320,7 +320,7 @@ const ProjectsPage = () => {
                     </div>
                     
                     <Button 
-                      className="bg-bis-primary hover:bg-[#4a9bc7] text-white font-semibold px-6"
+                      className="bg-bis-primary hover:bg-bis-primary/90 text-white font-semibold px-6"
                       asChild
                     >
                       <Link to={`/project/${project.id}`}>
@@ -345,7 +345,7 @@ const ProjectsPage = () => {
                 setFilterLocation('all');
                 setSearchTerm('');
               }}
-              className="bg-bis-primary hover:bg-[#4a9bc7] text-white"
+              className="bg-bis-primary hover:bg-bis-primary/90 text-white"
             >
               Xóa tất cả bộ lọc
             </Button>

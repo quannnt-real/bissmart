@@ -479,7 +479,7 @@ const NewsPage = () => {
                       </Button>
                       <Button 
                         size="sm"
-                        className="bg-bis-primary hover:bg-[#4a9bc7] text-white"
+                        className="bg-bis-primary hover:bg-bis-primary/90 text-white"
                         asChild
                       >
                         <Link to={`/news/${post.id}`}>
@@ -504,7 +504,7 @@ const NewsPage = () => {
                 setFilterCategory('all');
                 setSearchTerm('');
               }}
-              className="bg-bis-primary hover:bg-[#4a9bc7] text-white"
+              className="bg-bis-primary hover:bg-bis-primary/90 text-white"
             >
               Xóa tất cả bộ lọc
             </Button>

@@ -50,7 +50,7 @@ const HomePage = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
                 size="lg" 
-                className="bg-bis-primary hover:bg-[#4a9bc7] text-white px-8 py-4 text-lg font-semibold transition-all duration-200 transform hover:scale-105"
+                className="bg-bis-primary hover:bg-bis-primary/90 text-white px-8 py-4 text-lg font-semibold transition-all duration-200 transform hover:scale-105"
                 asChild
               >
                 <Link to="/services#quote-form">{mockData.hero.cta}</Link>
@@ -130,7 +130,7 @@ const HomePage = () => {
                     </li>
                   ))}
                 </ul>
-                <Button className="w-full bg-bis-primary hover:bg-[#4a9bc7] text-white" asChild>
+                <Button className="w-full bg-bis-primary hover:bg-bis-primary/90 text-white" asChild>
                   <Link to="/services">
                     Tìm hiểu thêm <ArrowRight className="w-4 h-4 ml-2" />
                   </Link>
@@ -166,7 +166,7 @@ const HomePage = () => {
                     <span className="text-sm text-gray-600">Tối ưu không gian sống</span>
                   </li>
                 </ul>
-                <Button className="w-full bg-bis-primary hover:bg-[#4a9bc7] text-white" asChild>
+                <Button className="w-full bg-bis-primary hover:bg-bis-primary/90 text-white" asChild>
                   <Link to="/services">
                     Tìm hiểu thêm <ArrowRight className="w-4 h-4 ml-2" />
                   </Link>
@@ -201,7 +201,7 @@ const HomePage = () => {
                     <span className="text-sm text-gray-600">Hỗ trợ 24/7</span>
                   </li>
                 </ul>
-                <Button className="w-full bg-bis-primary hover:bg-[#4a9bc7] text-white" asChild>
+                <Button className="w-full bg-bis-primary hover:bg-bis-primary/90 text-white" asChild>
                   <Link to="/services">
                     Tìm hiểu thêm <ArrowRight className="w-4 h-4 ml-2" />
                   </Link>

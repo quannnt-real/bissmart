@@ -232,7 +232,7 @@ const ContactPage = () => {
 
                   <Button 
                     type="submit"
-                    className="w-full bg-bis-primary hover:bg-[#4a9bc7] text-white py-3 text-lg font-semibold"
+                    className="w-full bg-bis-primary hover:bg-bis-primary/90 text-white py-3 text-lg font-semibold"
                   >
                     <Send className="w-5 h-5 mr-2" />
                     Gửi yêu cầu tư vấn
