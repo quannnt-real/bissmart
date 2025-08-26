@@ -53,7 +53,7 @@ const HomePage = () => {
                 className="bg-[#60bde9] hover:bg-[#4a9bc7] text-white px-8 py-4 text-lg font-semibold transition-all duration-200 transform hover:scale-105"
                 asChild
               >
-                <Link to="/contact">{mockData.hero.cta}</Link>
+                <Link to="/services#quote-form">{mockData.hero.cta}</Link>
               </Button>
               <Button 
                 size="lg" 
