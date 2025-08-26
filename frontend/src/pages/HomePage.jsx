@@ -24,8 +24,12 @@ const HomePage = () => {
             <Badge className="bg-bis-primary text-white mb-6 px-4 py-2 text-sm">
               ƯU ĐÃI ĐẶC BIỆT 2025
             </Badge>
-            <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
-              {mockData.hero.title}
+            <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-6 leading-tight">
+              <span className="block text-bis-accent">CÔNG TY TNHH THIẾT KẾ VÀ XÂY DỰNG</span>
+              <span className="block text-white mt-2">BIS SMART</span>
+              <span className="block text-xl md:text-2xl lg:text-3xl xl:text-4xl font-medium text-gray-200 mt-4">
+                NHÀ THẦU UY TÍN SỐ 1 VỀ XÂY NHÀ TRỌN GÓI
+              </span>
             </h1>
             <p className="text-xl lg:text-2xl mb-8 text-gray-200 leading-relaxed">
               {mockData.hero.subtitle}
