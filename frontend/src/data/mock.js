@@ -21,7 +21,7 @@ export const mockData = {
 
   // Hero Section
   hero: {
-    title: "BIS SMART - NHÀ THẦU UY TÍN SỐ 1 VỀ XÂY NHÀ TRỌN GÓI",
+    title: "CÔNG TY TNHH THIẾT KẾ VÀ XÂY DỰNG BIS SMART - NHÀ THẦU UY TÍN SỐ 1 VỀ XÂY NHÀ TRỌN GÓI",
     subtitle: "Cam kết xây đúng ngân sách, không phát sinh chi phí bất ngờ, minh bạch vật tư & đúng tiến độ thi công",
     backgroundImage: "https://images.unsplash.com/photo-1536895058696-a69b1c7ba34f",
     features: [
