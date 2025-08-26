@@ -35,10 +35,10 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Dịch vụ</h3>
             <ul className="space-y-2">
-              <li><Link to="/services" className="text-gray-300 hover:text-[#60bde9] transition-colors">Thiết kế kiến trúc</Link></li>
-              <li><Link to="/services" className="text-gray-300 hover:text-[#60bde9] transition-colors">Thi công trọn gói</Link></li>
-              <li><Link to="/services" className="text-gray-300 hover:text-[#60bde9] transition-colors">Hỗ trợ pháp lý</Link></li>
-              <li><Link to="/pricing" className="text-gray-300 hover:text-[#60bde9] transition-colors">Báo giá</Link></li>
+              <li><Link to="/services" className="text-gray-300 hover:text-bis-primary transition-colors">Thiết kế kiến trúc</Link></li>
+              <li><Link to="/services" className="text-gray-300 hover:text-bis-primary transition-colors">Thi công trọn gói</Link></li>
+              <li><Link to="/services" className="text-gray-300 hover:text-bis-primary transition-colors">Hỗ trợ pháp lý</Link></li>
+              <li><Link to="/pricing" className="text-gray-300 hover:text-bis-primary transition-colors">Báo giá</Link></li>
             </ul>
           </div>
 
