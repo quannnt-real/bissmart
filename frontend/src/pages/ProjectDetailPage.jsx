@@ -4,6 +4,7 @@ import { Button } from '../components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/card';
 import { Badge } from '../components/ui/badge';
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from '../components/ui/breadcrumb';
+import { Separator } from '../components/ui/separator';
 import { 
   ArrowRight, 
   ArrowLeft,
@@ -11,7 +12,14 @@ import {
   Ruler,
   Calendar,
   CheckCircle,
-  Phone
+  Phone,
+  Clock,
+  Users,
+  Building,
+  Wrench,
+  Shield,
+  Award,
+  Home
 } from 'lucide-react';
 import { mockData } from '../data/mock';
 
@@ -25,6 +33,40 @@ const ProjectDetailPage = () => {
 
   // Get other projects for suggestions
   const otherProjects = mockData.projects.filter(p => p.id !== project.id);
+
+  // Extended project details (in real app, would come from backend)
+  const projectDetails = {
+    startDate: "01/2024",
+    completionDate: "08/2024",
+    budget: "2.5 tỷ VNĐ",
+    contractor: "BIS SMART",
+    architect: "Kiến trúc sư Nguyễn Văn A",
+    floors: project.type === "Biệt thự" ? "2 tầng + 1 tum" : project.type === "Văn phòng" ? "8 tầng" : "3 tầng",
+    rooms: project.type === "Biệt thự" ? "4 phòng ngủ, 3 phòng tắm" : project.type === "Văn phòng" ? "50+ văn phòng" : "3 phòng ngủ, 2 phòng tắm",
+    features: [
+      "Thiết kế hiện đại, tối ưu không gian sống",
+      "Hệ thống điện và nước tiêu chuẩn quốc tế",
+      "Vật liệu cao cấp, thân thiện môi trường",
+      "Hệ thống an ninh thông minh",
+      "Sân vườn và không gian xanh",
+      "Hệ thống cách âm chuyên nghiệp"
+    ],
+    materials: [
+      "Gạch lát nền Viglacera cao cấp",
+      "Cửa nhôm Xingfa hệ 55",
+      "Sơn Dulux nước ngoài",
+      "Thiết bị vệ sinh TOTO",
+      "Hệ thống điện Panasonic",
+      "Cửa gỗ công nghiệp An Cường"
+    ],
+    timeline: [
+      { phase: "Khảo sát và thiết kế", duration: "2 tháng", status: "completed" },
+      { phase: "Xin phép xây dựng", duration: "1 tháng", status: "completed" },
+      { phase: "Thi công phần thô", duration: "3 tháng", status: "completed" },
+      { phase: "Hoàn thiện nội thất", duration: "2 tháng", status: "completed" },
+      { phase: "Bàn giao và nghiệm thu", duration: "0.5 tháng", status: "completed" }
+    ]
+  };
 
   return (
     <div className="min-h-screen">
@@ -56,43 +98,54 @@ const ProjectDetailPage = () => {
       {/* Project Hero */}
       <section className="py-8 bg-white">
         <div className="container mx-auto px-4">
-          <div className="mb-6">
-            <Button variant="ghost" asChild className="mb-4 p-0 h-auto text-gray-600 hover:text-[#f05a2c]">
-              <Link to="/du-an">
-                <ArrowLeft className="mr-2 h-4 w-4" />
-                Quay lại danh sách dự án
-              </Link>
-            </Button>
-          </div>
+          <Button variant="ghost" asChild className="mb-6 p-0 h-auto text-gray-600 hover:text-[#f05a2c]">
+            <Link to="/du-an">
+              <ArrowLeft className="mr-2 h-4 w-4" />
+              Quay lại danh sách dự án
+            </Link>
+          </Button>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Project Image */}
-            <div className="relative">
-              <img 
-                src={project.image} 
-                alt={project.name}
-                className="w-full h-[500px] object-cover rounded-2xl shadow-xl"
-              />
-              <Badge className="absolute top-4 right-4 bg-[#f05a2c] text-white text-lg px-4 py-2">
+          {/* Project Header */}
+          <div className="mb-8">
+            <div className="flex items-center space-x-4 mb-4">
+              <Badge className="bg-[#f05a2c] text-white text-lg px-4 py-2">
                 {project.type}
               </Badge>
+              <Badge variant="outline" className="text-green-600 border-green-600">
+                Đã hoàn thành
+              </Badge>
             </div>
+            <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+              {project.name}
+            </h1>
+            <p className="text-gray-600 text-lg leading-relaxed max-w-3xl">
+              {project.description} Dự án được thiết kế và thi công bởi đội ngũ chuyên gia giàu kinh nghiệm của BIS SMART, đảm bảo chất lượng cao và tiến độ đúng cam kết.
+            </p>
+          </div>
 
-            {/* Project Details */}
-            <div className="space-y-6">
-              <div>
-                <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-                  {project.name}
-                </h1>
-                <p className="text-gray-600 text-lg leading-relaxed">
-                  {project.description}
-                </p>
-              </div>
+          {/* Project Image */}
+          <div className="mb-12">
+            <img 
+              src={project.image} 
+              alt={project.name}
+              className="w-full h-[500px] object-cover rounded-2xl shadow-xl"
+            />
+          </div>
 
-              {/* Project Info Cards */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <Card className="border-l-4 border-l-[#f05a2c]">
-                  <CardContent className="p-4">
+          {/* Project Info Grid */}
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            {/* Main Content */}
+            <div className="lg:col-span-2 space-y-8">
+              {/* Basic Info */}
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center space-x-2">
+                    <Building className="h-5 w-5 text-[#f05a2c]" />
+                    <span>Thông tin cơ bản</span>
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="flex items-center space-x-3">
                       <MapPin className="h-5 w-5 text-[#f05a2c]" />
                       <div>
@@ -100,11 +153,6 @@ const ProjectDetailPage = () => {
                         <div className="font-semibold text-gray-900">{project.location}</div>
                       </div>
                     </div>
-                  </CardContent>
-                </Card>
-
-                <Card className="border-l-4 border-l-[#f05a2c]">
-                  <CardContent className="p-4">
                     <div className="flex items-center space-x-3">
                       <Ruler className="h-5 w-5 text-[#f05a2c]" />
                       <div>
@@ -112,63 +160,167 @@ const ProjectDetailPage = () => {
                         <div className="font-semibold text-gray-900">{project.area}</div>
                       </div>
                     </div>
-                  </CardContent>
-                </Card>
-              </div>
-
-              {/* Project Features */}
-              <Card className="bg-orange-50 border-[#f05a2c]">
-                <CardHeader>
-                  <CardTitle className="text-lg text-gray-900">
-                    Đặc điểm nổi bật
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="grid grid-cols-1 gap-3">
                     <div className="flex items-center space-x-3">
-                      <CheckCircle className="h-5 w-5 text-[#f05a2c]" />
-                      <span className="text-gray-700">Thiết kế hiện đại, tối ưu không gian</span>
+                      <Home className="h-5 w-5 text-[#f05a2c]" />
+                      <div>
+                        <div className="text-sm text-gray-500">Quy mô</div>
+                        <div className="font-semibold text-gray-900">{projectDetails.floors}</div>
+                      </div>
                     </div>
                     <div className="flex items-center space-x-3">
-                      <CheckCircle className="h-5 w-5 text-[#f05a2c]" />
-                      <span className="text-gray-700">Sử dụng vật liệu cao cấp, bền vững</span>
-                    </div>
-                    <div className="flex items-center space-x-3">
-                      <CheckCircle className="h-5 w-5 text-[#f05a2c]" />
-                      <span className="text-gray-700">Thi công đúng tiến độ cam kết</span>
-                    </div>
-                    <div className="flex items-center space-x-3">
-                      <CheckCircle className="h-5 w-5 text-[#f05a2c]" />
-                      <span className="text-gray-700">Bảo hành 2 năm toàn diện</span>
+                      <Users className="h-5 w-5 text-[#f05a2c]" />
+                      <div>
+                        <div className="text-sm text-gray-500">Không gian</div>
+                        <div className="font-semibold text-gray-900">{projectDetails.rooms}</div>
+                      </div>
                     </div>
                   </div>
                 </CardContent>
               </Card>
 
-              {/* Action Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button 
-                  size="lg" 
-                  className="bg-[#f05a2c] hover:bg-[#e04a1c] text-white px-8 py-3 flex-1"
-                  asChild
-                >
-                  <Link to="/lien-he">
-                    Nhận tư vấn dự án tương tự
-                    <Phone className="ml-2 h-5 w-5" />
-                  </Link>
-                </Button>
-                <Button 
-                  size="lg" 
-                  variant="outline" 
-                  className="border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white px-8 py-3 flex-1"
-                  asChild
-                >
-                  <Link to="/dich-vu">
-                    Xem bảng giá
-                    <ArrowRight className="ml-2 h-5 w-5" />
-                  </Link>
-                </Button>
-              </div>
+              {/* Project Details */}
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center space-x-2">
+                    <Wrench className="h-5 w-5 text-[#f05a2c]" />
+                    <span>Chi tiết dự án</span>
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                      <div className="text-sm text-gray-500 mb-1">Ngày khởi công</div>
+                      <div className="font-semibold text-gray-900">{projectDetails.startDate}</div>
+                    </div>
+                    <div>
+                      <div className="text-sm text-gray-500 mb-1">Ngày hoàn thành</div>
+                      <div className="font-semibold text-gray-900">{projectDetails.completionDate}</div>
+                    </div>
+                    <div>
+                      <div className="text-sm text-gray-500 mb-1">Tổng ngân sách</div>
+                      <div className="font-semibold text-gray-900">{projectDetails.budget}</div>
+                    </div>
+                    <div>
+                      <div className="text-sm text-gray-500 mb-1">Kiến trúc sư</div>
+                      <div className="font-semibold text-gray-900">{projectDetails.architect}</div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Features */}
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center space-x-2">
+                    <Award className="h-5 w-5 text-[#f05a2c]" />
+                    <span>Đặc điểm nổi bật</span>
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                    {projectDetails.features.map((feature, index) => (
+                      <div key={index} className="flex items-start space-x-3">
+                        <CheckCircle className="h-5 w-5 text-[#f05a2c] mt-0.5 flex-shrink-0" />
+                        <span className="text-gray-700">{feature}</span>
+                      </div>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Materials */}
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center space-x-2">
+                    <Shield className="h-5 w-5 text-[#f05a2c]" />
+                    <span>Vật liệu chính</span>
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                    {projectDetails.materials.map((material, index) => (
+                      <div key={index} className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-[#f05a2c] rounded-full mt-2 flex-shrink-0"></div>
+                        <span className="text-gray-700">{material}</span>
+                      </div>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* Sidebar */}
+            <div className="space-y-6">
+              {/* Timeline */}
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center space-x-2">
+                    <Clock className="h-5 w-5 text-[#f05a2c]" />
+                    <span>Tiến độ thi công</span>
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-4">
+                    {projectDetails.timeline.map((phase, index) => (
+                      <div key={index} className="relative">
+                        <div className="flex items-center space-x-3">
+                          <div className="w-3 h-3 bg-green-500 rounded-full flex-shrink-0"></div>
+                          <div className="flex-1">
+                            <div className="font-semibold text-gray-900 text-sm">{phase.phase}</div>
+                            <div className="text-xs text-gray-500">{phase.duration}</div>
+                          </div>
+                        </div>
+                        {index < projectDetails.timeline.length - 1 && (
+                          <div className="absolute left-1.5 top-4 w-0.5 h-8 bg-gray-200"></div>
+                        )}
+                      </div>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Contact Card */}
+              <Card className="bg-orange-50 border-[#f05a2c]">
+                <CardHeader>
+                  <CardTitle className="text-lg text-gray-900">
+                    Quan tâm dự án tương tự?
+                  </CardTitle>
+                  <CardDescription>
+                    Liên hệ với chúng tôi để được tư vấn chi tiết
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <div className="flex items-center space-x-3">
+                    <Phone className="h-5 w-5 text-[#f05a2c]" />
+                    <div>
+                      <div className="font-semibold text-gray-900">Hotline</div>
+                      <div className="text-gray-600">{mockData.company.phone}</div>
+                    </div>
+                  </div>
+                  <Separator />
+                  <Button 
+                    size="sm" 
+                    className="bg-[#f05a2c] hover:bg-[#e04a1c] text-white w-full"
+                    asChild
+                  >
+                    <Link to="/lien-he">
+                      Nhận tư vấn miễn phí
+                      <Phone className="ml-2 h-4 w-4" />
+                    </Link>
+                  </Button>
+                  <Button 
+                    size="sm" 
+                    variant="outline" 
+                    className="border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white w-full"
+                    asChild
+                  >
+                    <Link to="/dich-vu">
+                      Xem bảng giá
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
+                  </Button>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </div>
