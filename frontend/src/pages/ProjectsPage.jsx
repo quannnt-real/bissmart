@@ -113,7 +113,7 @@ const ProjectsPage = () => {
                     className="w-full bg-white/90 text-gray-900 hover:bg-white"
                     asChild
                   >
-                    <Link to={`/projects/${project.id}`}>
+                    <Link to={`/project/${project.id}`}>
                       <Eye className="w-4 h-4 mr-2" />
                       Xem chi tiết
                     </Link>
