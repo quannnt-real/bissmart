@@ -234,7 +234,7 @@ const NewsDetailPage = () => {
 
                 {/* Article Excerpt */}
                 <div className="mb-8">
-                  <p className="text-xl text-gray-700 leading-relaxed font-medium bg-blue-50 p-6 rounded-lg border-l-4 border-[#60bde9]">
+                  <p className="text-xl text-gray-700 leading-relaxed font-medium bg-blue-50 p-6 rounded-lg border-l-4 border-bis-primary">
                     {post.excerpt}
                   </p>
                 </div>
@@ -440,7 +440,7 @@ const NewsDetailPage = () => {
                       <Button 
                         variant="outline" 
                         size="sm"
-                        className="border-[#60bde9] text-bis-primary hover:bg-bis-primary hover:text-white font-semibold"
+                        className="border-bis-primary text-bis-primary hover:bg-bis-primary hover:text-white font-semibold"
                         asChild
                       >
                         <Link to={`/news/${relatedPost.id}`}>

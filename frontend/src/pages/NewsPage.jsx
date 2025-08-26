@@ -252,7 +252,7 @@ const NewsPage = () => {
                     placeholder="Tìm kiếm bài viết, tác giả hoặc nội dung..."
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
-                    className="pl-12 h-14 text-lg border-2 border-gray-200 focus:border-[#60bde9] rounded-xl"
+                    className="pl-12 h-14 text-lg border-2 border-gray-200 focus:border-bis-primary rounded-xl"
                   />
                 </div>
               </div>
@@ -265,7 +265,7 @@ const NewsPage = () => {
                     Danh mục
                   </label>
                   <Select value={filterCategory} onValueChange={setFilterCategory}>
-                    <SelectTrigger className="h-12 border-2 border-gray-200 focus:border-[#60bde9]">
+                    <SelectTrigger className="h-12 border-2 border-gray-200 focus:border-bis-primary">
                       <SelectValue placeholder="Chọn danh mục" />
                     </SelectTrigger>
                     <SelectContent>
@@ -284,7 +284,7 @@ const NewsPage = () => {
                     Sắp xếp theo
                   </label>
                   <Select value={sortBy} onValueChange={setSortBy}>
-                    <SelectTrigger className="h-12 border-2 border-gray-200 focus:border-[#60bde9]">
+                    <SelectTrigger className="h-12 border-2 border-gray-200 focus:border-bis-primary">
                       <SelectValue placeholder="Sắp xếp" />
                     </SelectTrigger>
                     <SelectContent>
@@ -339,7 +339,7 @@ const NewsPage = () => {
                       setSortBy('newest');
                     }}
                     variant="outline"
-                    className="w-full h-12 border-[#60bde9] text-bis-primary hover:bg-bis-primary hover:text-white"
+                    className="w-full h-12 border-bis-primary text-bis-primary hover:bg-bis-primary hover:text-white"
                   >
                     Xóa bộ lọc
                   </Button>

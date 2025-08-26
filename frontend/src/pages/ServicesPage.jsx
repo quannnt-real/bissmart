@@ -322,7 +322,7 @@ const ServicesPage = () => {
                     ))}
                   </ul>
                   <Button 
-                    className={`w-full mt-6 ${pkg.popular ? 'bg-bis-primary hover:bg-[#4a9bc7] text-white' : 'border-[#60bde9] text-bis-primary hover:bg-bis-primary hover:text-white'}`}
+                    className={`w-full mt-6 ${pkg.popular ? 'bg-bis-primary hover:bg-[#4a9bc7] text-white' : 'border-bis-primary text-bis-primary hover:bg-bis-primary hover:text-white'}`}
                     variant={pkg.popular ? 'default' : 'outline'}
                     asChild
                   >

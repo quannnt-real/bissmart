@@ -270,7 +270,7 @@ const HomePage = () => {
                   
                   <p className="text-gray-600 mb-4 line-clamp-2">{project.description}</p>
                   
-                  <Button variant="outline" className="w-full border-[#60bde9] text-bis-primary hover:bg-bis-primary hover:text-white">
+                  <Button variant="outline" className="w-full border-bis-primary text-bis-primary hover:bg-bis-primary hover:text-white">
                     <Link to={`/project/${project.id}`} className="flex items-center justify-center w-full">
                       Xem chi tiết <ArrowRight className="w-4 h-4 ml-2" />
                     </Link>
@@ -281,7 +281,7 @@ const HomePage = () => {
           </div>
           
           <div className="text-center mt-8">
-            <Button size="lg" variant="outline" className="border-[#60bde9] text-bis-primary hover:bg-bis-primary hover:text-white" asChild>
+            <Button size="lg" variant="outline" className="border-bis-primary text-bis-primary hover:bg-bis-primary hover:text-white" asChild>
               <Link to="/projects">Xem tất cả dự án</Link>
             </Button>
           </div>
@@ -318,7 +318,7 @@ const HomePage = () => {
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-3 line-clamp-2">{post.title}</h3>
                   <p className="text-gray-600 mb-4 line-clamp-3">{post.excerpt}</p>
-                  <Button variant="outline" className="w-full border-[#60bde9] text-bis-primary hover:bg-bis-primary hover:text-white" asChild>
+                  <Button variant="outline" className="w-full border-bis-primary text-bis-primary hover:bg-bis-primary hover:text-white" asChild>
                     <Link to={`/news/${post.id}`}>
                       Đọc thêm <ArrowRight className="w-4 h-4 ml-2" />
                     </Link>
@@ -329,7 +329,7 @@ const HomePage = () => {
           </div>
           
           <div className="text-center mt-8">
-            <Button size="lg" variant="outline" className="border-[#60bde9] text-bis-primary hover:bg-bis-primary hover:text-white" asChild>
+            <Button size="lg" variant="outline" className="border-bis-primary text-bis-primary hover:bg-bis-primary hover:text-white" asChild>
               <Link to="/news">Xem tất cả tin tức</Link>
             </Button>
           </div>

@@ -301,7 +301,7 @@ const ContactPage = () => {
                     <div key={index} className="p-4 bg-gray-50 rounded-lg">
                       <div className="flex items-center justify-between mb-2">
                         <h3 className="font-semibold text-gray-900">{region.name}</h3>
-                        <Badge variant="outline" className="border-[#60bde9] text-bis-primary">
+                        <Badge variant="outline" className="border-bis-primary text-bis-primary">
                           Khu vực
                         </Badge>
                       </div>

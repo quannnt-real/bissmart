@@ -98,7 +98,7 @@ const ProjectsPage = () => {
                     placeholder="Tìm kiếm dự án theo tên hoặc mô tả..."
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
-                    className="pl-12 h-14 text-lg border-2 border-gray-200 focus:border-[#60bde9] rounded-xl"
+                    className="pl-12 h-14 text-lg border-2 border-gray-200 focus:border-bis-primary rounded-xl"
                   />
                 </div>
               </div>
@@ -111,7 +111,7 @@ const ProjectsPage = () => {
                     Loại công trình
                   </label>
                   <Select value={filterType} onValueChange={setFilterType}>
-                    <SelectTrigger className="h-12 border-2 border-gray-200 focus:border-[#60bde9]">
+                    <SelectTrigger className="h-12 border-2 border-gray-200 focus:border-bis-primary">
                       <SelectValue placeholder="Chọn loại công trình" />
                     </SelectTrigger>
                     <SelectContent>
@@ -130,7 +130,7 @@ const ProjectsPage = () => {
                     Khu vực
                   </label>
                   <Select value={filterLocation} onValueChange={setFilterLocation}>
-                    <SelectTrigger className="h-12 border-2 border-gray-200 focus:border-[#60bde9]">
+                    <SelectTrigger className="h-12 border-2 border-gray-200 focus:border-bis-primary">
                       <SelectValue placeholder="Chọn khu vực" />
                     </SelectTrigger>
                     <SelectContent>
@@ -151,7 +151,7 @@ const ProjectsPage = () => {
                     Sắp xếp theo
                   </label>
                   <Select value={sortBy} onValueChange={setSortBy}>
-                    <SelectTrigger className="h-12 border-2 border-gray-200 focus:border-[#60bde9]">
+                    <SelectTrigger className="h-12 border-2 border-gray-200 focus:border-bis-primary">
                       <SelectValue placeholder="Sắp xếp" />
                     </SelectTrigger>
                     <SelectContent>
@@ -204,7 +204,7 @@ const ProjectsPage = () => {
                     setSortBy('newest');
                   }}
                   variant="outline"
-                  className="border-[#60bde9] text-bis-primary hover:bg-bis-primary hover:text-white"
+                  className="border-bis-primary text-bis-primary hover:bg-bis-primary hover:text-white"
                 >
                   Xóa tất cả bộ lọc
                 </Button>

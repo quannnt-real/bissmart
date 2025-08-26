@@ -335,7 +335,7 @@ const ProjectDetailPage = () => {
                     
                     <Button 
                       variant="outline" 
-                      className="w-full border-[#60bde9] text-bis-primary hover:bg-bis-primary hover:text-white font-semibold"
+                      className="w-full border-bis-primary text-bis-primary hover:bg-bis-primary hover:text-white font-semibold"
                       asChild
                     >
                       <Link to={`/project/${relatedProject.id}`}>
