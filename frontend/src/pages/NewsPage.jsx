@@ -30,7 +30,7 @@ const NewsPage = () => {
       <section className="relative bg-[#223b5f] text-white py-20">
         <div className="container mx-auto px-4">
           <div className="text-center">
-            <Badge className="bg-[#f05a2c] text-white mb-6 text-lg px-4 py-2">
+            <Badge className="bg-[#60bde9] text-white mb-6 text-lg px-4 py-2">
               Tin tức & Kiến thức
             </Badge>
             <h1 className="text-4xl lg:text-5xl font-bold mb-6">
@@ -76,7 +76,7 @@ const NewsPage = () => {
               {sortedNews.length > 0 && (
                 <div className="mb-16">
                   <h2 className="text-2xl font-bold text-gray-900 mb-8">Bài viết nổi bật</h2>
-                  <Card className="overflow-hidden border-2 border-[#f05a2c] shadow-xl bg-white">
+                  <Card className="overflow-hidden border-2 border-[#60bde9] shadow-xl bg-white">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
                       <div className="relative">
                         <img 
@@ -104,7 +104,7 @@ const NewsPage = () => {
                         </CardDescription>
                         <Button 
                           size="lg" 
-                          className="bg-[#f05a2c] hover:bg-[#e04a1c] text-white w-fit"
+                          className="bg-[#60bde9] hover:bg-[#e04a1c] text-white w-fit"
                           asChild
                         >
                           <Link to={`/tin-tuc/${sortedNews[0].id}`}>
@@ -143,7 +143,7 @@ const NewsPage = () => {
                               <span>3 phút đọc</span>
                             </div>
                           </div>
-                          <CardTitle className="text-lg text-gray-900 leading-tight group-hover:text-[#f05a2c] transition-colors">
+                          <CardTitle className="text-lg text-gray-900 leading-tight group-hover:text-[#60bde9] transition-colors">
                             {article.title}
                           </CardTitle>
                         </CardHeader>
@@ -153,7 +153,7 @@ const NewsPage = () => {
                           </p>
                           <Button 
                             variant="ghost" 
-                            className="p-0 h-auto text-[#f05a2c] hover:text-[#e04a1c]" 
+                            className="p-0 h-auto text-[#60bde9] hover:text-[#e04a1c]" 
                             asChild
                           >
                             <Link to={`/tin-tuc/${article.id}`}>
@@ -206,7 +206,7 @@ const NewsPage = () => {
                 placeholder="Nhập email của bạn"
                 className="flex-1"
               />
-              <Button className="bg-[#f05a2c] hover:bg-[#e04a1c] text-white">
+              <Button className="bg-[#60bde9] hover:bg-[#e04a1c] text-white">
                 Đăng ký
               </Button>
             </div>
@@ -229,7 +229,7 @@ const NewsPage = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               size="lg" 
-              className="bg-[#f05a2c] hover:bg-[#e04a1c] text-white px-8 py-4 text-lg font-semibold"
+              className="bg-[#60bde9] hover:bg-[#e04a1c] text-white px-8 py-4 text-lg font-semibold"
               asChild
             >
               <Link to="/lien-he">

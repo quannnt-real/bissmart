@@ -66,7 +66,7 @@ const ContactPage = () => {
       title: 'Hotline 24/7',
       value: mockData.company.phone,
       description: 'Gọi ngay để được tư vấn miễn phí',
-      color: 'text-[#f05a2c]'
+      color: 'text-[#60bde9]'
     },
     {
       icon: Mail,
@@ -97,11 +97,11 @@ const ContactPage = () => {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-4xl mx-auto">
-            <Badge className="bg-[#f05a2c] text-white mb-6 text-lg px-4 py-2">
+            <Badge className="bg-[#60bde9] text-white mb-6 text-lg px-4 py-2">
               Liên hệ với BIS SMART
             </Badge>
             <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-              Sẵn sàng hỗ trợ bạn <span className="text-[#f05a2c]">24/7</span>
+              Sẵn sàng hỗ trợ bạn <span className="text-[#60bde9]">24/7</span>
             </h1>
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
               Liên hệ với chúng tôi để nhận tư vấn miễn phí và báo giá chính xác nhất cho dự án xây dựng của bạn
@@ -109,7 +109,7 @@ const ContactPage = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
                 size="lg" 
-                className="bg-[#f05a2c] hover:bg-[#e04a1c] text-white px-8 py-4 text-lg font-semibold"
+                className="bg-[#60bde9] hover:bg-[#e04a1c] text-white px-8 py-4 text-lg font-semibold"
                 onClick={() => document.getElementById('contact-form').scrollIntoView({ behavior: 'smooth' })}
               >
                 Gửi tin nhắn ngay
@@ -178,10 +178,10 @@ const ContactPage = () => {
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {mockData.company.branches.map((branch, index) => (
-              <Card key={branch.id} className="bg-white border-2 hover:border-[#f05a2c] transition-colors duration-300">
+              <Card key={branch.id} className="bg-white border-2 hover:border-[#60bde9] transition-colors duration-300">
                 <CardHeader>
                   <div className="flex items-start space-x-3 mb-4">
-                    <div className="w-12 h-12 bg-[#f05a2c] rounded-lg flex items-center justify-center flex-shrink-0">
+                    <div className="w-12 h-12 bg-[#60bde9] rounded-lg flex items-center justify-center flex-shrink-0">
                       <Building className="h-6 w-6 text-white" />
                     </div>
                     <div className="flex-1">
@@ -249,9 +249,9 @@ const ContactPage = () => {
                     ))}
                     <div className="mt-6 p-4 bg-orange-50 rounded-lg border border-orange-200">
                       <div className="flex items-center space-x-2">
-                        <Phone className="h-5 w-5 text-[#f05a2c]" />
+                        <Phone className="h-5 w-5 text-[#60bde9]" />
                         <span className="font-semibold text-gray-900">Hotline 24/7:</span>
-                        <span className="font-bold text-[#f05a2c]">{mockData.company.phone}</span>
+                        <span className="font-bold text-[#60bde9]">{mockData.company.phone}</span>
                       </div>
                       <p className="text-sm text-gray-600 mt-2">
                         Hỗ trợ khẩn cấp và tư vấn ngoài giờ
@@ -270,7 +270,7 @@ const ContactPage = () => {
               <div className="space-y-4">
                 {whyChooseUs.map((reason, index) => (
                   <div key={index} className="flex items-start space-x-3">
-                    <div className="w-8 h-8 bg-[#f05a2c] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <div className="w-8 h-8 bg-[#60bde9] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                       <CheckCircle className="h-5 w-5 text-white" />
                     </div>
                     <div className="flex-1">
@@ -280,10 +280,10 @@ const ContactPage = () => {
                 ))}
               </div>
               
-              <Card className="mt-8 bg-white border-[#f05a2c] border-2">
+              <Card className="mt-8 bg-white border-[#60bde9] border-2">
                 <CardContent className="p-6">
                   <div className="flex items-center space-x-3 mb-4">
-                    <Star className="h-6 w-6 text-[#f05a2c]" />
+                    <Star className="h-6 w-6 text-[#60bde9]" />
                     <h4 className="text-lg font-semibold text-gray-900">Cam kết chất lượng</h4>
                   </div>
                   <p className="text-gray-600 mb-4">
@@ -420,7 +420,7 @@ const ContactPage = () => {
                       <Button 
                         type="submit"
                         size="lg" 
-                        className="bg-[#f05a2c] hover:bg-[#e04a1c] text-white px-12 py-4 text-lg font-semibold"
+                        className="bg-[#60bde9] hover:bg-[#e04a1c] text-white px-12 py-4 text-lg font-semibold"
                       >
                         Gửi tin nhắn
                         <Send className="ml-2 h-5 w-5" />
@@ -466,7 +466,7 @@ const ContactPage = () => {
                     </div>
                   </div>
                   <Button 
-                    className="w-full bg-[#f05a2c] hover:bg-[#e04a1c] text-white"
+                    className="w-full bg-[#60bde9] hover:bg-[#e04a1c] text-white"
                     onClick={() => window.open(`https://maps.google.com/?q=${encodeURIComponent(branch.address)}`)}
                   >
                     Chỉ đường
@@ -491,7 +491,7 @@ const ContactPage = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               size="lg" 
-              className="bg-[#f05a2c] hover:bg-[#e04a1c] text-white px-8 py-4 text-lg font-semibold"
+              className="bg-[#60bde9] hover:bg-[#e04a1c] text-white px-8 py-4 text-lg font-semibold"
               onClick={() => window.open(`tel:${mockData.company.phone}`)}
             >
               Gọi ngay: {mockData.company.phone}

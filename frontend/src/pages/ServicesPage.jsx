@@ -136,11 +136,11 @@ const ServicesPage = () => {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-4xl mx-auto">
-            <Badge className="bg-[#f05a2c] text-white mb-6 text-lg px-4 py-2">
+            <Badge className="bg-[#60bde9] text-white mb-6 text-lg px-4 py-2">
               BIS SMART - NHÀ THẦU UY TÍN SỐ 1
             </Badge>
             <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-              Dịch vụ <span className="text-[#f05a2c]">Thi công trọn gói</span>
+              Dịch vụ <span className="text-[#60bde9]">Thi công trọn gói</span>
             </h1>
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
               Cam kết xây đúng ngân sách, không phát sinh chi phí bất ngờ, minh bạch vật tư & đúng tiến độ thi công.
@@ -148,7 +148,7 @@ const ServicesPage = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
                 size="lg" 
-                className="bg-[#f05a2c] hover:bg-[#e04a1c] text-white px-8 py-4 text-lg font-semibold"
+                className="bg-[#60bde9] hover:bg-[#e04a1c] text-white px-8 py-4 text-lg font-semibold"
                 onClick={() => document.getElementById('quote-form').scrollIntoView({ behavior: 'smooth' })}
               >
                 Nhận báo giá ngay
@@ -183,7 +183,7 @@ const ServicesPage = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-            <Card className="border-2 border-[#f05a2c] bg-white">
+            <Card className="border-2 border-[#60bde9] bg-white">
               <CardHeader className="text-center">
                 <CardTitle className="text-2xl text-gray-900">
                   Tặng 100% các hạng mục
@@ -193,7 +193,7 @@ const ServicesPage = () => {
                 <div className="space-y-3">
                   {mockData.services.promotions.slice(0, 3).map((promotion, index) => (
                     <div key={index} className="flex items-start space-x-3">
-                      <CheckCircle className="h-5 w-5 text-[#f05a2c] mt-1 flex-shrink-0" />
+                      <CheckCircle className="h-5 w-5 text-[#60bde9] mt-1 flex-shrink-0" />
                       <span className="text-gray-700">{promotion}</span>
                     </div>
                   ))}
@@ -201,7 +201,7 @@ const ServicesPage = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-2 border-[#f05a2c] bg-white">
+            <Card className="border-2 border-[#60bde9] bg-white">
               <CardHeader className="text-center">
                 <CardTitle className="text-2xl text-gray-900">
                   Ưu đãi hợp đồng 2025
@@ -210,15 +210,15 @@ const ServicesPage = () => {
               <CardContent>
                 <div className="space-y-3">
                   <div className="flex items-start space-x-3">
-                    <Star className="h-5 w-5 text-[#f05a2c] mt-1 flex-shrink-0" />
+                    <Star className="h-5 w-5 text-[#60bde9] mt-1 flex-shrink-0" />
                     <span className="text-gray-700">Tặng 50% Gói Thiết Kế Kiến Trúc Cao Cấp</span>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <Star className="h-5 w-5 text-[#f05a2c] mt-1 flex-shrink-0" />
+                    <Star className="h-5 w-5 text-[#60bde9] mt-1 flex-shrink-0" />
                     <span className="text-gray-700">Kiến trúc sư &gt;15 năm kinh nghiệm</span>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <Star className="h-5 w-5 text-[#f05a2c] mt-1 flex-shrink-0" />
+                    <Star className="h-5 w-5 text-[#60bde9] mt-1 flex-shrink-0" />
                     <span className="text-gray-700">Gói thiết kế tối giản chỉ 70k/m²</span>
                   </div>
                 </div>
@@ -246,7 +246,7 @@ const ServicesPage = () => {
                 <thead>
                   <tr className="bg-gray-100">
                     <th className="border p-4 text-left font-semibold text-gray-900">Tiêu chí</th>
-                    <th className="border p-4 text-left font-semibold text-[#f05a2c]">BIS SMART</th>
+                    <th className="border p-4 text-left font-semibold text-[#60bde9]">BIS SMART</th>
                     <th className="border p-4 text-left font-semibold text-gray-600">Đơn vị khác</th>
                   </tr>
                 </thead>
@@ -283,7 +283,7 @@ const ServicesPage = () => {
                 <Card key={index} className="bg-white shadow-md hover:shadow-lg transition-shadow">
                   <CardContent className="p-6">
                     <div className="flex items-start space-x-4">
-                      <div className="w-12 h-12 bg-[#f05a2c] rounded-full flex items-center justify-center text-white font-bold text-lg flex-shrink-0">
+                      <div className="w-12 h-12 bg-[#60bde9] rounded-full flex items-center justify-center text-white font-bold text-lg flex-shrink-0">
                         {step.step}
                       </div>
                       <div className="flex-1">
@@ -317,9 +317,9 @@ const ServicesPage = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {mockData.pricingPackages.map((pkg, index) => (
-              <Card key={index} className={`relative ${index === 1 ? 'border-2 border-[#f05a2c] scale-105' : 'border'} bg-white`}>
+              <Card key={index} className={`relative ${index === 1 ? 'border-2 border-[#60bde9] scale-105' : 'border'} bg-white`}>
                 {index === 1 && (
-                  <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-[#f05a2c] text-white">
+                  <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-[#60bde9] text-white">
                     Phổ biến nhất
                   </Badge>
                 )}
@@ -327,7 +327,7 @@ const ServicesPage = () => {
                   <CardTitle className="text-2xl text-gray-900 mb-2">
                     {pkg.name}
                   </CardTitle>
-                  <div className="text-3xl font-bold text-[#f05a2c] mb-2">
+                  <div className="text-3xl font-bold text-[#60bde9] mb-2">
                     {pkg.price}
                   </div>
                   <CardDescription className="text-gray-600">
@@ -338,13 +338,13 @@ const ServicesPage = () => {
                   <div className="space-y-3 mb-6">
                     {materialsByPackage[index === 0 ? 'economy' : index === 1 ? 'optimal' : 'premium'].map((material, i) => (
                       <div key={i} className="flex items-start space-x-2">
-                        <CheckCircle className="h-4 w-4 text-[#f05a2c] mt-1 flex-shrink-0" />
+                        <CheckCircle className="h-4 w-4 text-[#60bde9] mt-1 flex-shrink-0" />
                         <span className="text-sm text-gray-700">{material}</span>
                       </div>
                     ))}
                   </div>
                   <Button 
-                    className="w-full bg-[#f05a2c] hover:bg-[#e04a1c] text-white"
+                    className="w-full bg-[#60bde9] hover:bg-[#e04a1c] text-white"
                     onClick={() => document.getElementById('quote-form').scrollIntoView({ behavior: 'smooth' })}
                   >
                     Chọn gói này
@@ -556,7 +556,7 @@ const ServicesPage = () => {
                     alt="Đội ngũ miền Bắc"
                     className="w-full h-48 object-cover rounded-t-lg"
                   />
-                  <Badge className="absolute top-4 right-4 bg-[#f05a2c] text-white">
+                  <Badge className="absolute top-4 right-4 bg-[#60bde9] text-white">
                     Miền Bắc
                   </Badge>
                 </div>
@@ -573,7 +573,7 @@ const ServicesPage = () => {
                     alt="Đội ngũ miền Trung"
                     className="w-full h-48 object-cover rounded-t-lg"
                   />
-                  <Badge className="absolute top-4 right-4 bg-[#f05a2c] text-white">
+                  <Badge className="absolute top-4 right-4 bg-[#60bde9] text-white">
                     Miền Trung
                   </Badge>
                 </div>
@@ -590,7 +590,7 @@ const ServicesPage = () => {
                     alt="Đội ngũ miền Nam"
                     className="w-full h-48 object-cover rounded-t-lg"
                   />
-                  <Badge className="absolute top-4 right-4 bg-[#f05a2c] text-white">
+                  <Badge className="absolute top-4 right-4 bg-[#60bde9] text-white">
                     Miền Nam
                   </Badge>
                 </div>
@@ -808,7 +808,7 @@ const ServicesPage = () => {
                       <div className="relative">
                         <div className="w-full h-48 bg-gray-200 rounded-t-lg flex items-center justify-center">
                           <div className="text-center">
-                            <div className="w-16 h-16 bg-[#f05a2c] rounded-full flex items-center justify-center mx-auto mb-2">
+                            <div className="w-16 h-16 bg-[#60bde9] rounded-full flex items-center justify-center mx-auto mb-2">
                               <span className="text-white text-2xl">▶</span>
                             </div>
                             <span className="text-gray-600 font-semibold">VIDEO 0{num}</span>
@@ -831,7 +831,7 @@ const ServicesPage = () => {
                       <div className="relative">
                         <div className="w-full h-48 bg-gray-200 rounded-t-lg flex items-center justify-center">
                           <div className="text-center">
-                            <div className="w-16 h-16 bg-[#f05a2c] rounded-full flex items-center justify-center mx-auto mb-2">
+                            <div className="w-16 h-16 bg-[#60bde9] rounded-full flex items-center justify-center mx-auto mb-2">
                               <span className="text-white text-2xl">▶</span>
                             </div>
                             <span className="text-gray-600 font-semibold">VIDEO 0{num}</span>
@@ -854,7 +854,7 @@ const ServicesPage = () => {
                       <div className="relative">
                         <div className="w-full h-48 bg-gray-200 rounded-t-lg flex items-center justify-center">
                           <div className="text-center">
-                            <div className="w-16 h-16 bg-[#f05a2c] rounded-full flex items-center justify-center mx-auto mb-2">
+                            <div className="w-16 h-16 bg-[#60bde9] rounded-full flex items-center justify-center mx-auto mb-2">
                               <span className="text-white text-2xl">▶</span>
                             </div>
                             <span className="text-gray-600 font-semibold">VIDEO 0{num}</span>
@@ -887,7 +887,7 @@ const ServicesPage = () => {
                   <div className="relative">
                     <div className="w-full h-32 bg-gray-200 rounded-t-lg flex items-center justify-center">
                       <div className="text-center">
-                        <div className="w-12 h-12 bg-[#f05a2c] rounded-full flex items-center justify-center mx-auto mb-2">
+                        <div className="w-12 h-12 bg-[#60bde9] rounded-full flex items-center justify-center mx-auto mb-2">
                           <span className="text-white text-lg">▶</span>
                         </div>
                         <span className="text-gray-600 text-sm font-semibold">Video phản hồi</span>
@@ -1038,7 +1038,7 @@ const ServicesPage = () => {
                     <Button 
                       type="submit"
                       size="lg" 
-                      className="bg-[#f05a2c] hover:bg-[#e04a1c] text-white px-12 py-4 text-lg font-semibold"
+                      className="bg-[#60bde9] hover:bg-[#e04a1c] text-white px-12 py-4 text-lg font-semibold"
                     >
                       Gửi yêu cầu báo giá
                       <ArrowRight className="ml-2 h-5 w-5" />
@@ -1063,7 +1063,7 @@ const ServicesPage = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               size="lg" 
-              className="bg-[#f05a2c] hover:bg-[#e04a1c] text-white px-8 py-4 text-lg font-semibold"
+              className="bg-[#60bde9] hover:bg-[#e04a1c] text-white px-8 py-4 text-lg font-semibold"
               asChild
             >
               <Link to="/lien-he">

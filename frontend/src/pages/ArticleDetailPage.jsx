@@ -129,7 +129,7 @@ const ArticleDetailPage = () => {
       <article className="py-8 bg-white">
         <div className="container mx-auto px-4">
           {/* Back Button */}
-          <Button variant="ghost" asChild className="mb-8 p-0 h-auto text-gray-600 hover:text-[#f05a2c]">
+          <Button variant="ghost" asChild className="mb-8 p-0 h-auto text-gray-600 hover:text-[#60bde9]">
             <Link to="/tin-tuc">
               <ArrowLeft className="mr-2 h-4 w-4" />
               Quay lại tin tức
@@ -142,7 +142,7 @@ const ArticleDetailPage = () => {
               {/* Article Header */}
               <header className="mb-8">
                 {/* Category Badge */}
-                <Badge className="bg-[#f05a2c] text-white mb-4">
+                <Badge className="bg-[#60bde9] text-white mb-4">
                   {articleData.category}
                 </Badge>
 
@@ -177,7 +177,7 @@ const ArticleDetailPage = () => {
                 </div>
 
                 {/* Excerpt */}
-                <p className="text-xl text-gray-600 leading-relaxed mb-8 p-4 bg-orange-50 border-l-4 border-[#f05a2c] rounded-r-lg">
+                <p className="text-xl text-gray-600 leading-relaxed mb-8 p-4 bg-orange-50 border-l-4 border-[#60bde9] rounded-r-lg">
                   {article.excerpt}
                 </p>
               </header>
@@ -209,7 +209,7 @@ const ArticleDetailPage = () => {
                 </div>
                 <div className="flex flex-wrap gap-2">
                   {articleData.tags.map((tag, index) => (
-                    <Badge key={index} variant="secondary" className="hover:bg-[#f05a2c] hover:text-white cursor-pointer transition-colors">
+                    <Badge key={index} variant="secondary" className="hover:bg-[#60bde9] hover:text-white cursor-pointer transition-colors">
                       {tag}
                     </Badge>
                   ))}
@@ -223,28 +223,28 @@ const ArticleDetailPage = () => {
               <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center space-x-2 text-lg">
-                    <BookOpen className="h-5 w-5 text-[#f05a2c]" />
+                    <BookOpen className="h-5 w-5 text-[#60bde9]" />
                     <span>Nội dung bài viết</span>
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <nav className="space-y-2 text-sm">
-                    <a href="#" className="block text-gray-600 hover:text-[#f05a2c] transition-colors py-1">
+                    <a href="#" className="block text-gray-600 hover:text-[#60bde9] transition-colors py-1">
                       1. Thiết kế tối giản và chức năng
                     </a>
-                    <a href="#" className="block text-gray-600 hover:text-[#f05a2c] transition-colors py-1">
+                    <a href="#" className="block text-gray-600 hover:text-[#60bde9] transition-colors py-1">
                       2. Công nghệ Smart Home tích hợp
                     </a>
-                    <a href="#" className="block text-gray-600 hover:text-[#f05a2c] transition-colors py-1">
+                    <a href="#" className="block text-gray-600 hover:text-[#60bde9] transition-colors py-1">
                       3. Vật liệu xây dựng bền vững
                     </a>
-                    <a href="#" className="block text-gray-600 hover:text-[#f05a2c] transition-colors py-1">
+                    <a href="#" className="block text-gray-600 hover:text-[#60bde9] transition-colors py-1">
                       4. Không gian mở và linh hoạt
                     </a>
-                    <a href="#" className="block text-gray-600 hover:text-[#f05a2c] transition-colors py-1">
+                    <a href="#" className="block text-gray-600 hover:text-[#60bde9] transition-colors py-1">
                       5. Tích hợp thiên nhiên vào kiến trúc
                     </a>
-                    <a href="#" className="block text-gray-600 hover:text-[#f05a2c] transition-colors py-1">
+                    <a href="#" className="block text-gray-600 hover:text-[#60bde9] transition-colors py-1">
                       6. Thiết kế đa thế hệ
                     </a>
                   </nav>
@@ -262,7 +262,7 @@ const ArticleDetailPage = () => {
                       <Link 
                         key={index}
                         to="/tin-tuc" 
-                        className="block text-sm text-gray-600 hover:text-[#f05a2c] transition-colors border-b border-gray-100 pb-2 last:border-b-0"
+                        className="block text-sm text-gray-600 hover:text-[#60bde9] transition-colors border-b border-gray-100 pb-2 last:border-b-0"
                       >
                         {topic}
                       </Link>
@@ -272,7 +272,7 @@ const ArticleDetailPage = () => {
               </Card>
 
               {/* Contact CTA */}
-              <Card className="bg-orange-50 border-[#f05a2c]">
+              <Card className="bg-orange-50 border-[#60bde9]">
                 <CardHeader>
                   <CardTitle className="text-lg text-gray-900">
                     Cần tư vấn thiết kế?
@@ -284,14 +284,14 @@ const ArticleDetailPage = () => {
                 <CardContent className="space-y-4">
                   <div className="space-y-3">
                     <div className="flex items-center space-x-3">
-                      <Phone className="h-4 w-4 text-[#f05a2c]" />
+                      <Phone className="h-4 w-4 text-[#60bde9]" />
                       <div className="text-sm">
                         <div className="font-semibold text-gray-900">Hotline</div>
                         <div className="text-gray-600">{mockData.company.phone}</div>
                       </div>
                     </div>
                     <div className="flex items-center space-x-3">
-                      <Mail className="h-4 w-4 text-[#f05a2c]" />
+                      <Mail className="h-4 w-4 text-[#60bde9]" />
                       <div className="text-sm">
                         <div className="font-semibold text-gray-900">Email</div>
                         <div className="text-gray-600">{mockData.company.email}</div>
@@ -302,7 +302,7 @@ const ArticleDetailPage = () => {
                   <div className="space-y-2">
                     <Button 
                       size="sm" 
-                      className="bg-[#f05a2c] hover:bg-[#e04a1c] text-white w-full"
+                      className="bg-[#60bde9] hover:bg-[#e04a1c] text-white w-full"
                       asChild
                     >
                       <Link to="/lien-he">
@@ -363,7 +363,7 @@ const ArticleDetailPage = () => {
                         <span>5 phút đọc</span>
                       </div>
                     </div>
-                    <CardTitle className="text-lg text-gray-900 leading-tight group-hover:text-[#f05a2c] transition-colors">
+                    <CardTitle className="text-lg text-gray-900 leading-tight group-hover:text-[#60bde9] transition-colors">
                       {relatedArticle.title}
                     </CardTitle>
                   </CardHeader>
@@ -373,7 +373,7 @@ const ArticleDetailPage = () => {
                     </p>
                     <Button 
                       variant="ghost" 
-                      className="p-0 h-auto text-[#f05a2c] hover:text-[#e04a1c]" 
+                      className="p-0 h-auto text-[#60bde9] hover:text-[#e04a1c]" 
                       asChild
                     >
                       <Link to={`/tin-tuc/${relatedArticle.id}`}>

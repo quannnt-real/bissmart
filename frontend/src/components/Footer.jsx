@@ -36,12 +36,12 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="font-semibold text-lg text-white">Liên kết nhanh</h3>
             <ul className="space-y-2">
-              <li><Link to="/" className="text-gray-400 hover:text-[#f05a2c] transition-colors text-sm">Trang chủ</Link></li>
-              <li><Link to="/gioi-thieu" className="text-gray-400 hover:text-[#f05a2c] transition-colors text-sm">Giới thiệu</Link></li>
-              <li><Link to="/dich-vu" className="text-gray-400 hover:text-[#f05a2c] transition-colors text-sm">Dịch vụ</Link></li>
-              <li><Link to="/du-an" className="text-gray-400 hover:text-[#f05a2c] transition-colors text-sm">Dự án</Link></li>
-              <li><Link to="/tin-tuc" className="text-gray-400 hover:text-[#f05a2c] transition-colors text-sm">Tin tức</Link></li>
-              <li><Link to="/lien-he" className="text-gray-400 hover:text-[#f05a2c] transition-colors text-sm">Liên hệ</Link></li>
+              <li><Link to="/" className="text-gray-400 hover:text-[#60bde9] transition-colors text-sm">Trang chủ</Link></li>
+              <li><Link to="/gioi-thieu" className="text-gray-400 hover:text-[#60bde9] transition-colors text-sm">Giới thiệu</Link></li>
+              <li><Link to="/dich-vu" className="text-gray-400 hover:text-[#60bde9] transition-colors text-sm">Dịch vụ</Link></li>
+              <li><Link to="/du-an" className="text-gray-400 hover:text-[#60bde9] transition-colors text-sm">Dự án</Link></li>
+              <li><Link to="/tin-tuc" className="text-gray-400 hover:text-[#60bde9] transition-colors text-sm">Tin tức</Link></li>
+              <li><Link to="/lien-he" className="text-gray-400 hover:text-[#60bde9] transition-colors text-sm">Liên hệ</Link></li>
             </ul>
           </div>
 

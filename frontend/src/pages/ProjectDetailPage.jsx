@@ -79,7 +79,7 @@ const ProjectDetailPage = () => {
       {/* Project Hero */}
       <section className="py-8 bg-white">
         <div className="container mx-auto px-4">
-          <Button variant="ghost" asChild className="mb-6 p-0 h-auto text-gray-600 hover:text-[#f05a2c]">
+          <Button variant="ghost" asChild className="mb-6 p-0 h-auto text-gray-600 hover:text-[#60bde9]">
             <Link to="/du-an">
               <ArrowLeft className="mr-2 h-4 w-4" />
               Quay lại danh sách dự án
@@ -89,7 +89,7 @@ const ProjectDetailPage = () => {
           {/* Project Header */}
           <div className="mb-8">
             <div className="flex items-center space-x-4 mb-4">
-              <Badge className="bg-[#f05a2c] text-white text-lg px-4 py-2">
+              <Badge className="bg-[#60bde9] text-white text-lg px-4 py-2">
                 {project.type}
               </Badge>
               <Badge variant="outline" className="text-green-600 border-green-600">
@@ -146,7 +146,7 @@ const ProjectDetailPage = () => {
                   onClick={() => setCurrentImageIndex(index)}
                   className={`flex-shrink-0 rounded-lg overflow-hidden transition-all duration-200 ${
                     index === currentImageIndex 
-                      ? 'ring-4 ring-[#f05a2c] ring-opacity-60' 
+                      ? 'ring-4 ring-[#60bde9] ring-opacity-60' 
                       : 'hover:ring-2 hover:ring-gray-300'
                   }`}
                 >
@@ -167,24 +167,24 @@ const ProjectDetailPage = () => {
               <Card className="mb-8">
                 <CardHeader>
                   <CardTitle className="flex items-center space-x-2">
-                    <Building className="h-5 w-5 text-[#f05a2c]" />
+                    <Building className="h-5 w-5 text-[#60bde9]" />
                     <span>Thông tin dự án</span>
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                     <div className="text-center p-4 bg-gray-50 rounded-lg">
-                      <MapPin className="h-8 w-8 text-[#f05a2c] mx-auto mb-2" />
+                      <MapPin className="h-8 w-8 text-[#60bde9] mx-auto mb-2" />
                       <div className="text-sm text-gray-500">Vị trí</div>
                       <div className="font-semibold text-gray-900">{project.location}</div>
                     </div>
                     <div className="text-center p-4 bg-gray-50 rounded-lg">
-                      <Ruler className="h-8 w-8 text-[#f05a2c] mx-auto mb-2" />
+                      <Ruler className="h-8 w-8 text-[#60bde9] mx-auto mb-2" />
                       <div className="text-sm text-gray-500">Diện tích</div>
                       <div className="font-semibold text-gray-900">{project.area}</div>
                     </div>
                     <div className="text-center p-4 bg-gray-50 rounded-lg">
-                      <Home className="h-8 w-8 text-[#f05a2c] mx-auto mb-2" />
+                      <Home className="h-8 w-8 text-[#60bde9] mx-auto mb-2" />
                       <div className="text-sm text-gray-500">Quy mô</div>
                       <div className="font-semibold text-gray-900">
                         {project.type === "Biệt thự" ? "2 tầng + 1 tum" : 
@@ -192,7 +192,7 @@ const ProjectDetailPage = () => {
                       </div>
                     </div>
                     <div className="text-center p-4 bg-gray-50 rounded-lg">
-                      <Users className="h-8 w-8 text-[#f05a2c] mx-auto mb-2" />
+                      <Users className="h-8 w-8 text-[#60bde9] mx-auto mb-2" />
                       <div className="text-sm text-gray-500">Không gian</div>
                       <div className="font-semibold text-gray-900">
                         {project.type === "Biệt thự" ? "4PN, 3WC" : 
@@ -214,28 +214,28 @@ const ProjectDetailPage = () => {
                 <CardContent>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="flex items-start space-x-3 p-4 bg-orange-50 rounded-lg">
-                      <div className="w-2 h-2 bg-[#f05a2c] rounded-full mt-2 flex-shrink-0"></div>
+                      <div className="w-2 h-2 bg-[#60bde9] rounded-full mt-2 flex-shrink-0"></div>
                       <div>
                         <div className="font-semibold text-gray-900 mb-1">Thiết kế hiện đại</div>
                         <div className="text-sm text-gray-600">Kiến trúc đương đại, tối ưu không gian sống</div>
                       </div>
                     </div>
                     <div className="flex items-start space-x-3 p-4 bg-orange-50 rounded-lg">
-                      <div className="w-2 h-2 bg-[#f05a2c] rounded-full mt-2 flex-shrink-0"></div>
+                      <div className="w-2 h-2 bg-[#60bde9] rounded-full mt-2 flex-shrink-0"></div>
                       <div>
                         <div className="font-semibold text-gray-900 mb-1">Vật liệu cao cấp</div>
                         <div className="text-sm text-gray-600">Sử dụng vật liệu nhập khẩu, bền vững</div>
                       </div>
                     </div>
                     <div className="flex items-start space-x-3 p-4 bg-orange-50 rounded-lg">
-                      <div className="w-2 h-2 bg-[#f05a2c] rounded-full mt-2 flex-shrink-0"></div>
+                      <div className="w-2 h-2 bg-[#60bde9] rounded-full mt-2 flex-shrink-0"></div>
                       <div>
                         <div className="font-semibold text-gray-900 mb-1">Ánh sáng tự nhiên</div>
                         <div className="text-sm text-gray-600">Tận dụng tối đa ánh sáng và thông gió tự nhiên</div>
                       </div>
                     </div>
                     <div className="flex items-start space-x-3 p-4 bg-orange-50 rounded-lg">
-                      <div className="w-2 h-2 bg-[#f05a2c] rounded-full mt-2 flex-shrink-0"></div>
+                      <div className="w-2 h-2 bg-[#60bde9] rounded-full mt-2 flex-shrink-0"></div>
                       <div>
                         <div className="font-semibold text-gray-900 mb-1">Hoàn thiện tỉ mỉ</div>
                         <div className="text-sm text-gray-600">Chú trọng từng chi tiết nhỏ nhất</div>
@@ -249,7 +249,7 @@ const ProjectDetailPage = () => {
             {/* Sidebar */}
             <div className="space-y-6">
               {/* Contact Card */}
-              <Card className="bg-orange-50 border-[#f05a2c]">
+              <Card className="bg-orange-50 border-[#60bde9]">
                 <CardHeader>
                   <CardTitle className="text-lg text-gray-900">
                     Quan tâm dự án tương tự?
@@ -260,7 +260,7 @@ const ProjectDetailPage = () => {
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="flex items-center space-x-3 p-3 bg-white rounded-lg">
-                    <Phone className="h-5 w-5 text-[#f05a2c]" />
+                    <Phone className="h-5 w-5 text-[#60bde9]" />
                     <div>
                       <div className="font-semibold text-gray-900">Hotline 24/7</div>
                       <div className="text-gray-600">{mockData.company.phone}</div>
@@ -268,7 +268,7 @@ const ProjectDetailPage = () => {
                   </div>
                   <Button 
                     size="sm" 
-                    className="bg-[#f05a2c] hover:bg-[#e04a1c] text-white w-full"
+                    className="bg-[#60bde9] hover:bg-[#e04a1c] text-white w-full"
                     asChild
                   >
                     <Link to="/lien-he">
@@ -310,7 +310,7 @@ const ProjectDetailPage = () => {
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="text-gray-600">Bảo hành</span>
-                    <span className="font-semibold text-[#f05a2c]">2 năm</span>
+                    <span className="font-semibold text-[#60bde9]">2 năm</span>
                   </div>
                 </CardContent>
               </Card>
@@ -341,12 +341,12 @@ const ProjectDetailPage = () => {
                       alt={relatedProject.name}
                       className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                     />
-                    <Badge className="absolute top-4 right-4 bg-[#f05a2c] text-white">
+                    <Badge className="absolute top-4 right-4 bg-[#60bde9] text-white">
                       {relatedProject.type}
                     </Badge>
                   </div>
                   <CardHeader>
-                    <CardTitle className="text-xl text-gray-900 group-hover:text-[#f05a2c] transition-colors">
+                    <CardTitle className="text-xl text-gray-900 group-hover:text-[#60bde9] transition-colors">
                       {relatedProject.name}
                     </CardTitle>
                     <CardDescription>
@@ -368,7 +368,7 @@ const ProjectDetailPage = () => {
                     </p>
                     <Button 
                       variant="outline" 
-                      className="w-full border-[#f05a2c] text-[#f05a2c] hover:bg-[#f05a2c] hover:text-white transition-all" 
+                      className="w-full border-[#60bde9] text-[#60bde9] hover:bg-[#60bde9] hover:text-white transition-all" 
                       asChild
                     >
                       <Link to={`/du-an/${relatedProject.id}`}>

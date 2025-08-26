@@ -40,7 +40,7 @@ const ProjectsPage = () => {
       <section className="relative bg-[#223b5f] text-white py-20">
         <div className="container mx-auto px-4">
           <div className="text-center">
-            <Badge className="bg-[#f05a2c] text-white mb-6 text-lg px-4 py-2">
+            <Badge className="bg-[#60bde9] text-white mb-6 text-lg px-4 py-2">
               Dự án tiêu biểu
             </Badge>
             <h1 className="text-4xl lg:text-5xl font-bold mb-6">
@@ -126,12 +126,12 @@ const ProjectsPage = () => {
                       alt={project.name}
                       className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                     />
-                    <Badge className="absolute top-4 right-4 bg-[#f05a2c] text-white">
+                    <Badge className="absolute top-4 right-4 bg-[#60bde9] text-white">
                       {project.type}
                     </Badge>
                   </div>
                   <CardHeader>
-                    <CardTitle className="text-xl text-gray-900 group-hover:text-[#f05a2c] transition-colors">
+                    <CardTitle className="text-xl text-gray-900 group-hover:text-[#60bde9] transition-colors">
                       {project.name}
                     </CardTitle>
                     <CardDescription>
@@ -153,7 +153,7 @@ const ProjectsPage = () => {
                     </p>
                     <Button 
                       variant="outline" 
-                      className="w-full border-[#f05a2c] text-[#f05a2c] hover:bg-[#f05a2c] hover:text-white transition-all" 
+                      className="w-full border-[#60bde9] text-[#60bde9] hover:bg-[#60bde9] hover:text-white transition-all" 
                       asChild
                     >
                       <Link to={`/du-an/${project.id}`}>
@@ -203,7 +203,7 @@ const ProjectsPage = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               size="lg" 
-              className="bg-[#f05a2c] hover:bg-[#e04a1c] text-white px-8 py-4 text-lg font-semibold"
+              className="bg-[#60bde9] hover:bg-[#e04a1c] text-white px-8 py-4 text-lg font-semibold"
               asChild
             >
               <Link to="/lien-he">

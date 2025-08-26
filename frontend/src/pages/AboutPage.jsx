@@ -25,7 +25,7 @@ const AboutPage = () => {
       <section className="relative bg-[#223b5f] text-white py-20">
         <div className="container mx-auto px-4">
           <div className="text-center">
-            <Badge className="bg-[#f05a2c] text-white mb-6 text-lg px-4 py-2">
+            <Badge className="bg-[#60bde9] text-white mb-6 text-lg px-4 py-2">
               Về BIS SMART
             </Badge>
             <h1 className="text-4xl lg:text-5xl font-bold mb-6">
@@ -93,7 +93,7 @@ const AboutPage = () => {
                 <Card key={index} className="text-center hover:shadow-lg transition-shadow duration-300 bg-white border">
                   <CardHeader>
                     <div className="mx-auto w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mb-4">
-                      <Icon className="h-8 w-8 text-[#f05a2c]" />
+                      <Icon className="h-8 w-8 text-[#60bde9]" />
                     </div>
                     <CardTitle className="text-lg text-gray-900">
                       {value}
@@ -107,7 +107,7 @@ const AboutPage = () => {
       </section>
 
       {/* Statistics */}
-      <section className="py-16 bg-[#f05a2c] text-white">
+      <section className="py-16 bg-[#60bde9] text-white">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
             <div className="space-y-2">
@@ -147,7 +147,7 @@ const AboutPage = () => {
               <Card key={branch.id} className="hover:shadow-lg transition-shadow duration-300 bg-white border">
                 <CardHeader>
                   <div className="flex items-center space-x-3 mb-4">
-                    <div className="w-12 h-12 bg-[#f05a2c] rounded-lg flex items-center justify-center">
+                    <div className="w-12 h-12 bg-[#60bde9] rounded-lg flex items-center justify-center">
                       <Building className="h-6 w-6 text-white" />
                     </div>
                     <div>
@@ -159,7 +159,7 @@ const AboutPage = () => {
                 </CardHeader>
                 <CardContent>
                   <div className="flex items-start space-x-3">
-                    <MapPin className="h-5 w-5 text-[#f05a2c] mt-1 flex-shrink-0" />
+                    <MapPin className="h-5 w-5 text-[#60bde9] mt-1 flex-shrink-0" />
                     <p className="text-gray-600">{branch.address}</p>
                   </div>
                 </CardContent>
@@ -173,7 +173,7 @@ const AboutPage = () => {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <Card className="border-2 border-[#f05a2c] shadow-xl bg-white">
+            <Card className="border-2 border-[#60bde9] shadow-xl bg-white">
               <CardHeader className="text-center bg-orange-50">
                 <CardTitle className="text-2xl text-gray-900">
                   Liên hệ với chúng tôi
@@ -185,7 +185,7 @@ const AboutPage = () => {
               <CardContent className="p-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-[#f05a2c] rounded-lg flex items-center justify-center">
+                    <div className="w-12 h-12 bg-[#60bde9] rounded-lg flex items-center justify-center">
                       <Phone className="h-6 w-6 text-white" />
                     </div>
                     <div>
@@ -194,7 +194,7 @@ const AboutPage = () => {
                     </div>
                   </div>
                   <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-[#f05a2c] rounded-lg flex items-center justify-center">
+                    <div className="w-12 h-12 bg-[#60bde9] rounded-lg flex items-center justify-center">
                       <Mail className="h-6 w-6 text-white" />
                     </div>
                     <div>
@@ -206,7 +206,7 @@ const AboutPage = () => {
                 <div className="mt-8 text-center">
                   <Button 
                     size="lg" 
-                    className="bg-[#f05a2c] hover:bg-[#e04a1c] text-white px-8 py-3"
+                    className="bg-[#60bde9] hover:bg-[#e04a1c] text-white px-8 py-3"
                     asChild
                   >
                     <Link to="/lien-he">

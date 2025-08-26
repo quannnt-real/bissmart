@@ -43,7 +43,7 @@ const HomePage = () => {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button 
                   size="lg" 
-                  className="bg-[#f05a2c] hover:bg-[#e04a1c] text-white px-8 py-4 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
+                  className="bg-[#60bde9] hover:bg-[#e04a1c] text-white px-8 py-4 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
                   asChild
                 >
                   <Link to="/lien-he">
@@ -65,7 +65,7 @@ const HomePage = () => {
 
               <div className="flex items-center space-x-6">
                 <div className="flex items-center space-x-2">
-                  <Phone className="h-5 w-5 text-[#f05a2c]" />
+                  <Phone className="h-5 w-5 text-[#60bde9]" />
                   <span className="font-semibold text-gray-900">{mockData.company.phone}</span>
                 </div>
                 <div className="text-sm text-gray-500">Hotline 24/7</div>
@@ -82,7 +82,7 @@ const HomePage = () => {
               </div>
               <div className="absolute top-4 right-4 bg-white p-4 rounded-xl shadow-lg z-20 border">
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-[#f05a2c]">1000+</div>
+                  <div className="text-2xl font-bold text-[#60bde9]">1000+</div>
                   <div className="text-sm text-gray-600">Dự án hoàn thành</div>
                 </div>
               </div>
@@ -110,7 +110,7 @@ const HomePage = () => {
           </div>
 
           <div className="max-w-4xl mx-auto">
-            <Card className="border-2 border-[#f05a2c] shadow-xl bg-white">
+            <Card className="border-2 border-[#60bde9] shadow-xl bg-white">
               <CardHeader className="text-center bg-orange-50">
                 <CardTitle className="text-2xl text-gray-900">
                   Thi công trọn gói
@@ -123,7 +123,7 @@ const HomePage = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   {mockData.services.promotions.map((promotion, index) => (
                     <div key={index} className="flex items-start space-x-3">
-                      <CheckCircle className="h-6 w-6 text-[#f05a2c] mt-1 flex-shrink-0" />
+                      <CheckCircle className="h-6 w-6 text-[#60bde9] mt-1 flex-shrink-0" />
                       <span className="text-gray-700">{promotion}</span>
                     </div>
                   ))}
@@ -131,7 +131,7 @@ const HomePage = () => {
                 <div className="mt-8 text-center">
                   <Button 
                     size="lg" 
-                    className="bg-[#f05a2c] hover:bg-[#e04a1c] text-white px-8 py-3"
+                    className="bg-[#60bde9] hover:bg-[#e04a1c] text-white px-8 py-3"
                     asChild
                   >
                     <Link to="/dich-vu">
@@ -166,7 +166,7 @@ const HomePage = () => {
                 <Card key={index} className="text-center hover:shadow-lg transition-shadow duration-300 bg-white border">
                   <CardHeader>
                     <div className="mx-auto w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mb-4">
-                      <Icon className="h-8 w-8 text-[#f05a2c]" />
+                      <Icon className="h-8 w-8 text-[#60bde9]" />
                     </div>
                     <CardTitle className="text-lg text-gray-900">
                       {reason}
@@ -200,7 +200,7 @@ const HomePage = () => {
                     alt={project.name}
                     className="w-full h-48 object-cover"
                   />
-                  <Badge className="absolute top-4 right-4 bg-[#f05a2c] text-white">
+                  <Badge className="absolute top-4 right-4 bg-[#60bde9] text-white">
                     {project.type}
                   </Badge>
                 </div>
@@ -280,7 +280,7 @@ const HomePage = () => {
                   <p className="text-gray-600 text-sm mb-4">
                     {article.excerpt}
                   </p>
-                  <Button variant="ghost" className="p-0 h-auto text-[#f05a2c] hover:text-[#e04a1c]" asChild>
+                  <Button variant="ghost" className="p-0 h-auto text-[#60bde9] hover:text-[#e04a1c]" asChild>
                     <Link to="/tin-tuc">
                       Đọc thêm
                       <ArrowRight className="ml-1 h-4 w-4" />
@@ -319,7 +319,7 @@ const HomePage = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               size="lg" 
-              className="bg-[#f05a2c] hover:bg-[#e04a1c] text-white px-8 py-4 text-lg font-semibold"
+              className="bg-[#60bde9] hover:bg-[#e04a1c] text-white px-8 py-4 text-lg font-semibold"
               asChild
             >
               <Link to="/lien-he">

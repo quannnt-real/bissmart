@@ -46,7 +46,7 @@ const Header = () => {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
-            <div className="w-12 h-12 bg-[#f05a2c] rounded-lg flex items-center justify-center">
+            <div className="w-12 h-12 bg-[#60bde9] rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-xl">BS</span>
             </div>
             <div>
@@ -63,13 +63,13 @@ const Header = () => {
                 to={item.href}
                 className={`relative py-2 transition-colors duration-200 ${
                   isActive(item.href)
-                    ? 'text-[#f05a2c] font-semibold'
-                    : 'text-gray-700 hover:text-[#f05a2c]'
+                    ? 'text-[#60bde9] font-semibold'
+                    : 'text-gray-700 hover:text-[#60bde9]'
                 }`}
               >
                 {item.label}
                 {isActive(item.href) && (
-                  <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#f05a2c]"></div>
+                  <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#60bde9]"></div>
                 )}
               </Link>
             ))}
@@ -78,7 +78,7 @@ const Header = () => {
           {/* CTA Button */}
           <div className="hidden md:flex items-center space-x-4">
             <Button 
-              className="bg-[#f05a2c] hover:bg-[#e04a1c] text-white px-6 py-2 rounded-lg font-semibold transition-all duration-200 shadow-lg hover:shadow-xl"
+              className="bg-[#60bde9] hover:bg-[#e04a1c] text-white px-6 py-2 rounded-lg font-semibold transition-all duration-200 shadow-lg hover:shadow-xl"
               asChild
             >
               <Link to="/lien-he">Nhận tư vấn ngay</Link>
@@ -101,7 +101,7 @@ const Header = () => {
                     onClick={() => setIsOpen(false)}
                     className={`py-3 px-4 rounded-lg transition-colors duration-200 ${
                       isActive(item.href)
-                        ? 'bg-[#f05a2c] text-white'
+                        ? 'bg-[#60bde9] text-white'
                         : 'text-gray-700 hover:bg-gray-100'
                     }`}
                   >
@@ -109,7 +109,7 @@ const Header = () => {
                   </Link>
                 ))}
                 <Button 
-                  className="bg-[#f05a2c] hover:bg-[#e04a1c] text-white mt-4"
+                  className="bg-[#60bde9] hover:bg-[#e04a1c] text-white mt-4"
                   asChild
                   onClick={() => setIsOpen(false)}
                 >
