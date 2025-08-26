@@ -190,23 +190,41 @@
         agent: "main"
         comment: "Fixed ProjectsPage routing inconsistency: changed `/projects/${project.id}` to `/project/${project.id}` in both project card hover button and bottom action button to match the route defined in App.js"
 
-  - task: "Create NewsDetailPage and add news detail routing"
+  - task: "Increase homepage news from 2 to 3 articles"
     implemented: true
     working: true
-    file: "NewsDetailPage.jsx, App.js"
-    stuck_count: 1
+    file: "mock.js"
+    stuck_count: 0
+    priority: "medium"
+    needs_retesting: true
+    status_history:
+      - working: true
+        agent: "main"
+        comment: "Added 3rd blog post to mockData.blogPosts array. Homepage now displays 3 news articles instead of 2."
+
+  - task: "Redesign ProjectDetailPage for professional layout"
+    implemented: true
+    working: true
+    file: "ProjectDetailPage.jsx"
+    stuck_count: 0
     priority: "high"
     needs_retesting: true
     status_history:
       - working: true
         agent: "main"
-        comment: "Created comprehensive NewsDetailPage.jsx component with full article display, author info, related posts, and social sharing. Added route `/news/:id` to App.js and imported NewsDetailPage component. News detail pages now functional."
-      - working: false
-        agent: "user"
-        comment: "ERROR: Cannot read properties of undefined (reading 'toLowerCase') - caused by accessing undefined category and readTime properties"
+        comment: "Completely redesigned ProjectDetailPage with professional layout including: hero section with gradient overlay, project stats sidebar with contact CTA, image gallery grid, features & materials cards with colored headers, comprehensive project information display, and enhanced related projects section. Much more professional and visually appealing."
+
+  - task: "Redesign NewsDetailPage for professional layout"
+    implemented: true
+    working: true
+    file: "NewsDetailPage.jsx"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
       - working: true
         agent: "main"
-        comment: "FIXED: Added null/undefined checks for all optional properties (category, readTime) throughout NewsDetailPage. Added conditional rendering for category badges and readTime displays. All posts from mockData.blogPosts (which don't have category/readTime) now work without errors."
+        comment: "Completely redesigned NewsDetailPage with professional layout including: hero section with gradient overlay and article meta, breadcrumb navigation, article interaction buttons (like, comment, bookmark), enhanced typography with proper prose styling, sidebar with table of contents and newsletter/contact CTAs, author bio section with avatar, tags section, and improved related posts grid. Much more engaging and professional design."
 
   - task: "Customer testimonials with 6 videos section"
     implemented: true
