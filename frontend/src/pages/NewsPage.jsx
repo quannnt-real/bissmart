@@ -186,7 +186,7 @@ const NewsPage = () => {
                     
                     {post.category && (
                       <div className="absolute top-4 right-4">
-                        <Badge className="bg-bis-primary text-white px-3 py-1 font-semibold">
+                        <Badge className="bg-bis-accent text-white px-3 py-1 font-semibold">
                           {post.category}
                         </Badge>
                       </div>
