@@ -262,8 +262,56 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Why Choose Us */}
+      {/* Latest News */}
       <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+              Tin tức & Chia sẻ
+            </h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Cập nhật những thông tin mới nhất về xu hướng xây dựng và kinh nghiệm thực tế
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {mockData.blogPosts.map((post, index) => (
+              <Card key={post.id} className="group overflow-hidden hover:shadow-xl transition-all duration-300">
+                <div className="overflow-hidden">
+                  <img 
+                    src={post.image} 
+                    alt={post.title}
+                    className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+                  />
+                </div>
+                <CardContent className="p-6">
+                  <div className="flex items-center space-x-2 text-sm text-gray-500 mb-3">
+                    <span>{new Date(post.date).toLocaleDateString('vi-VN')}</span>
+                    <span>•</span>
+                    <span>{post.author}</span>
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3 line-clamp-2">{post.title}</h3>
+                  <p className="text-gray-600 mb-4 line-clamp-3">{post.excerpt}</p>
+                  <Button variant="outline" className="w-full border-[#60bde9] text-[#60bde9] hover:bg-[#60bde9] hover:text-white" asChild>
+                    <Link to={`/news/${post.id}`}>
+                      Đọc thêm <ArrowRight className="w-4 h-4 ml-2" />
+                    </Link>
+                  </Button>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+          
+          <div className="text-center mt-8">
+            <Button size="lg" variant="outline" className="border-[#60bde9] text-[#60bde9] hover:bg-[#60bde9] hover:text-white" asChild>
+              <Link to="/news">Xem tất cả tin tức</Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Us */}
+      <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
