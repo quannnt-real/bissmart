@@ -102,7 +102,7 @@
 # Testing Data - Main Agent and testing sub agent both should log testing data below this section
 #====================================================================================================
 
-## user_problem_statement: "Kiểm tra trang tin tức đã tạo xong chưa? nếu chưa tiếp tục tạo và sau đó tạo tiếp trang liên hệ. Sau đó cập nhật routing cho các trang cũng như kết nối các dự án, các tin tức vào trang chủ"
+## user_problem_statement: "Button báo giá công trình đang link sai trang, nó phải nằm ở phần báo giá dịch vụ chữ? Bên cạnh đó chi tiết dự án tại trang chủ và trang dự án không giống nhau cần điều chỉnh cho giống, bài viết tin tức thì bỏ đi bài nổi bật, chỉ dùng thiết kế bình thường cho đẹp. Bên cạnh đó container cần giới hạn ở 1280 ko giới hạn ở kích thước 1536"
 
 ## backend:
   - task: "Backend server health and basic API functionality"
