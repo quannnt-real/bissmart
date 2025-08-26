@@ -246,10 +246,7 @@
 
 ## test_plan:
   current_focus:
-    - "News Page completion check"
-    - "Contact Page creation"
-    - "Updated routing configuration"
-    - "Connect projects and news to homepage"
+    - "Backend server health and basic API functionality"
   stuck_tasks: []
   test_all: true
   test_priority: "high_first"
