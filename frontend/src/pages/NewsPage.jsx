@@ -66,9 +66,6 @@ const NewsPage = () => {
     return matchesSearch && matchesCategory;
   });
 
-  const featuredPost = filteredPosts[0];
-  const regularPosts = filteredPosts.slice(1);
-
   return (
     <div className="min-h-screen py-16">
       <div className="container mx-auto px-4">
