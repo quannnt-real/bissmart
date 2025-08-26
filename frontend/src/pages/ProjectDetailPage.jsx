@@ -268,7 +268,7 @@ const ProjectDetailPage = () => {
                   </div>
                   <Button 
                     size="sm" 
-                    className="bg-[#60bde9] hover:bg-[#e04a1c] text-white w-full"
+                    className="bg-[#60bde9] hover:bg-[#4a9bdb] text-white w-full"
                     asChild
                   >
                     <Link to="/lien-he">

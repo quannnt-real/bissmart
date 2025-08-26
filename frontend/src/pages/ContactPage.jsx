@@ -109,7 +109,7 @@ const ContactPage = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
                 size="lg" 
-                className="bg-[#60bde9] hover:bg-[#e04a1c] text-white px-8 py-4 text-lg font-semibold"
+                className="bg-[#60bde9] hover:bg-[#4a9bdb] text-white px-8 py-4 text-lg font-semibold"
                 onClick={() => document.getElementById('contact-form').scrollIntoView({ behavior: 'smooth' })}
               >
                 Gửi tin nhắn ngay
@@ -420,7 +420,7 @@ const ContactPage = () => {
                       <Button 
                         type="submit"
                         size="lg" 
-                        className="bg-[#60bde9] hover:bg-[#e04a1c] text-white px-12 py-4 text-lg font-semibold"
+                        className="bg-[#60bde9] hover:bg-[#4a9bdb] text-white px-12 py-4 text-lg font-semibold"
                       >
                         Gửi tin nhắn
                         <Send className="ml-2 h-5 w-5" />
@@ -466,7 +466,7 @@ const ContactPage = () => {
                     </div>
                   </div>
                   <Button 
-                    className="w-full bg-[#60bde9] hover:bg-[#e04a1c] text-white"
+                    className="w-full bg-[#60bde9] hover:bg-[#4a9bdb] text-white"
                     onClick={() => window.open(`https://maps.google.com/?q=${encodeURIComponent(branch.address)}`)}
                   >
                     Chỉ đường
@@ -491,7 +491,7 @@ const ContactPage = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               size="lg" 
-              className="bg-[#60bde9] hover:bg-[#e04a1c] text-white px-8 py-4 text-lg font-semibold"
+              className="bg-[#60bde9] hover:bg-[#4a9bdb] text-white px-8 py-4 text-lg font-semibold"
               onClick={() => window.open(`tel:${mockData.company.phone}`)}
             >
               Gọi ngay: {mockData.company.phone}

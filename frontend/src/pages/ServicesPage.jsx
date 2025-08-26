@@ -148,7 +148,7 @@ const ServicesPage = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
                 size="lg" 
-                className="bg-[#60bde9] hover:bg-[#e04a1c] text-white px-8 py-4 text-lg font-semibold"
+                className="bg-[#60bde9] hover:bg-[#4a9bdb] text-white px-8 py-4 text-lg font-semibold"
                 onClick={() => document.getElementById('quote-form').scrollIntoView({ behavior: 'smooth' })}
               >
                 Nhận báo giá ngay
@@ -344,7 +344,7 @@ const ServicesPage = () => {
                     ))}
                   </div>
                   <Button 
-                    className="w-full bg-[#60bde9] hover:bg-[#e04a1c] text-white"
+                    className="w-full bg-[#60bde9] hover:bg-[#4a9bdb] text-white"
                     onClick={() => document.getElementById('quote-form').scrollIntoView({ behavior: 'smooth' })}
                   >
                     Chọn gói này
@@ -1038,7 +1038,7 @@ const ServicesPage = () => {
                     <Button 
                       type="submit"
                       size="lg" 
-                      className="bg-[#60bde9] hover:bg-[#e04a1c] text-white px-12 py-4 text-lg font-semibold"
+                      className="bg-[#60bde9] hover:bg-[#4a9bdb] text-white px-12 py-4 text-lg font-semibold"
                     >
                       Gửi yêu cầu báo giá
                       <ArrowRight className="ml-2 h-5 w-5" />
@@ -1063,7 +1063,7 @@ const ServicesPage = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               size="lg" 
-              className="bg-[#60bde9] hover:bg-[#e04a1c] text-white px-8 py-4 text-lg font-semibold"
+              className="bg-[#60bde9] hover:bg-[#4a9bdb] text-white px-8 py-4 text-lg font-semibold"
               asChild
             >
               <Link to="/lien-he">

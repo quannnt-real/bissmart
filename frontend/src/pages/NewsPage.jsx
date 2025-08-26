@@ -104,7 +104,7 @@ const NewsPage = () => {
                         </CardDescription>
                         <Button 
                           size="lg" 
-                          className="bg-[#60bde9] hover:bg-[#e04a1c] text-white w-fit"
+                          className="bg-[#60bde9] hover:bg-[#4a9bdb] text-white w-fit"
                           asChild
                         >
                           <Link to={`/tin-tuc/${sortedNews[0].id}`}>
@@ -153,7 +153,7 @@ const NewsPage = () => {
                           </p>
                           <Button 
                             variant="ghost" 
-                            className="p-0 h-auto text-[#60bde9] hover:text-[#e04a1c]" 
+                            className="p-0 h-auto text-[#60bde9] hover:text-[#4a9bdb]" 
                             asChild
                           >
                             <Link to={`/tin-tuc/${article.id}`}>
@@ -206,7 +206,7 @@ const NewsPage = () => {
                 placeholder="Nhập email của bạn"
                 className="flex-1"
               />
-              <Button className="bg-[#60bde9] hover:bg-[#e04a1c] text-white">
+              <Button className="bg-[#60bde9] hover:bg-[#4a9bdb] text-white">
                 Đăng ký
               </Button>
             </div>
@@ -229,7 +229,7 @@ const NewsPage = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               size="lg" 
-              className="bg-[#60bde9] hover:bg-[#e04a1c] text-white px-8 py-4 text-lg font-semibold"
+              className="bg-[#60bde9] hover:bg-[#4a9bdb] text-white px-8 py-4 text-lg font-semibold"
               asChild
             >
               <Link to="/lien-he">

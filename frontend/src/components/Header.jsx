@@ -78,7 +78,7 @@ const Header = () => {
           {/* CTA Button */}
           <div className="hidden md:flex items-center space-x-4">
             <Button 
-              className="bg-[#60bde9] hover:bg-[#e04a1c] text-white px-6 py-2 rounded-lg font-semibold transition-all duration-200 shadow-lg hover:shadow-xl"
+              className="bg-[#60bde9] hover:bg-[#4a9bdb] text-white px-6 py-2 rounded-lg font-semibold transition-all duration-200 shadow-lg hover:shadow-xl"
               asChild
             >
               <Link to="/lien-he">Nhận tư vấn ngay</Link>
@@ -109,7 +109,7 @@ const Header = () => {
                   </Link>
                 ))}
                 <Button 
-                  className="bg-[#60bde9] hover:bg-[#e04a1c] text-white mt-4"
+                  className="bg-[#60bde9] hover:bg-[#4a9bdb] text-white mt-4"
                   asChild
                   onClick={() => setIsOpen(false)}
                 >

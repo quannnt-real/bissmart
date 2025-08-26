@@ -302,7 +302,7 @@ const ArticleDetailPage = () => {
                   <div className="space-y-2">
                     <Button 
                       size="sm" 
-                      className="bg-[#60bde9] hover:bg-[#e04a1c] text-white w-full"
+                      className="bg-[#60bde9] hover:bg-[#4a9bdb] text-white w-full"
                       asChild
                     >
                       <Link to="/lien-he">
@@ -373,7 +373,7 @@ const ArticleDetailPage = () => {
                     </p>
                     <Button 
                       variant="ghost" 
-                      className="p-0 h-auto text-[#60bde9] hover:text-[#e04a1c]" 
+                      className="p-0 h-auto text-[#60bde9] hover:text-[#4a9bdb]" 
                       asChild
                     >
                       <Link to={`/tin-tuc/${relatedArticle.id}`}>

@@ -43,7 +43,7 @@ const HomePage = () => {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button 
                   size="lg" 
-                  className="bg-[#60bde9] hover:bg-[#e04a1c] text-white px-8 py-4 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
+                  className="bg-[#60bde9] hover:bg-[#4a9bdb] text-white px-8 py-4 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
                   asChild
                 >
                   <Link to="/lien-he">
@@ -131,7 +131,7 @@ const HomePage = () => {
                 <div className="mt-8 text-center">
                   <Button 
                     size="lg" 
-                    className="bg-[#60bde9] hover:bg-[#e04a1c] text-white px-8 py-3"
+                    className="bg-[#60bde9] hover:bg-[#4a9bdb] text-white px-8 py-3"
                     asChild
                   >
                     <Link to="/dich-vu">
@@ -280,7 +280,7 @@ const HomePage = () => {
                   <p className="text-gray-600 text-sm mb-4">
                     {article.excerpt}
                   </p>
-                  <Button variant="ghost" className="p-0 h-auto text-[#60bde9] hover:text-[#e04a1c]" asChild>
+                  <Button variant="ghost" className="p-0 h-auto text-[#60bde9] hover:text-[#4a9bdb]" asChild>
                     <Link to="/tin-tuc">
                       Đọc thêm
                       <ArrowRight className="ml-1 h-4 w-4" />
@@ -319,7 +319,7 @@ const HomePage = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               size="lg" 
-              className="bg-[#60bde9] hover:bg-[#e04a1c] text-white px-8 py-4 text-lg font-semibold"
+              className="bg-[#60bde9] hover:bg-[#4a9bdb] text-white px-8 py-4 text-lg font-semibold"
               asChild
             >
               <Link to="/lien-he">

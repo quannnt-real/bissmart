@@ -206,7 +206,7 @@ const AboutPage = () => {
                 <div className="mt-8 text-center">
                   <Button 
                     size="lg" 
-                    className="bg-[#60bde9] hover:bg-[#e04a1c] text-white px-8 py-3"
+                    className="bg-[#60bde9] hover:bg-[#4a9bdb] text-white px-8 py-3"
                     asChild
                   >
                     <Link to="/lien-he">
