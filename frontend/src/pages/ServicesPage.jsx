@@ -29,7 +29,7 @@ const ServicesPage = () => {
 
         {/* Special Offers */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
-          <div className="bg-gradient-to-r from-[rgb(34 59 95)] to-[rgb(34 59 95 / 0.9)] text-white rounded-lg p-8">
+          <div className="bg-gradient-to-r from-bis-accent to-orange-500 text-white rounded-lg p-8">
             <h3 className="text-2xl font-bold mb-4">Tặng 100%</h3>
             <div className="space-y-3 mb-6">
               {mockData.mainService.features.map((feature, index) => (
@@ -42,17 +42,17 @@ const ServicesPage = () => {
             <Button 
               size="lg" 
               variant="secondary" 
-              className="bg-white text-bis-primary hover:bg-gray-100 w-full"
+              className="bg-white text-bis-accent hover:bg-gray-100 w-full"
               asChild
             >
               <Link to="/contact">NHẬN BÁO GIÁ CÔNG TRÌNH</Link>
             </Button>
           </div>
 
-          <div className="bg-gradient-to-r from-orange-500 to-red-500 text-white rounded-lg p-8">
+          <div className="bg-gradient-to-r from-bis-primary to-bis-secondary text-white rounded-lg p-8">
             <h3 className="text-2xl font-bold mb-2">Tặng 50%</h3>
             <h4 className="text-xl font-semibold mb-4">Gói Thiết Kế Kiến Trúc Cao Cấp</h4>
-            <p className="mb-4">(KTS &gt;15 năm kinh nghiệm)</p>
+            <p className="mb-4">(KTS >15 năm kinh nghiệm)</p>
             <div className="bg-white/20 rounded-lg p-4 mb-6">
               <p className="font-semibold">Gói thiết kế tối giản chỉ 70k/m²</p>
               <p className="text-sm mt-2">Bao gồm mặt bằng công năng chi tiết, mặt bằng kết cấu cột, Concept 3D trong tháng 9-10/2025</p>
@@ -60,7 +60,7 @@ const ServicesPage = () => {
             <Button 
               size="lg" 
               variant="secondary" 
-              className="bg-white text-orange-600 hover:bg-gray-100 w-full"
+              className="bg-white text-bis-primary hover:bg-gray-100 w-full"
               asChild
             >
               <Link to="/contact">ĐĂNG KÝ NGAY</Link>
