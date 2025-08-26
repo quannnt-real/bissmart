@@ -282,9 +282,11 @@ const NewsDetailPage = () => {
                         className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
                       />
                       <div className="absolute top-4 left-4">
-                        <Badge className="bg-[#60bde9] text-white">
-                          {relatedPost.category}
-                        </Badge>
+                        {relatedPost.category && (
+                          <Badge className="bg-[#60bde9] text-white">
+                            {relatedPost.category}
+                          </Badge>
+                        )}
                       </div>
                     </div>
                     
