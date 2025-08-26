@@ -19,13 +19,13 @@ const Footer = () => {
               {mockData.company.description}
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-[#60bde9] transition-colors">
+              <a href="#" className="text-gray-400 hover:text-bis-primary transition-colors">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-[#60bde9] transition-colors">
+              <a href="#" className="text-gray-400 hover:text-bis-primary transition-colors">
                 <Youtube className="w-5 h-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-[#60bde9] transition-colors">
+              <a href="#" className="text-gray-400 hover:text-bis-primary transition-colors">
                 <MessageCircle className="w-5 h-5" />
               </a>
             </div>
