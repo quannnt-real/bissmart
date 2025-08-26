@@ -83,7 +83,7 @@ const ProjectsPage = () => {
         {/* Advanced Filter Section */}
         <div className="mb-12">
           <Card className="border-0 shadow-xl bg-white">
-            <CardHeader className="bg-gradient-to-r from-[#60bde9] to-[#4a9bc7] text-white">
+            <CardHeader className="bg-gradient-to-r from-[rgb(34 59 95)] to-[#4a9bc7] text-white">
               <CardTitle className="text-2xl font-bold flex items-center">
                 <Filter className="w-6 h-6 mr-3" />
                 Bộ lọc & Tìm kiếm dự án
@@ -353,7 +353,7 @@ const ProjectsPage = () => {
         )}
 
         {/* Call to Action Section */}
-        <Card className="border-0 shadow-xl bg-gradient-to-br from-[#60bde9] via-[#4a9bc7] to-[#3a8bb0] text-white">
+        <Card className="border-0 shadow-xl bg-gradient-to-br from-[rgb(34 59 95)] via-[#4a9bc7] to-[#3a8bb0] text-white">
           <CardContent className="p-12 text-center">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-3xl lg:text-4xl font-bold mb-6">

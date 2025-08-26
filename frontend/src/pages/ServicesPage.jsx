@@ -29,7 +29,7 @@ const ServicesPage = () => {
 
         {/* Special Offers */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
-          <div className="bg-gradient-to-r from-[#60bde9] to-[#4a9bc7] text-white rounded-lg p-8">
+          <div className="bg-gradient-to-r from-[rgb(34 59 95)] to-[#4a9bc7] text-white rounded-lg p-8">
             <h3 className="text-2xl font-bold mb-4">Tặng 100%</h3>
             <div className="space-y-3 mb-6">
               {mockData.mainService.features.map((feature, index) => (
@@ -296,7 +296,7 @@ const ServicesPage = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {mockData.pricing.map((pkg, index) => (
-              <Card key={index} className={`relative hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 ${pkg.popular ? 'ring-4 ring-[#60bde9] scale-105' : ''}`}>
+              <Card key={index} className={`relative hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 ${pkg.popular ? 'ring-4 ring-[rgb(34 59 95)] scale-105' : ''}`}>
                 {pkg.popular && (
                   <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
                     <Badge className="bg-bis-primary text-white px-4 py-2 text-sm">

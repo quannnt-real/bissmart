@@ -314,7 +314,7 @@ const ContactPage = () => {
             </Card>
 
             {/* Quick Actions */}
-            <Card className="shadow-lg bg-gradient-to-br from-[#60bde9] to-[#4a9bc7] text-white">
+            <Card className="shadow-lg bg-gradient-to-br from-[rgb(34 59 95)] to-[#4a9bc7] text-white">
               <CardContent className="p-6 text-center">
                 <h3 className="text-xl font-bold mb-4">Cần tư vấn gấp?</h3>
                 <p className="mb-6 text-white/90">
