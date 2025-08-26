@@ -57,8 +57,8 @@ const Header = () => {
               <Link
                 key={item.name}
                 to={item.href}
-                className={`text-gray-700 hover:text-[#60bde9] font-medium transition-colors duration-200 ${
-                  location.pathname === item.href ? 'text-[#60bde9]' : ''
+                className={`text-gray-700 hover:text-bis-primary font-medium transition-colors duration-200 ${
+                  location.pathname === item.href ? 'text-bis-primary' : ''
                 }`}
               >
                 {item.name}
