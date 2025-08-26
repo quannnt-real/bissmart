@@ -69,7 +69,7 @@ const Header = () => {
           {/* CTA Button */}
           <div className="hidden md:block">
             <Button 
-              className="bg-[#60bde9] hover:bg-[#4a9bc7] text-white px-6 py-2 rounded-lg font-semibold transition-all duration-200 transform hover:scale-105"
+              className="bg-bis-accent hover:bg-bis-accent/90 text-white px-6 py-2 rounded-lg font-semibold transition-all duration-200 transform hover:scale-105"
               asChild
             >
               <Link to="/contact">Nhận báo giá</Link>
