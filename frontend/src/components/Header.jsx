@@ -22,7 +22,7 @@ const Header = () => {
     <header className="bg-white shadow-lg sticky top-0 z-50">
       {/* Top bar */}
       <div className="bg-gray-800 text-white py-2">
-        <div className="container mx-auto px-4 flex justify-between items-center text-sm">
+        <div className="max-w-7xl mx-auto px-4 flex justify-between items-center text-sm">
           <div className="flex items-center space-x-4">
             <div className="flex items-center space-x-1">
               <Phone className="w-4 h-4" />
