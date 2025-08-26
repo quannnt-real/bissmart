@@ -19,7 +19,7 @@ const HomePage = () => {
           backgroundAttachment: 'fixed'
         }}
       >
-        <div className="container mx-auto px-4">
+        <div className="max-w-7xl mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <Badge className="bg-[#60bde9] text-white mb-6 px-4 py-2 text-sm">
               ƯU ĐÃI ĐẶC BIỆT 2025
