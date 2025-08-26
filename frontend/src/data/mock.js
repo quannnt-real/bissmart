@@ -23,6 +23,13 @@ export const mockData = {
       }
     ]
   },
+
+  design:{
+    name: "Linxhq Việt Nam",
+    description: "Công ty thiết kế và phát triển phần mềm hàng đầu tại Việt Nam",
+    logo: "https://linxhq.com.vn/wp-content/uploads/2021/10/Picture1.png",
+    url: "https://linxhq.com.vn/"
+  },
   
   services: {
     main: "Thi công trọn gói",
