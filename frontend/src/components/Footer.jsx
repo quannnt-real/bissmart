@@ -46,11 +46,11 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Liên kết</h3>
             <ul className="space-y-2">
-              <li><Link to="/about" className="text-gray-300 hover:text-[#60bde9] transition-colors">Về chúng tôi</Link></li>
-              <li><Link to="/projects" className="text-gray-300 hover:text-[#60bde9] transition-colors">Dự án</Link></li>
-              <li><Link to="/process" className="text-gray-300 hover:text-[#60bde9] transition-colors">Quy trình</Link></li>
-              <li><Link to="/blog" className="text-gray-300 hover:text-[#60bde9] transition-colors">Tin tức</Link></li>
-              <li><Link to="/contact" className="text-gray-300 hover:text-[#60bde9] transition-colors">Liên hệ</Link></li>
+              <li><Link to="/about" className="text-gray-300 hover:text-bis-primary transition-colors">Về chúng tôi</Link></li>
+              <li><Link to="/projects" className="text-gray-300 hover:text-bis-primary transition-colors">Dự án</Link></li>
+              <li><Link to="/process" className="text-gray-300 hover:text-bis-primary transition-colors">Quy trình</Link></li>
+              <li><Link to="/blog" className="text-gray-300 hover:text-bis-primary transition-colors">Tin tức</Link></li>
+              <li><Link to="/contact" className="text-gray-300 hover:text-bis-primary transition-colors">Liên hệ</Link></li>
             </ul>
           </div>
 
