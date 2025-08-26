@@ -195,7 +195,7 @@ const NewsDetailPage = () => {
                     </p>
                     <p>
                       Bài viết sẽ cung cấp thông tin chi tiết, hướng dẫn cụ thể và những 
-                      kinh nghiệm thực tế về chủ đề {post.category.toLowerCase()}.
+                      kinh nghiệm thực tế về chủ đề {post.category ? post.category.toLowerCase() : 'xây dựng'}.
                     </p>
                     <p>
                       Để biết thêm thông tin chi tiết, vui lòng liên hệ với đội ngũ 
