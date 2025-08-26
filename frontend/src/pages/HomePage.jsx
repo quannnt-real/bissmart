@@ -32,16 +32,16 @@ const HomePage = () => {
             </p>
             
             {/* Special Offer */}
-            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 mb-8 border border-white/20">
-              <h3 className="text-2xl font-bold text-[#60bde9] mb-4">
+            <div className="bg-[#60bde9] rounded-lg p-6 mb-8 shadow-xl">
+              <h3 className="text-2xl font-bold text-white mb-4">
                 {mockData.offers.design.title}
               </h3>
-              <p className="text-lg mb-4">{mockData.offers.design.subtitle}</p>
+              <p className="text-lg mb-4 text-white/90">{mockData.offers.design.subtitle}</p>
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 text-left">
                 {mockData.hero.features.map((feature, index) => (
                   <div key={index} className="flex items-center space-x-2">
-                    <CheckCircle className="w-5 h-5 text-[#60bde9] flex-shrink-0" />
-                    <span className="text-sm">{feature}</span>
+                    <CheckCircle className="w-5 h-5 text-white flex-shrink-0" />
+                    <span className="text-sm text-white/95">{feature}</span>
                   </div>
                 ))}
               </div>
