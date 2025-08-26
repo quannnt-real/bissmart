@@ -63,19 +63,19 @@ const Footer = () => {
             <h3 className="font-semibold text-lg text-white">Giờ làm việc</h3>
             <div className="space-y-2 text-sm">
               <div className="flex items-center space-x-2">
-                <Clock className="h-4 w-4 text-[#f05a2c]" />
+                <Clock className="h-4 w-4 text-white" />
                 <span className="text-gray-400">Thứ 2 - Thứ 6: 8:00 - 18:00</span>
               </div>
               <div className="flex items-center space-x-2">
-                <Clock className="h-4 w-4 text-[#f05a2c]" />
+                <Clock className="h-4 w-4 text-white" />
                 <span className="text-gray-400">Thứ 7: 8:00 - 17:00</span>
               </div>
               <div className="flex items-center space-x-2">
-                <Clock className="h-4 w-4 text-[#f05a2c]" />
+                <Clock className="h-4 w-4 text-white" />
                 <span className="text-gray-400">Chủ nhật: 9:00 - 16:00</span>
               </div>
             </div>
-            <div className="text-[#f05a2c] font-semibold text-sm">
+            <div className="text-white font-semibold text-sm border border-gray-600 px-3 py-2 rounded">
               Hotline 24/7: {mockData.company.phone}
             </div>
           </div>
